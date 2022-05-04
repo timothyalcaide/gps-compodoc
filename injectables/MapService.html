@@ -1,0 +1,1377 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >MapService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/features/map/services/map.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#MAXIMUM_DOMAIN_PER_CROSSROAD" >MAXIMUM_DOMAIN_PER_CROSSROAD</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildEndOfRoadDistricts" >buildEndOfRoadDistricts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#domains" >domains</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expansion" >expansion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#firstDistrict" >firstDistrict</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initMapElements" >initMapElements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onlySiblings" >onlySiblings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#orderPois" >orderPois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#randomEndOfTheRoadDistrict" >randomEndOfTheRoadDistrict</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(document: Document)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/features/map/services/map.service.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>document</td>
+                                                  
+                                                        <td>
+                                                                    <code>Document</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildEndOfRoadDistricts"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildEndOfRoadDistricts</b></span>
+                        <a href="#buildEndOfRoadDistricts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildEndOfRoadDistricts(element: <a href="../classes/MapBowElement.html" target="_self">MapBowElement</a>, endOfRoadDistricts: <a href="../classes/District.html" target="_self">District[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get all districts that are at the end of a road</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>element</td>
+                                    <td>
+                                                <code><a href="../classes/MapBowElement.html" target="_self" >MapBowElement</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>The current element in the tree. At first, it must be the initial district</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>endOfRoadDistricts</td>
+                                    <td>
+                                                <code><a href="../classes/District.html" target="_self" >District[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>[]</code>
+                                    </td>
+
+                                    <td>
+                                        <p>The list of currently known districts at the end of roads</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/District.html" target="_self" >District[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The list of currently known districts at the end of roads with districts at the end of roads from the current element</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="domains"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>domains</b></span>
+                        <a href="#domains"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>domains(parent: District | Road, domains: <a href="../interfaces/Domain.html" target="_self">Domain[]</a>, domainCount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="229"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:229</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a crossroad if we have multiple domains waypoint
+Create one road by domain waypoint
+Create a district for the job or diploma waypoint list after a domain waypoint
+Create a village for each job or diploma waypoint</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>parent</td>
+                                    <td>
+                                            <code>District | Road</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>domains</td>
+                                    <td>
+                                                <code><a href="../interfaces/Domain.html" target="_self" >Domain[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>domainCount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/MapBowElement.html" target="_self" >MapBowElement</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The first step of this domain</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expansion"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>expansion</b></span>
+                        <a href="#expansion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>expansion(expand: <a href="../interfaces/Expand.html" target="_self">Expand</a>, currentVillage: <a href="../classes/Village.html" target="_self">Village</a>, diplomasChoiceLabel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, jobsChoiceLabel: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a map expand who contains
+   if we have both jobs and diplomas waypoint -&gt; A crossroad with two static road to separate
+     by waypoint type
+   if we have multiple domain waypoints for one type -&gt; A crossroad with one road by domain
+     waypoint (cf: domains method)
+   if we have multiple job or diploma waypoints by domain waypoint -&gt; A district who contains
+     the waypoint list (cf: domains method)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>expand</td>
+                                    <td>
+                                                <code><a href="../interfaces/Expand.html" target="_self" >Expand</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The new expand</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>currentVillage</td>
+                                    <td>
+                                                <code><a href="../classes/Village.html" target="_self" >Village</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The current village</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>diplomasChoiceLabel</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>jobsChoiceLabel</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The translated label for jobs choice sign</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/MapBowElement.html" target="_self" >MapBowElement</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The district or crossroad of the following step. Null if there is no following step</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="firstDistrict"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>firstDistrict</b></span>
+                        <a href="#firstDistrict"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>firstDistrict(svg: SVGGraphicsElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build the first district</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>svg</td>
+                                    <td>
+                                            <code>SVGGraphicsElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The SVG element containing the map</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/District.html" target="_self" >District</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The first district district</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initMapElements"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>initMapElements</b></span>
+                        <a href="#initMapElements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initMapElements(waypoints: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>, firstDistrict: <a href="../classes/District.html" target="_self">District</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize villages, districts, signs and roads from a list of selected waypoints</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoints</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of selected waypoints</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>firstDistrict</td>
+                                    <td>
+                                                <code><a href="../classes/District.html" target="_self" >District</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Village.html" target="_self" >Village</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The last selected village</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onlySiblings"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onlySiblings</b></span>
+                        <a href="#onlySiblings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onlySiblings(villageIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, siblings: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get all siblings waypoint with the ones following the current village in the sibling array
+first</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>villageIndex</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The index of the current village within the siblings list</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>siblings</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of sibling waypoints, including the current village</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The list of sibling waypoint starting from the one following the current village</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderPois"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>orderPois</b></span>
+                        <a href="#orderPois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>orderPois(focusedPoi: <a href="../interfaces/Poi.html" target="_self">Poi</a>, jumblePois: <a href="../interfaces/Poi.html" target="_self">Poi[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get all village Pois with the focused Poi in first position</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>focusedPoi</td>
+                                    <td>
+                                                <code><a href="../interfaces/Poi.html" target="_self" >Poi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The focused Poi</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>jumblePois</td>
+                                    <td>
+                                                <code><a href="../interfaces/Poi.html" target="_self" >Poi[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of human and parcours Pois of the village</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Poi[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The list of Pois of the village with the focused Poi first</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="randomEndOfTheRoadDistrict"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>randomEndOfTheRoadDistrict</b></span>
+                        <a href="#randomEndOfTheRoadDistrict"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>randomEndOfTheRoadDistrict(initialDistrict: <a href="../classes/District.html" target="_self">District</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="215"
+                            class="link-to-prism">src/app/features/map/services/map.service.ts:215</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get a random district among districts at the end of roads</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>initialDistrict</td>
+                                    <td>
+                                                <code><a href="../classes/District.html" target="_self" >District</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The initial district of the map</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/District.html" target="_self" >District</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The random district</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MAXIMUM_DOMAIN_PER_CROSSROAD"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>MAXIMUM_DOMAIN_PER_CROSSROAD</b></span>
+                        <a href="#MAXIMUM_DOMAIN_PER_CROSSROAD"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>3</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/features/map/services/map.service.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DOCUMENT } from &#x27;@angular/common&#x27;;
+import { Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { Domain, Expand, Waypoint } from &#x27;@clients/adventure/bean/waypoint&#x27;;
+import { Poi } from &#x27;@clients/poi/poi&#x27;;
+import {
+  Choice,
+  Crossroad,
+  District,
+  Kind,
+  MapBowElement,
+  MoreDomain,
+  Position,
+  Road,
+  Sign,
+  Village
+} from &#x27;@features/map/models&#x27;;
+import { Utils, Vector } from &#x27;@features/map/utils&#x27;;
+import { WaypointType } from &#x27;@models/waypoint/waypoint-type&#x27;;
+
+@Injectable()
+export class MapService {
+  private readonly MAXIMUM_DOMAIN_PER_CROSSROAD &#x3D; 3;
+
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  /**
+   * Build the first district
+   *
+   * @param svg The SVG element containing the map
+   * @returns The first district district
+   */
+  public firstDistrict(svg: SVGGraphicsElement): District {
+    const startPosition &#x3D; new Position(svg.clientWidth / 2, svg.clientHeight);
+
+    const orientation &#x3D; new Vector(0, -1);
+
+    const initialDistrict &#x3D; new District(
+      null,
+      startPosition,
+      Utils.orientedEndPoint(startPosition, orientation, true),
+      orientation
+    );
+
+    initialDistrict.discovered &#x3D; true;
+
+    return initialDistrict;
+  }
+
+  /**
+   * Initialize villages, districts, signs and roads from a list of selected waypoints
+   *
+   * @param waypoints The list of selected waypoints
+   * @param svg The SVG element containing the map
+   * @returns The last selected village
+   */
+  public initMapElements(waypoints: Waypoint[], firstDistrict: District): Village {
+    let lastBow: MapBowElement &#x3D; null;
+    let village: Village &#x3D; null;
+
+    waypoints.forEach(waypoint &#x3D;&gt; {
+      // FIXME : Missing nomenclature on inOffer waypoints ?
+      if (!waypoint.nomenclature || waypoint.nomenclature !&#x3D;&#x3D; WaypointType.domain) {
+        if (!lastBow) lastBow &#x3D; firstDistrict;
+        else {
+          lastBow &#x3D; new District(
+            lastBow as Road,
+            lastBow.end,
+            Utils.orientedEndPoint(lastBow.end, lastBow.orientation, true),
+            lastBow.orientation
+          );
+
+          lastBow.discovered &#x3D; true;
+        }
+
+        village &#x3D; new Village(this.document, waypoint, lastBow as District);
+
+        village.selected &#x3D; true;
+      } else {
+        const sign &#x3D; new Sign(waypoint as Domain);
+
+        lastBow &#x3D; new Road(lastBow as District, sign, 1);
+
+        lastBow.discovered &#x3D; true;
+
+        sign.selected &#x3D; true;
+      }
+    });
+
+    return village;
+  }
+
+  /**
+   * Create a map expand who contains
+   *    if we have both jobs and diplomas waypoint -&gt; A crossroad with two static road to separate
+   *      by waypoint type
+   *    if we have multiple domain waypoints for one type -&gt; A crossroad with one road by domain
+   *      waypoint (cf: domains method)
+   *    if we have multiple job or diploma waypoints by domain waypoint -&gt; A district who contains
+   *      the waypoint list (cf: domains method)
+   *
+   * @param expand The new expand
+   * @param currentVillage The current village
+   * @param diplomaChoiceLabel The translated label for diplomas choice sign
+   * @param jobsChoiceLabel The translated label for jobs choice sign
+   * @returns The district or crossroad of the following step. Null if there is no following step
+   */
+  public expansion(
+    expand: Expand,
+    currentVillage: Village,
+    diplomasChoiceLabel: string,
+    jobsChoiceLabel: string
+  ): MapBowElement {
+    const hasJobs &#x3D; !!expand.jobs?.domains?.length;
+    const hasDiplomas &#x3D; !!expand.diplomas?.domains.length;
+
+    if (!hasJobs &amp;&amp; !hasDiplomas) return null;
+
+    // Whether there is choice between jobs and diplomas
+    const hasChoice &#x3D; hasJobs &amp;&amp; hasDiplomas;
+
+    let followingCrossroad: Crossroad &#x3D; null;
+    let diplomasFollowingElement: MapBowElement &#x3D; null;
+    let jobsFollowingElement: MapBowElement &#x3D; null;
+    let diplomasParentRoad: District | Road &#x3D; null;
+    let jobsParentRoad: District | Road &#x3D; null;
+
+    // Both diplomas &amp; jobs -&gt; Add choice
+    if (hasChoice) {
+      const crossroad &#x3D; new Crossroad(currentVillage.district);
+
+      crossroad.discovered &#x3D; true;
+
+      followingCrossroad &#x3D; crossroad;
+
+      const diplomasSign &#x3D; new Choice(
+        WaypointType.diploma,
+        diplomasChoiceLabel,
+        expand.diplomas.userCount
+      );
+
+      diplomasParentRoad &#x3D; new Road(crossroad, diplomasSign, 3, hasChoice);
+      diplomasParentRoad.discovered &#x3D; true;
+
+      const jobsSign &#x3D; new Choice(WaypointType.job, jobsChoiceLabel, expand.jobs.userCount);
+
+      jobsParentRoad &#x3D; new Road(crossroad, jobsSign, 3, hasChoice);
+      jobsParentRoad.discovered &#x3D; true;
+    }
+
+    // Diplomas
+    if (hasDiplomas) {
+      diplomasFollowingElement &#x3D; this.domains(
+        diplomasParentRoad || currentVillage.district,
+        expand.diplomas.domains,
+        expand.diplomas.domainCount
+      );
+    }
+
+    // Jobs
+    if (hasJobs) {
+      jobsFollowingElement &#x3D; this.domains(
+        jobsParentRoad || currentVillage.district,
+        expand.jobs.domains,
+        expand.jobs.domainCount
+      );
+    }
+
+    if (!hasChoice) (diplomasFollowingElement || jobsFollowingElement).discovered &#x3D; true;
+
+    return followingCrossroad || diplomasFollowingElement || jobsFollowingElement;
+  }
+
+  /**
+   * Get all siblings waypoint with the ones following the current village in the sibling array
+   * first
+   *
+   * @param villageIndex The index of the current village within the siblings list
+   * @param siblings The list of sibling waypoints, including the current village
+   * @returns The list of sibling waypoint starting from the one following the current village
+   */
+  public onlySiblings(villageIndex: number, siblings: Waypoint[]): Waypoint[] {
+    if (villageIndex) {
+      return siblings
+        .slice(villageIndex + 1, siblings.length)
+        .concat(siblings.slice(0, villageIndex));
+    }
+
+    return siblings.slice(1, siblings.length);
+  }
+
+  /**
+   * Get all village Pois with the focused Poi in first position
+   *
+   * @param focusedPoi The focused Poi
+   * @param jumblePois The list of human and parcours Pois of the village
+   * @returns The list of Pois of the village with the focused Poi first
+   */
+  public orderPois(focusedPoi: Poi, jumblePois: Poi[]): Poi[] {
+    // Build the array from the village Pois and remove the focused Poi
+    const siblingsPois: Poi[] &#x3D; jumblePois.filter(p &#x3D;&gt; p.id !&#x3D;&#x3D; focusedPoi.id);
+
+    // Place the focused Poi in first position
+    siblingsPois.unshift(focusedPoi);
+
+    return siblingsPois;
+  }
+
+  /**
+   * Get a random district among districts at the end of roads
+   *
+   * @param initialDistrict The initial district of the map
+   *
+   * @returns The random district
+   */
+  public randomEndOfTheRoadDistrict(initialDistrict: District): District {
+    const endOfRoadDistricts: District[] &#x3D; this.buildEndOfRoadDistricts(initialDistrict);
+
+    return endOfRoadDistricts[Math.floor(Math.random() * endOfRoadDistricts.length)];
+  }
+
+  /**
+   * Create a crossroad if we have multiple domains waypoint
+   * Create one road by domain waypoint
+   * Create a district for the job or diploma waypoint list after a domain waypoint
+   * Create a village for each job or diploma waypoint
+   *
+   * @returns The first step of this domain
+   */
+  private domains(parent: District | Road, domains: Domain[], domainCount: number): MapBowElement {
+    const moreDomains &#x3D; domainCount &gt; this.MAXIMUM_DOMAIN_PER_CROSSROAD;
+
+    // Add crossroad if there are multiple domains
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const realParent: any &#x3D; domains.length &gt; 1 ? new Crossroad(parent) : parent;
+
+    // add districts
+    domains.forEach(domain &#x3D;&gt; {
+      const sign &#x3D; new Sign(domain);
+
+      const road &#x3D; new Road(
+        realParent,
+        sign,
+        moreDomains ? this.MAXIMUM_DOMAIN_PER_CROSSROAD + 1 : domains.length,
+        false
+      );
+
+      road.discovered &#x3D; true;
+
+      const district &#x3D; new District(road);
+
+      domain.waypoints.forEach(waypoint &#x3D;&gt; {
+        // eslint-disable-next-line no-new
+        new Village(this.document, waypoint, district);
+      });
+    });
+
+    if (moreDomains) {
+      const moreDomain &#x3D; new MoreDomain(domainCount);
+
+      // eslint-disable-next-line no-new
+      new Road(realParent, moreDomain, this.MAXIMUM_DOMAIN_PER_CROSSROAD + 1, false);
+    }
+
+    return realParent;
+  }
+
+  /**
+   * Get all districts that are at the end of a road
+   *
+   * @param element The current element in the tree. At first, it must be the initial district
+   * @param endOfRoadDistricts The list of currently known districts at the end of roads
+   * @returns The list of currently known districts at the end of roads with districts at the end of roads from the current element
+   */
+  private buildEndOfRoadDistricts(
+    element: MapBowElement,
+    endOfRoadDistricts: District[] &#x3D; []
+  ): District[] {
+    if (!element.children.length &amp;&amp; element.kind &#x3D;&#x3D;&#x3D; Kind.District)
+      return [...endOfRoadDistricts, element as District];
+
+    return element.children.reduce(
+      (childrenEndOfRoadDistricts, child) &#x3D;&gt;
+        this.buildEndOfRoadDistricts(child, childrenEndOfRoadDistricts),
+      endOfRoadDistricts
+    );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'MapService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

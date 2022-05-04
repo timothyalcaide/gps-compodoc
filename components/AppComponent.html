@@ -1,0 +1,1110 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#hasGivenChoice$" >hasGivenChoice$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#IN_NATIVE_APP" >IN_NATIVE_APP</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#onDestroySubject$" >onDestroySubject$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#SHOW_MODE_INACTIVITY_TIME" >SHOW_MODE_INACTIVITY_TIME</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleAppUpdate" >handleAppUpdate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#showInactivityDialog" >showInactivityDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(icons: MatIconRegistry, sanitizer: <a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank">DomSanitizer</a>, document: Document, analyticsService: <a href="../injectables/AnalyticsService.html" target="_self">AnalyticsService</a>, context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, dialog: MatDialog, dialogService: <a href="../injectables/DialogService.html" target="_self">DialogService</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, swUpdate: <a href="https://angular.io/api/service-worker/SwUpdate" target="_blank">SwUpdate</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/app.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>icons</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatIconRegistry</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sanitizer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>document</td>
+                                                  
+                                                        <td>
+                                                                    <code>Document</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>analyticsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AnalyticsService.html" target="_self" >AnalyticsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>swUpdate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/service-worker/SwUpdate" target="_blank" >SwUpdate</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleAppUpdate"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleAppUpdate</b></span>
+                        <a href="#handleAppUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleAppUpdate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="286"
+                            class="link-to-prism">src/app/app.component.ts:286</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/app.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="259"
+                            class="link-to-prism">src/app/app.component.ts:259</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/app.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showInactivityDialog"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>showInactivityDialog</b></span>
+                        <a href="#showInactivityDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showInactivityDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">src/app/app.component.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean | undefined&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasGivenChoice$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>hasGivenChoice$</b></span>
+                        <a href="#hasGivenChoice$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/app.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="IN_NATIVE_APP"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>IN_NATIVE_APP</b></span>
+                        <a href="#IN_NATIVE_APP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/app.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDestroySubject$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>onDestroySubject$</b></span>
+                        <a href="#onDestroySubject$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/app.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SHOW_MODE_INACTIVITY_TIME"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>SHOW_MODE_INACTIVITY_TIME</b></span>
+                        <a href="#SHOW_MODE_INACTIVITY_TIME"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>60000</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/app.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DOCUMENT } from &#x27;@angular/common&#x27;;
+import { AfterViewInit, Component, Inject, OnDestroy, OnInit, Renderer2 } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { MatIconRegistry } from &#x27;@angular/material/icon&#x27;;
+import { DomSanitizer } from &#x27;@angular/platform-browser&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { SwUpdate } from &#x27;@angular/service-worker&#x27;;
+import { AnalyticsService, ApplicationContext, DialogService } from &#x27;@core/services&#x27;;
+import { Product } from &#x27;@models/context/product&#x27;;
+import { ConfirmationDialogComponent } from &#x27;@organisms/confirmation-dialog/confirmation-dialog.component&#x27;;
+import { BehaviorSubject, fromEvent, merge, Observable, Subject } from &#x27;rxjs&#x27;;
+import { debounceTime, filter, mergeMap, takeUntil } from &#x27;rxjs/operators&#x27;;
+import { FAVICON_CONFIG } from &#x27;./configs/favicon.config&#x27;;
+
+@Component({
+  selector: &#x27;app-root&#x27;,
+  templateUrl: &#x27;./app.component.html&#x27;
+})
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+  public IN_NATIVE_APP: boolean;
+  public hasGivenChoice$: BehaviorSubject&lt;boolean&gt;;
+
+  private readonly SHOW_MODE_INACTIVITY_TIME &#x3D; 60000;
+  private onDestroySubject$ &#x3D; new Subject&lt;void&gt;();
+
+  constructor(
+    icons: MatIconRegistry,
+    sanitizer: DomSanitizer,
+    @Inject(DOCUMENT) private readonly document: Document,
+    private analyticsService: AnalyticsService,
+    private context: ApplicationContext,
+    private dialog: MatDialog,
+    private dialogService: DialogService,
+    private renderer: Renderer2,
+    private router: Router,
+    private swUpdate: SwUpdate
+  ) {
+    icons.addSvgIcon(
+      &#x27;chest-open&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-chest-open.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;chest-close&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-chest-close.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;chest-close-bright&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-chest-close-bright.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;comment&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-comment.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;destination&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-destination.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;discover&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-discover.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;explorer&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-explorer.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;easter-egg&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-easter-egg.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;feedback&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-feedback.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;instagram-logo&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-instagram.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;reward&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-reward.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;roadmap&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-roadmap.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;school&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-school.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;question-mark&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-circle-question-mark.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;situation&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-situation.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;twitter-logo&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-twitter.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;parcoursup&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-parcoursup.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;profile&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-profile.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;settings&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-settings.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;lady-poi-avatar-1&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-lady-poi-avatar-1.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;lady-poi-avatar-2&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-lady-poi-avatar-2.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;lady-poi-avatar-3&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-lady-poi-avatar-3.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;lady-poi-avatar-4&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-lady-poi-avatar-4.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;lady-poi-avatar-5&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-lady-poi-avatar-5.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;man-poi-avatar-1&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-man-poi-avatar-1.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;man-poi-avatar-2&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-man-poi-avatar-2.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;man-poi-avatar-3&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-man-poi-avatar-3.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;man-poi-avatar-4&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-man-poi-avatar-4.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;man-poi-avatar-5&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-man-poi-avatar-5.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;whatsapp&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-whatsapp.svg&#x27;)
+    );
+    icons.addSvgIcon(&#x27;user&#x27;, sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/user.svg&#x27;));
+    // map
+    icons.addSvgIcon(
+      &#x27;pin-diploma&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-pin-diploma.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;pin-village&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/pin-village.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;pin-village-selected&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/pin-village-selected.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;pin-village-destination&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/pin-village-destination.svg&#x27;)
+    );
+    icons.addSvgIcon(&#x27;line&#x27;, sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/line.svg&#x27;));
+    icons.addSvgIcon(&#x27;gold&#x27;, sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/gold.svg&#x27;));
+    icons.addSvgIcon(
+      &#x27;info&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-info.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;error&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-error.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;warning&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-warning.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;success&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/icons/icon-success.svg&#x27;)
+    );
+
+    // Statuses
+    icons.addSvgIcon(
+      &#x27;student-lady&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/student-lady.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;student-man&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/student-man.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;unemployed-lady&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/unemployed-lady.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;unemployed-man&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/unemployed-man.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;pro-lady&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/pro-lady.svg&#x27;)
+    );
+    icons.addSvgIcon(&#x27;pro-man&#x27;, sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/pro-man.svg&#x27;));
+    icons.addSvgIcon(
+      &#x27;highschool-lady&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/highschool-lady.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;highschool-man&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/highschool-man.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;middleschool-lady&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/middleschool-lady.svg&#x27;)
+    );
+    icons.addSvgIcon(
+      &#x27;middleschool-man&#x27;,
+      sanitizer.bypassSecurityTrustResourceUrl(&#x27;assets/img/middleschool-man.svg&#x27;)
+    );
+  }
+
+  public ngOnInit(): void {
+    this.IN_NATIVE_APP &#x3D; this.context.inNativeApp;
+    this.hasGivenChoice$ &#x3D; this.analyticsService.hasGivenChoice$;
+
+    this.analyticsService.init().pipe(takeUntil(this.onDestroySubject$)).subscribe();
+
+    if (this.context.product &#x3D;&#x3D;&#x3D; Product.Show) {
+      const window: Window &#x3D; this.document.defaultView;
+
+      merge(fromEvent(window, &#x27;mousemove&#x27;), fromEvent(window, &#x27;scroll&#x27;), fromEvent(window, &#x27;click&#x27;))
+        .pipe(
+          debounceTime(this.SHOW_MODE_INACTIVITY_TIME),
+          filter(() &#x3D;&gt; this.router.url !&#x3D;&#x3D; &#x27;/&#x27;),
+          mergeMap(() &#x3D;&gt; this.showInactivityDialog()),
+          takeUntil(this.onDestroySubject$)
+        )
+        .subscribe(confirmed &#x3D;&gt; {
+          if (confirmed &#x3D;&#x3D;&#x3D; false) this.router.navigateByUrl(&#x27;/&#x27;);
+        });
+    }
+
+    this.handleAppUpdate();
+  }
+
+  public ngOnDestroy(): void {
+    this.onDestroySubject$.next();
+    this.onDestroySubject$.complete();
+  }
+
+  public ngAfterViewInit(): void {
+    const newFavIcon &#x3D; FAVICON_CONFIG(this.context.applicationName);
+
+    if (newFavIcon)
+      this.renderer.setAttribute(this.document.querySelector(&#x27;#favicon&#x27;), &#x27;href&#x27;, newFavIcon);
+  }
+
+  private showInactivityDialog(): Observable&lt;boolean | undefined&gt; {
+    return this.dialog
+      .open(
+        ConfirmationDialogComponent,
+        this.dialogService.simpleDialogConfig({
+          titleKey: &#x27;inactivity-dialog.title&#x27;,
+          confirmButtonLabelKey: &#x27;inactivity-dialog.confirm&#x27;,
+          cancelButtonLabelKey: &#x27;inactivity-dialog.cancel&#x27;
+        })
+      )
+      .afterClosed();
+  }
+
+  // TODO : add activateUpdate feature
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private handleAppUpdate(): any {
+    if (this.swUpdate.isEnabled) {
+      this.swUpdate.versionUpdates.pipe(takeUntil(this.onDestroySubject$)).subscribe(evt &#x3D;&gt; {
+        // eslint-disable-next-line default-case
+        switch (evt.type) {
+          case &#x27;VERSION_DETECTED&#x27;:
+            console.log(&#x60;Downloading new app version: ${evt.version.hash}&#x60;);
+            this.swUpdate.activateUpdate().then(() &#x3D;&gt; {
+              console.log(&#x27;New version available. Load New Version?&#x27;);
+              // window.location.reload();
+            });
+            break;
+
+          case &#x27;VERSION_READY&#x27;:
+            console.log(&#x60;Current app version: ${evt.currentVersion.hash}&#x60;);
+            console.log(&#x60;New app version ready for use: ${evt.latestVersion.hash}&#x60;);
+            break;
+
+          case &#x27;VERSION_INSTALLATION_FAILED&#x27;:
+            console.log(&#x60;Failed to install app version &#x27;${evt.version.hash}&#x27;: ${evt.error}&#x60;);
+            break;
+        }
+      });
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div style&#x3D;&quot;height: 100%; width: 100%&quot;&gt;
+  &lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
+
+&lt;app-consent-banner
+  *ngIf&#x3D;&quot;!IN_NATIVE_APP &amp;&amp; (hasGivenChoice$ | async) &#x3D;&#x3D;&#x3D; false&quot;
+&gt;&lt;/app-consent-banner&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div style="height: 100%; width: 100%">  <router-outlet></router-outlet></div><app-consent-banner  *ngIf="!IN_NATIVE_APP && (hasGivenChoice$ | async) === false"></app-consent-banner></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

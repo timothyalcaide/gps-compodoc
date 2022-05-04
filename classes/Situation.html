@@ -1,0 +1,2135 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >Situation</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/models/situation/situation.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>The user situation</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_bacSpecialties" >_bacSpecialties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_gender" >_gender</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_highSchoolClass" >_highSchoolClass</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_highSchoolType" >_highSchoolType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_status" >_status</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ANALYTICS_BAC" >ANALYTICS_BAC</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ANALYTICS_FST" >ANALYTICS_FST</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#applicationStep" >applicationStep</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#currentStep" >currentStep</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#id" >id</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#build" >build</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isCompatibleForDefinition" >isCompatibleForDefinition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setBacSpecialties" >setBacSpecialties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toApi" >toApi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toQueryParams" >toQueryParams</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#gender" >gender</a>
+                                </li>
+                                <li>
+                                    <a href="#status" >status</a>
+                                </li>
+                                <li>
+                                    <a href="#highSchoolClass" >highSchoolClass</a>
+                                </li>
+                                <li>
+                                    <a href="#highSchoolType" >highSchoolType</a>
+                                </li>
+                                <li>
+                                    <a href="#bacSpecialties" >bacSpecialties</a>
+                                </li>
+                                <li>
+                                    <a href="#hasValidGender" >hasValidGender</a>
+                                </li>
+                                <li>
+                                    <a href="#hasValidSituation" >hasValidSituation</a>
+                                </li>
+                                <li>
+                                    <a href="#hasBac" >hasBac</a>
+                                </li>
+                                <li>
+                                    <a href="#hasHighSchoolClass" >hasHighSchoolClass</a>
+                                </li>
+                                <li>
+                                    <a href="#hasHighSchoolType" >hasHighSchoolType</a>
+                                </li>
+                                <li>
+                                    <a href="#isStudent" >isStudent</a>
+                                </li>
+                                <li>
+                                    <a href="#isHighSchool" >isHighSchool</a>
+                                </li>
+                                <li>
+                                    <a href="#noNeedSpecialties" >noNeedSpecialties</a>
+                                </li>
+                                <li>
+                                    <a href="#needSpecialties" >needSpecialties</a>
+                                </li>
+                                <li>
+                                    <a href="#hasValidBacSpecialties" >hasValidBacSpecialties</a>
+                                </li>
+                                <li>
+                                    <a href="#numberOfRequiredBacSpecialties" >numberOfRequiredBacSpecialties</a>
+                                </li>
+                                <li>
+                                    <a href="#hasValidHighSchool" >hasValidHighSchool</a>
+                                </li>
+                                <li>
+                                    <a href="#hasValidStudent" >hasValidStudent</a>
+                                </li>
+                                <li>
+                                    <a href="#globalStatus" >globalStatus</a>
+                                </li>
+                                <li>
+                                    <a href="#accurateStatus" >accurateStatus</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(id?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>, status: <a href="../undefineds/Status.html" target="_self">Status</a>, highSchoolClass: <a href="../classes/School.html" target="_self">HighSchoolClass</a>, highSchoolType: <a href="../classes/School.html" target="_self">HighSchoolType</a>, bacSpecialties: <a href="../undefineds/BacSpecialty.html" target="_self">BacSpecialty[]</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="238" class="link-to-prism">src/app/shared/models/situation/situation.ts:238</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The user situation</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>The situation id</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>gender</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>The user gender</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>status</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/enumerations.html#Status" target="_self" >Status</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>The user status (student type, professional or unemployed)</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>highSchoolClass</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/School.html" target="_self" >HighSchoolClass</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>If the user is a high school student, its class</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>highSchoolType</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/School.html" target="_self" >HighSchoolType</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>If the user is a high school student, its high school course type</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>bacSpecialties</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/typealiases.html#BacSpecialty" target="_self" >BacSpecialty[]</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>If the user is high school student, its bac specialties</p>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_bacSpecialties"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_bacSpecialties</b></span>
+                        <a href="#_bacSpecialties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#BacSpecialty" target="_self" >BacSpecialty[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/shared/models/situation/situation.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_gender"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_gender</b></span>
+                        <a href="#_gender"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/shared/models/situation/situation.ts:79</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_highSchoolClass"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_highSchoolClass</b></span>
+                        <a href="#_highSchoolClass"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/School.html" target="_self" >HighSchoolClass</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/shared/models/situation/situation.ts:81</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_highSchoolType"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_highSchoolType</b></span>
+                        <a href="#_highSchoolType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/School.html" target="_self" >HighSchoolType</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/shared/models/situation/situation.ts:82</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_status"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_status</b></span>
+                        <a href="#_status"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Status" target="_self" >Status</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/shared/models/situation/situation.ts:80</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ANALYTICS_BAC"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ANALYTICS_BAC</b></span>
+                        <a href="#ANALYTICS_BAC"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;Bac1&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/shared/models/situation/situation.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ANALYTICS_FST"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ANALYTICS_FST</b></span>
+                        <a href="#ANALYTICS_FST"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;1ERE&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/shared/models/situation/situation.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applicationStep"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>applicationStep</b></span>
+                        <a href="#applicationStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Step.html" target="_self" >Step</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/shared/models/situation/situation.ts:69</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The diploma or job of the user within the application of the context</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentStep"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>currentStep</b></span>
+                        <a href="#currentStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Step.html" target="_self" >Step</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/shared/models/situation/situation.ts:74</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The current diploma or job of the user</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="251" class="link-to-prism">src/app/shared/models/situation/situation.ts:251</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">The situation id</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="build"></a>
+                    <span class="name">
+                        <span class="modifier">Static</span>
+                        <span ><b>build</b></span>
+                        <a href="#build"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>build(apiSituation: <a href="../interfaces/ApiSituation.html" target="_self">ApiSituation</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="281"
+                            class="link-to-prism">src/app/shared/models/situation/situation.ts:281</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build the Situation object from the Api Situation object</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>apiSituation</td>
+                                    <td>
+                                                <code><a href="../interfaces/ApiSituation.html" target="_self" >ApiSituation</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Api Situation object</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Situation.html" target="_self" >Situation</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The new Situation object</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCompatibleForDefinition"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isCompatibleForDefinition</b></span>
+                        <a href="#isCompatibleForDefinition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isCompatibleForDefinition(definition: <a href="../classes/Definition.html" target="_self">Definition</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="302"
+                            class="link-to-prism">src/app/shared/models/situation/situation.ts:302</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Check if the situation is compatible with a definition</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>definition</td>
+                                    <td>
+                                                <code><a href="../classes/Definition.html" target="_self" >Definition</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The definition</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>True if the user situation allows to access to the definition</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setBacSpecialties"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setBacSpecialties</b></span>
+                        <a href="#setBacSpecialties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setBacSpecialties(bacSpecialties: <a href="../undefineds/BacSpecialty.html" target="_self">BacSpecialty[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="292"
+                            class="link-to-prism">src/app/shared/models/situation/situation.ts:292</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bacSpecialties</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#BacSpecialty" target="_self" >BacSpecialty[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toApi"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>toApi</b></span>
+                        <a href="#toApi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toApi()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="311"
+                            class="link-to-prism">src/app/shared/models/situation/situation.ts:311</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the Api Situation object from the Situation object</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ApiSituation.html" target="_self" >ApiSituation</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The corresponding Api Situation object</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toQueryParams"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>toQueryParams</b></span>
+                        <a href="#toQueryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toQueryParams()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="326"
+                            class="link-to-prism">src/app/shared/models/situation/situation.ts:326</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build query params from the situation</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/common/http/HttpParams" target="_blank" >HttpParams</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The query params</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gender"></a>
+                        <span class="name"><b>gender</b><a href="#gender"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>gender()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/shared/models/situation/situation.ts:87</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>gender(gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/shared/models/situation/situation.ts:91</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>gender</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="status"></a>
+                        <span class="name"><b>status</b><a href="#status"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>status()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/shared/models/situation/situation.ts:98</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>status(status: <a href="../undefineds/Status.html" target="_self">Status</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/app/shared/models/situation/situation.ts:104</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>status</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../miscellaneous/enumerations.html#Status" target="_self" >Status</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="highSchoolClass"></a>
+                        <span class="name"><b>highSchoolClass</b><a href="#highSchoolClass"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>highSchoolClass()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/shared/models/situation/situation.ts:111</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>highSchoolClass(highSchoolClass: <a href="../classes/School.html" target="_self">HighSchoolClass</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/shared/models/situation/situation.ts:117</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>highSchoolClass</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../classes/School.html" target="_self" >HighSchoolClass</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="highSchoolType"></a>
+                        <span class="name"><b>highSchoolType</b><a href="#highSchoolType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>highSchoolType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/shared/models/situation/situation.ts:124</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>highSchoolType(highSchoolType: <a href="../classes/School.html" target="_self">HighSchoolType</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/shared/models/situation/situation.ts:130</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>highSchoolType</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../classes/School.html" target="_self" >HighSchoolType</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bacSpecialties"></a>
+                        <span class="name"><b>bacSpecialties</b><a href="#bacSpecialties"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>bacSpecialties()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="137" class="link-to-prism">src/app/shared/models/situation/situation.ts:137</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasValidGender"></a>
+                        <span class="name"><b>hasValidGender</b><a href="#hasValidGender"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasValidGender()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/app/shared/models/situation/situation.ts:145</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasValidSituation"></a>
+                        <span class="name"><b>hasValidSituation</b><a href="#hasValidSituation"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasValidSituation()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/app/shared/models/situation/situation.ts:149</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasBac"></a>
+                        <span class="name"><b>hasBac</b><a href="#hasBac"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasBac()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/shared/models/situation/situation.ts:162</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasHighSchoolClass"></a>
+                        <span class="name"><b>hasHighSchoolClass</b><a href="#hasHighSchoolClass"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasHighSchoolClass()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/app/shared/models/situation/situation.ts:166</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasHighSchoolType"></a>
+                        <span class="name"><b>hasHighSchoolType</b><a href="#hasHighSchoolType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasHighSchoolType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/app/shared/models/situation/situation.ts:170</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isStudent"></a>
+                        <span class="name"><b>isStudent</b><a href="#isStudent"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isStudent()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/shared/models/situation/situation.ts:174</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isHighSchool"></a>
+                        <span class="name"><b>isHighSchool</b><a href="#isHighSchool"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isHighSchool()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="178" class="link-to-prism">src/app/shared/models/situation/situation.ts:178</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="noNeedSpecialties"></a>
+                        <span class="name"><b>noNeedSpecialties</b><a href="#noNeedSpecialties"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>noNeedSpecialties()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/app/shared/models/situation/situation.ts:182</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="needSpecialties"></a>
+                        <span class="name"><b>needSpecialties</b><a href="#needSpecialties"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>needSpecialties()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="190" class="link-to-prism">src/app/shared/models/situation/situation.ts:190</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasValidBacSpecialties"></a>
+                        <span class="name"><b>hasValidBacSpecialties</b><a href="#hasValidBacSpecialties"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasValidBacSpecialties()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="194" class="link-to-prism">src/app/shared/models/situation/situation.ts:194</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="numberOfRequiredBacSpecialties"></a>
+                        <span class="name"><b>numberOfRequiredBacSpecialties</b><a href="#numberOfRequiredBacSpecialties"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>numberOfRequiredBacSpecialties()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="201" class="link-to-prism">src/app/shared/models/situation/situation.ts:201</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Get the number of required Bac specialties based on the highschool class and type</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasValidHighSchool"></a>
+                        <span class="name"><b>hasValidHighSchool</b><a href="#hasValidHighSchool"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasValidHighSchool()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/app/shared/models/situation/situation.ts:205</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasValidStudent"></a>
+                        <span class="name"><b>hasValidStudent</b><a href="#hasValidStudent"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasValidStudent()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="214" class="link-to-prism">src/app/shared/models/situation/situation.ts:214</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="globalStatus"></a>
+                        <span class="name"><b>globalStatus</b><a href="#globalStatus"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>globalStatus()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="221" class="link-to-prism">src/app/shared/models/situation/situation.ts:221</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Get the global status (student, highschool, middleschool, pro, unemployed)</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../miscellaneous/enumerations.html#Status" target="_self" >Status</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accurateStatus"></a>
+                        <span class="name"><b>accurateStatus</b><a href="#accurateStatus"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>accurateStatus()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">src/app/shared/models/situation/situation.ts:228</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>The user status defined by it&#39;s most accurate status</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpParams } from &#x27;@angular/common/http&#x27;;
+import {
+  BacSpecialty,
+  HighSchoolClass,
+  HighSchoolType,
+  Status
+} from &#x27;@clients/adventure/bean/situation&#x27;;
+import { Step } from &#x27;@clients/poi/poi&#x27;;
+import { Definition } from &#x27;@models/definition/definition&#x27;;
+import { Gender } from &#x27;@models/gender/gender&#x27;;
+import {
+  BAC_SPECIALTIES_QUERY_STRING,
+  GENDER_QUERY_STRING,
+  HIGH_SCHOOL_CLASS_QUERY_STRING,
+  HIGH_SCHOOL_TYPE_QUERY_STRING,
+  STATUS_QUERY_STRING
+} from &#x27;./situation-query-string.config&#x27;;
+import { ApiSituation } from &#x27;./situation.api&#x27;;
+
+/**
+ * Get the number of required Bac specialties based on the highschool class and type
+ *
+ * @param highschoolClass The highschool class
+ * @param highschoolType The highschool type
+ * @returns The number of required Bac specialties
+ */
+export const numberOfRequiredBacSpecialties &#x3D; (
+  highschoolClass: HighSchoolClass,
+  highschoolType: HighSchoolType
+): number &#x3D;&gt; {
+  switch (highschoolClass) {
+    case HighSchoolClass.FST:
+      // First &gt; Gen &gt; 3 specialties
+      // First &gt; TECH &gt; 1 specialty
+      // First &gt; PRO &gt; 0 specialty
+      switch (highschoolType) {
+        case HighSchoolType.GEN:
+          return 3;
+        case HighSchoolType.TECH:
+          return 1;
+        default:
+          return 0;
+      }
+    case HighSchoolClass.TML:
+      // Tml &gt; Gen &gt; 2 specialties
+      // Tml &gt; TECH &gt; 1 specialty
+      // Tml &gt; PRO &gt; 0 specialty
+      switch (highschoolType) {
+        case HighSchoolType.GEN:
+          return 2;
+        case HighSchoolType.TECH:
+          return 1;
+        default:
+          return 0;
+      }
+    // SEC &gt; no specialties
+    default:
+      return 0;
+  }
+};
+
+/**
+ * The user situation
+ */
+export class Situation {
+  /**
+   * The diploma or job of the user within the application of the context
+   */
+  public applicationStep?: Step;
+
+  /**
+   * The current diploma or job of the user
+   */
+  public currentStep?: Step;
+
+  private readonly ANALYTICS_FST &#x3D; &#x27;1ERE&#x27;;
+  private readonly ANALYTICS_BAC &#x3D; &#x27;Bac1&#x27;;
+
+  private _gender: Gender &#x3D; null;
+  private _status: Status &#x3D; null;
+  private _highSchoolClass: HighSchoolClass &#x3D; null;
+  private _highSchoolType: HighSchoolType &#x3D; null;
+  private _bacSpecialties: BacSpecialty[] &#x3D; [];
+
+  // -- GETTERS / SETTERS --
+
+  public get gender(): Gender {
+    return this._gender;
+  }
+
+  public set gender(gender: Gender) {
+    this._gender &#x3D; gender;
+
+    // Empty all dependent fields
+    this.status &#x3D; null;
+  }
+
+  public get status(): Status {
+    if (!this.gender) return null;
+
+    return this._status;
+  }
+
+  public set status(status: Status) {
+    if (this.gender) this._status &#x3D; status;
+
+    // Empty all dependent fields
+    this.highSchoolClass &#x3D; null;
+  }
+
+  public get highSchoolClass(): HighSchoolClass {
+    if (!this.status) return null;
+
+    return this._highSchoolClass;
+  }
+
+  public set highSchoolClass(highSchoolClass: HighSchoolClass) {
+    if (this.status) this._highSchoolClass &#x3D; highSchoolClass;
+
+    // Empty all dependent fields
+    this.highSchoolType &#x3D; null;
+  }
+
+  public get highSchoolType(): HighSchoolType {
+    if (!this.highSchoolClass) return null;
+
+    return this._highSchoolType;
+  }
+
+  public set highSchoolType(highSchoolType: HighSchoolType) {
+    if (this.highSchoolClass) this._highSchoolType &#x3D; highSchoolType;
+
+    // Empty all dependent fields
+    this._bacSpecialties &#x3D; [];
+  }
+
+  public get bacSpecialties(): BacSpecialty[] {
+    if (!this.highSchoolType) return [];
+
+    return this._bacSpecialties;
+  }
+
+  // -- VALIDATORS --
+
+  public get hasValidGender(): boolean {
+    return !!this.gender;
+  }
+
+  public get hasValidSituation(): boolean {
+    return (
+      this.hasValidGender &amp;&amp;
+      (Status.middleschool &#x3D;&#x3D;&#x3D; this.status ||
+        Status.pro &#x3D;&#x3D;&#x3D; this.status ||
+        Status.unemployed &#x3D;&#x3D;&#x3D; this.status ||
+        this.hasValidHighSchool ||
+        this.hasValidStudent)
+    );
+  }
+
+  // -- UTILS --
+
+  public get hasBac(): boolean {
+    return this.status?.startsWith(Status.Bac);
+  }
+
+  public get hasHighSchoolClass(): boolean {
+    return !!this.highSchoolClass;
+  }
+
+  public get hasHighSchoolType(): boolean {
+    return !!this.highSchoolType;
+  }
+
+  public get isStudent(): boolean {
+    return this.status &#x3D;&#x3D;&#x3D; Status.student || this.hasBac;
+  }
+
+  public get isHighSchool(): boolean {
+    return this.status &#x3D;&#x3D;&#x3D; Status.highschool;
+  }
+
+  public get noNeedSpecialties(): boolean {
+    return (
+      !this.hasHighSchoolClass ||
+      HighSchoolClass.SEC &#x3D;&#x3D;&#x3D; this.highSchoolClass ||
+      HighSchoolType.PRO &#x3D;&#x3D;&#x3D; this.highSchoolType
+    );
+  }
+
+  public get needSpecialties(): boolean {
+    return !this.noNeedSpecialties &amp;&amp; !this.hasValidBacSpecialties;
+  }
+
+  public get hasValidBacSpecialties(): boolean {
+    return this.bacSpecialties.length &#x3D;&#x3D;&#x3D; this.numberOfRequiredBacSpecialties;
+  }
+
+  /**
+   * Get the number of required Bac specialties based on the highschool class and type
+   */
+  public get numberOfRequiredBacSpecialties(): number {
+    return numberOfRequiredBacSpecialties(this._highSchoolClass, this.highSchoolType);
+  }
+
+  private get hasValidHighSchool(): boolean {
+    return (
+      this.status &#x3D;&#x3D;&#x3D; Status.highschool &amp;&amp;
+      this.hasHighSchoolClass &amp;&amp;
+      this.hasHighSchoolType &amp;&amp;
+      this.hasValidBacSpecialties
+    );
+  }
+
+  private get hasValidStudent(): boolean {
+    return !!this.status &amp;&amp; Status.student !&#x3D;&#x3D; this.status &amp;&amp; this.status.startsWith(Status.Bac);
+  }
+
+  /**
+   * Get the global status (student, highschool, middleschool, pro, unemployed)
+   */
+  public get globalStatus(): Status {
+    return this.isStudent ? Status.student : this.status;
+  }
+
+  /**
+   * The user status defined by it&#x27;s most accurate status
+   */
+  public get accurateStatus(): string {
+    if (this.isHighSchool)
+      return &#x60;${this.highSchoolClass}-${this.highSchoolType}&#x60;.replace(
+        HighSchoolClass.FST,
+        this.ANALYTICS_FST
+      );
+
+    if (this.status &#x3D;&#x3D;&#x3D; Status.Bac) return this.ANALYTICS_BAC;
+
+    return this.status;
+  }
+
+  /**
+   * The user situation
+   *
+   * @param id The situation id
+   * @param gender The user gender
+   * @param status The user status (student type, professional or unemployed)
+   * @param highSchoolClass If the user is a high school student, its class
+   * @param highSchoolType If the user is a high school student, its high school course type
+   * @param bacSpecialties If the user is high school student, its bac specialties
+   */
+  constructor(
+    public id?: string,
+    gender: Gender &#x3D; null,
+    status: Status &#x3D; null,
+    highSchoolClass: HighSchoolClass &#x3D; null,
+    highSchoolType: HighSchoolType &#x3D; null,
+    bacSpecialties: BacSpecialty[] &#x3D; []
+  ) {
+    this._gender &#x3D; gender;
+
+    if (gender) {
+      this._status &#x3D; status;
+
+      if (status &#x3D;&#x3D;&#x3D; Status.highschool) {
+        this._highSchoolClass &#x3D; highSchoolClass;
+
+        if (highSchoolClass) {
+          this._highSchoolType &#x3D; highSchoolType;
+
+          if (highSchoolType) this._bacSpecialties &#x3D; bacSpecialties ? [...bacSpecialties] : [];
+        }
+      }
+    }
+  }
+
+  /**
+   * Build the Situation object from the Api Situation object
+   *
+   * @param apiSituation The Api Situation object
+   * @returns The new Situation object
+   */
+  public static build(apiSituation: ApiSituation): Situation {
+    return new Situation(
+      apiSituation.id,
+      apiSituation.gender,
+      apiSituation.status,
+      apiSituation.highSchoolClass,
+      apiSituation.highSchoolType,
+      apiSituation.bacSpecialities
+    );
+  }
+
+  public setBacSpecialties(bacSpecialties: BacSpecialty[]): void {
+    this._bacSpecialties &#x3D; [...bacSpecialties];
+  }
+
+  /**
+   * Check if the situation is compatible with a definition
+   *
+   * @param definition The definition
+   * @returns True if the user situation allows to access to the definition
+   */
+  public isCompatibleForDefinition(definition: Definition): boolean {
+    return definition.statuses.includes(this.status);
+  }
+
+  /**
+   * Get the Api Situation object from the Situation object
+   *
+   * @returns The corresponding Api Situation object
+   */
+  public toApi(): ApiSituation {
+    return {
+      gender: this.gender || null,
+      status: this.status || null,
+      highSchoolClass: this.highSchoolClass || null,
+      highSchoolType: this.highSchoolType || null,
+      bacSpecialities: this.bacSpecialties || []
+    } as ApiSituation;
+  }
+
+  /**
+   * Build query params from the situation
+   *
+   * @returns The query params
+   */
+  public toQueryParams(): HttpParams {
+    let params &#x3D; new HttpParams()
+      .set(GENDER_QUERY_STRING, this.gender)
+      .set(STATUS_QUERY_STRING, this.status);
+
+    if (this.isHighSchool)
+      params &#x3D; params
+        .set(HIGH_SCHOOL_CLASS_QUERY_STRING, this.highSchoolClass)
+        .set(HIGH_SCHOOL_TYPE_QUERY_STRING, this.highSchoolType)
+        .set(BAC_SPECIALTIES_QUERY_STRING, this.bacSpecialties.toString());
+
+    return params;
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Situation.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

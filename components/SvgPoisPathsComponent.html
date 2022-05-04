@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SvgPoisPathsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/map/svg-definitions/svg-pois-paths/svg-pois-paths.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>svg-pois-paths</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../svg-definitions.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./svg-pois-paths.component.svg</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
+  selector: &#x27;svg-pois-paths&#x27;,
+  templateUrl: &#x27;./svg-pois-paths.component.svg&#x27;,
+  styleUrls: [&#x27;../svg-definitions.component.scss&#x27;]
+})
+export class SvgPoisPathsComponent {}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;defs&gt;&lt;path id&#x3D;&quot;pois-1&quot; fill-rule&#x3D;&quot;evenodd&quot; clip-rule&#x3D;&quot;evenodd&quot; d&#x3D;&quot;m112.012 186.189.991 23.438 5.994-.254-1.409-33.351c21.799-8.341 40.065-12.133 64.412-12.133h.239l.237-.038c17.475-2.806 28.556-8.344 34.968-15.618 6.492-7.365 7.805-16.057 6.712-24.2-2.069-15.412-12.885-29.792-15.054-32.675l-.198-.263c-.841-1.127-2.091-1.553-2.854-1.745-.874-.22-1.863-.312-2.86-.34-2.009-.057-4.564.137-7.406.482-5.714.694-13.043 2.055-20.473 3.596-7.447 1.545-15.066 3.286-21.38 4.753l-4.6 1.072c-2.73.638-5.035 1.177-6.761 1.565-1.48-3.008-2.753-6.829-2.77-10.247-.01-2.042.426-3.752 1.339-5.081.882-1.284 2.401-2.497 5.109-3.244 6.621-1.594 16.803-4.227 25.905-6.97 4.558-1.375 8.889-2.79 12.383-4.126 1.745-.668 3.322-1.332 4.633-1.977 1.253-.617 2.476-1.319 3.349-2.113.731-.664 1.699-1.403 2.806-2.247 5.999-4.576 16.044-12.239 14.154-27.834-.987-8.146-2.279-16.235-7.702-22.164-5.522-6.037-14.682-9.22-29.725-9.474-11.692-.199-23.524-1.108-33.523-1.953a2926.89 2926.89 0 0 1-4.37-.373l-.012-.001c-7.928-.682-14.497-1.247-18.206-1.173l.12 5.999c3.36-.068 9.518.461 17.507 1.147h.005c1.427.123 2.912.25 4.45.38 10.017.847 22.019 1.771 33.927 1.973 14.457.245 21.547 3.313 25.4 7.525 3.952 4.321 5.16 10.482 6.173 18.836 1.439 11.873-5.306 17.153-11.262 21.816-1.332 1.043-2.625 2.055-3.778 3.103-.227.206-.824.609-1.964 1.17-1.084.534-2.475 1.124-4.126 1.756-3.299 1.262-7.474 2.629-11.97 3.984-8.985 2.709-19.077 5.319-25.624 6.893l-.044.011-.043.012c-3.866 1.054-6.699 2.997-8.519 5.648-1.793 2.613-2.407 5.626-2.392 8.507.029 5.66 2.475 11.514 4.615 15.15l1.085 1.845 2.098-.427c1.744-.355 5.038-1.124 9.206-2.098l.007-.002 4.478-1.044c6.302-1.464 13.866-3.192 21.241-4.722 7.391-1.533 14.521-2.852 19.977-3.514 2.743-.333 4.951-.486 6.514-.442.662.02 1.121.071 1.413.128 2.459 3.289 11.971 16.254 13.775 29.697.93 6.926-.223 13.712-5.266 19.434-5.099 5.784-14.555 10.919-31.185 13.623-25.792.026-45.114 4.225-68.351 13.317l-1.995.781.091 2.14.253 5.985c-5.025 1.053-12.738 2.637-20.93 3.328-9.957.841-19.846.277-26.304-3.525-5.206-3.065-10.834-2.827-16.058-1.588-3.672.87-7.522 2.346-11.103 3.718v.001c-1.382.529-2.724 1.044-4 1.502-4.868 1.748-8.924 2.756-12.33 2.18-3.07-.519-6.142-2.434-8.826-8.026-.547-1.138-.973-2.888-1.213-5.316-.236-2.39-.274-5.239-.166-8.455.207-6.169.938-13.408 1.696-20.915l.101-1.004c.788-7.806 1.579-15.848 1.756-22.952.175-6.992-.22-13.562-2.1-18.189-3.779-9.302-6.637-20.36-4.245-31.093 2.346-10.534 9.896-21.372 28.25-30.067 4.927-2.333 15.326-5.98 27.424-10.221 3.364-1.18 6.86-2.406 10.404-3.662 16.05-5.686 33.086-11.99 42.36-17.214l-2.944-5.228c-8.726 4.916-25.21 11.043-41.42 16.787-3.407 1.207-6.805 2.398-10.107 3.556-12.171 4.266-23.043 8.077-28.285 10.56C14.07 43.595 5.01 55.757 2.177 68.473c-2.788 12.516.604 24.96 4.544 34.656 1.37 3.373 1.834 8.832 1.66 15.781-.171 6.838-.936 14.652-1.727 22.5l-.11 1.094c-.75 7.426-1.5 14.848-1.715 21.226-.112 3.352-.08 6.491.192 9.246.268 2.716.788 5.267 1.774 7.322 3.316 6.908 7.807 10.429 13.236 11.346 5.094.861 10.475-.696 15.358-2.449a228.519 228.519 0 0 0 4.527-1.698l.002-.001c3.424-1.313 6.67-2.558 9.93-3.331 4.527-1.073 8.336-1.019 11.63.92 8.191 4.823 19.748 5.187 29.852 4.334 8.023-.677 15.618-2.175 20.682-3.23Zm92.719-90.974a.207.207 0 0 1-.047-.019.22.22 0 0 1 .047.019Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path id&#x3D;&quot;pois-2&quot; fill-rule&#x3D;&quot;evenodd&quot; clip-rule&#x3D;&quot;evenodd&quot; d&#x3D;&quot;M89.712 171c1.02.193 2.04.382 3.058.57l1.84.34c4.12.769 8.209 1.593 11.604 2.849 3.362 1.243 6.579 3.097 8.35 6.284l.377.68V215h-6v-31.614c-.843-1.09-2.351-2.091-4.809-3-2.847-1.053-6.45-1.799-10.623-2.577-.656-.123-1.325-.246-2.006-.37l-.004-.001c-7.7-1.412-16.836-3.088-24.08-7.353-2.48-1.46-4.31-3.249-5.291-5.483-.99-2.255-.943-4.568-.413-6.728.519-2.113 1.534-4.229 2.677-6.262.947-1.685 2.065-3.456 3.184-5.228.234-.37.468-.74.7-1.11 5.565-8.851 10.678-18.107 5.46-28.976-.392-.819-1.276-1.744-2.992-2.694-1.7-.942-3.973-1.77-6.753-2.517-4.926-1.322-10.945-2.264-17.309-3.26l-.009-.001-2.562-.402c-7.178-1.135-14.644-2.407-20.744-4.454-5.937-1.993-11.546-5.025-13.705-10.341-.711-1.75-1.515-3.594-2.332-5.469-1.258-2.886-2.546-5.841-3.57-8.624-1.746-4.747-3.042-9.742-2.707-14.857.698-10.643 8.256-20.225 27.604-29.39 5.242-2.483 16.114-6.294 28.285-10.56 3.303-1.158 6.7-2.35 10.108-3.556 16.21-5.744 32.693-11.871 41.419-16.787l2.944 5.228c-9.274 5.225-26.31 11.527-42.36 17.214-3.545 1.256-7.04 2.482-10.404 3.661-12.097 4.242-22.497 7.888-27.424 10.222C12.575 48.546 7.523 56.714 7.04 64.071c-.254 3.885.717 7.952 2.35 12.393.995 2.702 2.124 5.284 3.303 7.98.828 1.893 1.68 3.841 2.527 5.927 1.09 2.684 4.341 4.993 10.056 6.91 5.55 1.864 12.53 3.072 19.772 4.216l2.557.401c6.307.986 12.68 1.982 17.942 3.394 2.999.806 5.797 1.786 8.103 3.063 2.293 1.269 4.356 2.972 5.496 5.347 6.782 14.131-.355 26.12-5.79 34.766l-.736 1.166c-1.116 1.769-2.133 3.38-2.997 4.917-1.053 1.873-1.756 3.429-2.081 4.753-.314 1.278-.235 2.17.08 2.885.323.736 1.071 1.683 2.841 2.726 4.208 2.478 9.232 3.966 14.478 5.119v-13.608l.682-.83c12.725-15.492 31.567-14.185 49.106-9.812 6.237 1.554 12.566 3.567 18.589 5.482 2.491.792 4.93 1.567 7.288 2.287 8.119 2.477 15.268 4.288 21.101 4.335 16.873-2.73 26.114-6.368 30.71-9.993 2.242-1.768 3.236-3.421 3.614-4.847.378-1.43.229-2.983-.45-4.715-1.419-3.619-4.876-7.345-8.572-10.641-1.607-1.433-3.172-2.712-4.53-3.822h-.001l-.205-.168-.285-.233a72.16 72.16 0 0 1-1.945-1.631c-.474-.418-1.027-.929-1.435-1.451-.034-.027-.144-.115-.374-.258-.386-.241-.947-.537-1.702-.883-1.504-.691-3.562-1.48-6.051-2.326-4.965-1.688-11.421-3.526-18.09-5.177-6.668-1.65-13.488-3.098-19.178-4.017-2.847-.46-5.373-.781-7.434-.932-2.137-.157-3.529-.11-4.24.035l-2.097.427-1.086-1.845c-2.14-3.636-4.586-9.49-4.615-15.15-.014-2.88.599-5.894 2.392-8.507 1.82-2.651 4.653-4.594 8.519-5.648l.043-.012.045-.01c6.546-1.575 16.638-4.186 25.623-6.894 4.496-1.355 8.671-2.722 11.97-3.984 1.651-.632 3.042-1.222 4.126-1.756 1.14-.561 1.737-.964 1.964-1.17 1.153-1.048 2.446-2.06 3.778-3.103 5.956-4.663 12.701-9.943 11.262-21.816-1.013-8.354-2.221-14.515-6.173-18.836-3.853-4.213-10.943-7.28-25.4-7.525-11.908-.202-23.909-1.126-33.927-1.973-1.538-.13-3.024-.258-4.452-.38h-.001c-7.99-.686-14.149-1.215-17.509-1.147l-.12-6c3.709-.073 10.279.492 18.206 1.174 1.42.122 2.883.248 4.382.374 9.999.845 21.831 1.754 33.523 1.953 15.043.255 24.203 3.437 29.725 9.474 5.423 5.93 6.715 14.018 7.702 22.164 1.891 15.595-8.155 23.258-14.154 27.834-1.106.844-2.075 1.583-2.806 2.247-.873.794-2.096 1.496-3.349 2.113-1.31.645-2.888 1.31-4.633 1.977-3.494 1.337-7.825 2.751-12.383 4.125-9.102 2.744-19.284 5.377-25.905 6.97-2.708.748-4.227 1.96-5.109 3.245-.912 1.33-1.349 3.039-1.339 5.08.018 3.507 1.357 7.437 2.885 10.479 1.106-.037 2.327.008 3.592.101 2.296.169 5.007.517 7.952.993 5.895.952 12.883 2.438 19.662 4.116 6.778 1.678 13.406 3.562 18.58 5.32 2.58.877 4.854 1.742 6.622 2.553.882.405 1.692.82 2.372 1.244.615.383 1.387.93 1.939 1.669l-.006-.008.003.003c.011.013.055.063.147.155.125.124.296.283.523.483.456.403 1.049.893 1.776 1.488l.485.396c1.352 1.105 3.019 2.466 4.73 3.992 3.756 3.35 8.185 7.881 10.164 12.929 1.02 2.601 1.447 5.483.664 8.44-.784 2.962-2.688 5.649-5.698 8.023-5.885 4.642-16.493 8.479-33.716 11.245l-.237.038h-.239c-6.875 0-14.893-2.098-23.086-4.598a670.318 670.318 0 0 1-7.559-2.371c-5.945-1.891-11.975-3.808-18.018-5.315-16.957-4.227-32.069-4.69-42.337 6.996V171h-1.229Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;/defs&gt;&lt;/svg&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../svg-definitions.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><svg xmlns="http://www.w3.org/2000/svg"><defs><path id="pois-1" fill-rule="evenodd" clip-rule="evenodd" d="m112.012 186.189.991 23.438 5.994-.254-1.409-33.351c21.799-8.341 40.065-12.133 64.412-12.133h.239l.237-.038c17.475-2.806 28.556-8.344 34.968-15.618 6.492-7.365 7.805-16.057 6.712-24.2-2.069-15.412-12.885-29.792-15.054-32.675l-.198-.263c-.841-1.127-2.091-1.553-2.854-1.745-.874-.22-1.863-.312-2.86-.34-2.009-.057-4.564.137-7.406.482-5.714.694-13.043 2.055-20.473 3.596-7.447 1.545-15.066 3.286-21.38 4.753l-4.6 1.072c-2.73.638-5.035 1.177-6.761 1.565-1.48-3.008-2.753-6.829-2.77-10.247-.01-2.042.426-3.752 1.339-5.081.882-1.284 2.401-2.497 5.109-3.244 6.621-1.594 16.803-4.227 25.905-6.97 4.558-1.375 8.889-2.79 12.383-4.126 1.745-.668 3.322-1.332 4.633-1.977 1.253-.617 2.476-1.319 3.349-2.113.731-.664 1.699-1.403 2.806-2.247 5.999-4.576 16.044-12.239 14.154-27.834-.987-8.146-2.279-16.235-7.702-22.164-5.522-6.037-14.682-9.22-29.725-9.474-11.692-.199-23.524-1.108-33.523-1.953a2926.89 2926.89 0 0 1-4.37-.373l-.012-.001c-7.928-.682-14.497-1.247-18.206-1.173l.12 5.999c3.36-.068 9.518.461 17.507 1.147h.005c1.427.123 2.912.25 4.45.38 10.017.847 22.019 1.771 33.927 1.973 14.457.245 21.547 3.313 25.4 7.525 3.952 4.321 5.16 10.482 6.173 18.836 1.439 11.873-5.306 17.153-11.262 21.816-1.332 1.043-2.625 2.055-3.778 3.103-.227.206-.824.609-1.964 1.17-1.084.534-2.475 1.124-4.126 1.756-3.299 1.262-7.474 2.629-11.97 3.984-8.985 2.709-19.077 5.319-25.624 6.893l-.044.011-.043.012c-3.866 1.054-6.699 2.997-8.519 5.648-1.793 2.613-2.407 5.626-2.392 8.507.029 5.66 2.475 11.514 4.615 15.15l1.085 1.845 2.098-.427c1.744-.355 5.038-1.124 9.206-2.098l.007-.002 4.478-1.044c6.302-1.464 13.866-3.192 21.241-4.722 7.391-1.533 14.521-2.852 19.977-3.514 2.743-.333 4.951-.486 6.514-.442.662.02 1.121.071 1.413.128 2.459 3.289 11.971 16.254 13.775 29.697.93 6.926-.223 13.712-5.266 19.434-5.099 5.784-14.555 10.919-31.185 13.623-25.792.026-45.114 4.225-68.351 13.317l-1.995.781.091 2.14.253 5.985c-5.025 1.053-12.738 2.637-20.93 3.328-9.957.841-19.846.277-26.304-3.525-5.206-3.065-10.834-2.827-16.058-1.588-3.672.87-7.522 2.346-11.103 3.718v.001c-1.382.529-2.724 1.044-4 1.502-4.868 1.748-8.924 2.756-12.33 2.18-3.07-.519-6.142-2.434-8.826-8.026-.547-1.138-.973-2.888-1.213-5.316-.236-2.39-.274-5.239-.166-8.455.207-6.169.938-13.408 1.696-20.915l.101-1.004c.788-7.806 1.579-15.848 1.756-22.952.175-6.992-.22-13.562-2.1-18.189-3.779-9.302-6.637-20.36-4.245-31.093 2.346-10.534 9.896-21.372 28.25-30.067 4.927-2.333 15.326-5.98 27.424-10.221 3.364-1.18 6.86-2.406 10.404-3.662 16.05-5.686 33.086-11.99 42.36-17.214l-2.944-5.228c-8.726 4.916-25.21 11.043-41.42 16.787-3.407 1.207-6.805 2.398-10.107 3.556-12.171 4.266-23.043 8.077-28.285 10.56C14.07 43.595 5.01 55.757 2.177 68.473c-2.788 12.516.604 24.96 4.544 34.656 1.37 3.373 1.834 8.832 1.66 15.781-.171 6.838-.936 14.652-1.727 22.5l-.11 1.094c-.75 7.426-1.5 14.848-1.715 21.226-.112 3.352-.08 6.491.192 9.246.268 2.716.788 5.267 1.774 7.322 3.316 6.908 7.807 10.429 13.236 11.346 5.094.861 10.475-.696 15.358-2.449a228.519 228.519 0 0 0 4.527-1.698l.002-.001c3.424-1.313 6.67-2.558 9.93-3.331 4.527-1.073 8.336-1.019 11.63.92 8.191 4.823 19.748 5.187 29.852 4.334 8.023-.677 15.618-2.175 20.682-3.23Zm92.719-90.974a.207.207 0 0 1-.047-.019.22.22 0 0 1 .047.019Z" fill="#fff"/><path id="pois-2" fill-rule="evenodd" clip-rule="evenodd" d="M89.712 171c1.02.193 2.04.382 3.058.57l1.84.34c4.12.769 8.209 1.593 11.604 2.849 3.362 1.243 6.579 3.097 8.35 6.284l.377.68V215h-6v-31.614c-.843-1.09-2.351-2.091-4.809-3-2.847-1.053-6.45-1.799-10.623-2.577-.656-.123-1.325-.246-2.006-.37l-.004-.001c-7.7-1.412-16.836-3.088-24.08-7.353-2.48-1.46-4.31-3.249-5.291-5.483-.99-2.255-.943-4.568-.413-6.728.519-2.113 1.534-4.229 2.677-6.262.947-1.685 2.065-3.456 3.184-5.228.234-.37.468-.74.7-1.11 5.565-8.851 10.678-18.107 5.46-28.976-.392-.819-1.276-1.744-2.992-2.694-1.7-.942-3.973-1.77-6.753-2.517-4.926-1.322-10.945-2.264-17.309-3.26l-.009-.001-2.562-.402c-7.178-1.135-14.644-2.407-20.744-4.454-5.937-1.993-11.546-5.025-13.705-10.341-.711-1.75-1.515-3.594-2.332-5.469-1.258-2.886-2.546-5.841-3.57-8.624-1.746-4.747-3.042-9.742-2.707-14.857.698-10.643 8.256-20.225 27.604-29.39 5.242-2.483 16.114-6.294 28.285-10.56 3.303-1.158 6.7-2.35 10.108-3.556 16.21-5.744 32.693-11.871 41.419-16.787l2.944 5.228c-9.274 5.225-26.31 11.527-42.36 17.214-3.545 1.256-7.04 2.482-10.404 3.661-12.097 4.242-22.497 7.888-27.424 10.222C12.575 48.546 7.523 56.714 7.04 64.071c-.254 3.885.717 7.952 2.35 12.393.995 2.702 2.124 5.284 3.303 7.98.828 1.893 1.68 3.841 2.527 5.927 1.09 2.684 4.341 4.993 10.056 6.91 5.55 1.864 12.53 3.072 19.772 4.216l2.557.401c6.307.986 12.68 1.982 17.942 3.394 2.999.806 5.797 1.786 8.103 3.063 2.293 1.269 4.356 2.972 5.496 5.347 6.782 14.131-.355 26.12-5.79 34.766l-.736 1.166c-1.116 1.769-2.133 3.38-2.997 4.917-1.053 1.873-1.756 3.429-2.081 4.753-.314 1.278-.235 2.17.08 2.885.323.736 1.071 1.683 2.841 2.726 4.208 2.478 9.232 3.966 14.478 5.119v-13.608l.682-.83c12.725-15.492 31.567-14.185 49.106-9.812 6.237 1.554 12.566 3.567 18.589 5.482 2.491.792 4.93 1.567 7.288 2.287 8.119 2.477 15.268 4.288 21.101 4.335 16.873-2.73 26.114-6.368 30.71-9.993 2.242-1.768 3.236-3.421 3.614-4.847.378-1.43.229-2.983-.45-4.715-1.419-3.619-4.876-7.345-8.572-10.641-1.607-1.433-3.172-2.712-4.53-3.822h-.001l-.205-.168-.285-.233a72.16 72.16 0 0 1-1.945-1.631c-.474-.418-1.027-.929-1.435-1.451-.034-.027-.144-.115-.374-.258-.386-.241-.947-.537-1.702-.883-1.504-.691-3.562-1.48-6.051-2.326-4.965-1.688-11.421-3.526-18.09-5.177-6.668-1.65-13.488-3.098-19.178-4.017-2.847-.46-5.373-.781-7.434-.932-2.137-.157-3.529-.11-4.24.035l-2.097.427-1.086-1.845c-2.14-3.636-4.586-9.49-4.615-15.15-.014-2.88.599-5.894 2.392-8.507 1.82-2.651 4.653-4.594 8.519-5.648l.043-.012.045-.01c6.546-1.575 16.638-4.186 25.623-6.894 4.496-1.355 8.671-2.722 11.97-3.984 1.651-.632 3.042-1.222 4.126-1.756 1.14-.561 1.737-.964 1.964-1.17 1.153-1.048 2.446-2.06 3.778-3.103 5.956-4.663 12.701-9.943 11.262-21.816-1.013-8.354-2.221-14.515-6.173-18.836-3.853-4.213-10.943-7.28-25.4-7.525-11.908-.202-23.909-1.126-33.927-1.973-1.538-.13-3.024-.258-4.452-.38h-.001c-7.99-.686-14.149-1.215-17.509-1.147l-.12-6c3.709-.073 10.279.492 18.206 1.174 1.42.122 2.883.248 4.382.374 9.999.845 21.831 1.754 33.523 1.953 15.043.255 24.203 3.437 29.725 9.474 5.423 5.93 6.715 14.018 7.702 22.164 1.891 15.595-8.155 23.258-14.154 27.834-1.106.844-2.075 1.583-2.806 2.247-.873.794-2.096 1.496-3.349 2.113-1.31.645-2.888 1.31-4.633 1.977-3.494 1.337-7.825 2.751-12.383 4.125-9.102 2.744-19.284 5.377-25.905 6.97-2.708.748-4.227 1.96-5.109 3.245-.912 1.33-1.349 3.039-1.339 5.08.018 3.507 1.357 7.437 2.885 10.479 1.106-.037 2.327.008 3.592.101 2.296.169 5.007.517 7.952.993 5.895.952 12.883 2.438 19.662 4.116 6.778 1.678 13.406 3.562 18.58 5.32 2.58.877 4.854 1.742 6.622 2.553.882.405 1.692.82 2.372 1.244.615.383 1.387.93 1.939 1.669l-.006-.008.003.003c.011.013.055.063.147.155.125.124.296.283.523.483.456.403 1.049.893 1.776 1.488l.485.396c1.352 1.105 3.019 2.466 4.73 3.992 3.756 3.35 8.185 7.881 10.164 12.929 1.02 2.601 1.447 5.483.664 8.44-.784 2.962-2.688 5.649-5.698 8.023-5.885 4.642-16.493 8.479-33.716 11.245l-.237.038h-.239c-6.875 0-14.893-2.098-23.086-4.598a670.318 670.318 0 0 1-7.559-2.371c-5.945-1.891-11.975-3.808-18.018-5.315-16.957-4.227-32.069-4.69-42.337 6.996V171h-1.229Z" fill="#fff"/></defs></svg></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'SvgPoisPathsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SvgPoisPathsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

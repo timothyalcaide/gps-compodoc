@@ -1,0 +1,1872 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >WaypointClient</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/clients/waypoint.client.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#WAYPOINT_URI" >WAYPOINT_URI</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#backward" >backward</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#companies" >companies</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fromPartner" >fromPartner</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#humanPois" >humanPois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#offers" >offers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#origins" >origins</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resumeNodes" >resumeNodes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#school" >school</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#schools" >schools</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#structures" >structures</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#waypoint" >waypoint</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, situationContext: <a href="../injectables/SituationContext.html" target="_self">SituationContext</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>situationContext</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SituationContext.html" target="_self" >SituationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="backward"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>backward</b></span>
+                        <a href="#backward"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>backward(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>, application?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, gender?: <a href="../undefineds/Gender.html" target="_self">Gender</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>application</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gender</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="companies"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>companies</b></span>
+                        <a href="#companies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>companies(waypointId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, applicationNodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, waypointType: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>, companiesFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>, limit?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="252"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:252</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves companies associated to a given waypoint within a given application, optionally using
+filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypointId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint Id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>applicationNodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application node id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>waypointType</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The type of the waypoint</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>companiesFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Optional filters</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>limit</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The number of results allowed</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Company.html" target="_self" >Observable&lt;Company[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching companies</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fromPartner"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>fromPartner</b></span>
+                        <a href="#fromPartner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fromPartner(partnerName: <a href="../classes/Partner.html" target="_self">PartnerName</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type?: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get an origin and/or a destination from a partner reference</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>partnerName</td>
+                                    <td>
+                                                <code><a href="../classes/Partner.html" target="_self" >PartnerName</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The name of the partner</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The reference id to the partner item</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The type of waypoint</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/OriginAndDestination.html" target="_self" >Observable&lt;OriginAndDestination&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An observable of the waypoints matching the partner reference</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="humanPois"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>humanPois</b></span>
+                        <a href="#humanPois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>humanPois(waypointId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, nomenclature: <a href="../undefineds/Nomenclature.html" target="_self">Nomenclature</a>, filters: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Humans POIs for a waypoint</p>
+<div><pre class="line-numbers"><code class="language-none">     Adventure Service</code></pre></div></div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypointId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint ID</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>nomenclature</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Nomenclature" target="_self" >Nomenclature</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Human POIs nomenclature. Can be either alumni or student</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint filters, used to get the application</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;HumanPoi[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An array of HumanPoi objects built from the array of HumanPoiResponse received from
+Adventure Service</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="offers"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>offers</b></span>
+                        <a href="#offers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>offers(nodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve offers for an application</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Offer.html" target="_self" >Observable&lt;Offer[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="origins"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>origins</b></span>
+                        <a href="#origins"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>origins(destinationId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, originFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get origin waypoints for a destination and a user gender</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>destinationId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The destination Id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>originFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Optional filters</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An observable of the waypoints matching the destination and the user status</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resumeNodes"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>resumeNodes</b></span>
+                        <a href="#resumeNodes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resumeNodes(applicationNodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, resumeNodeType: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>, searchText: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, trendsFilters: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Find resume nodes (jobs or diplomas) matching a given search text based on the user status</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicationNodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application node Id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>resumeNodeType</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The resume node type (or waypoint type). Can be Job or Diploma</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>searchText</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The search text</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>trendsFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The filters containing the region used to get the job trends</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="school"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>school</b></span>
+                        <a href="#school"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>school(waypointId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, applicationNodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, schoolId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve a school associated to a given waypoint</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypointId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint Id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>applicationNodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application node id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>schoolId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The school Id</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/School.html" target="_self" >Observable&lt;School&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching schools</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="schools"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>schools</b></span>
+                        <a href="#schools"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>schools(waypointId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, applicationNodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, waypointType: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>, schoolFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>, limit?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves schools associated to a given waypoint within a given application, optionally using
+filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypointId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint Id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>applicationNodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application node id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>waypointType</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The type of the waypoint</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>schoolFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Optional filters</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>limit</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The number of results allowed</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/School.html" target="_self" >Observable&lt;School[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching schools</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="structures"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>structures</b></span>
+                        <a href="#structures"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>structures(applicationNodeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, structureFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>, limit?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieves structures within a given application, optionally using
+filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicationNodeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application node id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>structureFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>Optional filters</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>limit</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The number of results allowed</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Structure.html" target="_self" >Observable&lt;Structure[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching structures</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="waypoint"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>waypoint</b></span>
+                        <a href="#waypoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>waypoint(waypointId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get a waypoint from an id</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypointId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The waypoint id</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gender</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The user gender</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching waypoint</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="WAYPOINT_URI"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>WAYPOINT_URI</b></span>
+                        <a href="#WAYPOINT_URI"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x60;${environment.adventureUri}/waypoints&#x60;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/core/services/clients/waypoint.client.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { Waypoint } from &#x27;@clients/adventure/bean/waypoint&#x27;;
+import { Nomenclature } from &#x27;@clients/poi/poi&#x27;;
+import { ApplicationContext, APPLICATION_URI, SituationContext } from &#x27;@core/services&#x27;;
+import { Company } from &#x27;@models/company/company&#x27;;
+import { ApplicationName } from &#x27;@models/context/application-name&#x27;;
+import { Filters } from &#x27;@models/filters/filters&#x27;;
+import { ApiFilters } from &#x27;@models/filters/filters.api&#x27;;
+import { Gender } from &#x27;@models/gender/gender&#x27;;
+import { ApiLocation } from &#x27;@models/location/location.api&#x27;;
+import { Offer } from &#x27;@models/offer/offer&#x27;;
+import { ApiOffer } from &#x27;@models/offer/offer.api&#x27;;
+import { PartnerName } from &#x27;@models/partner/partner-name&#x27;;
+import { HumanPoi } from &#x27;@models/poi/human-poi/human-poi&#x27;;
+import { ApiHumanPoi } from &#x27;@models/poi/human-poi/human-poi.api&#x27;;
+import { School } from &#x27;@models/school/school&#x27;;
+import { ApiSchool } from &#x27;@models/school/school.api&#x27;;
+import { Structure } from &#x27;@models/structure/structure&#x27;;
+import { OriginAndDestination } from &#x27;@models/waypoint/origin-with-destination&#x27;;
+import { WaypointType } from &#x27;@models/waypoint/waypoint-type&#x27;;
+import { environment } from &#x27;environments/environment&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { map, share } from &#x27;rxjs/operators&#x27;;
+
+@Injectable({ providedIn: &#x27;root&#x27; })
+export class WaypointClient {
+  private readonly WAYPOINT_URI &#x3D; &#x60;${environment.adventureUri}/waypoints&#x60;;
+
+  constructor(
+    private context: ApplicationContext,
+    private http: HttpClient,
+    private situationContext: SituationContext
+  ) {}
+
+  /**
+   * Get a waypoint from an id
+   *
+   * @param waypointId The waypoint id
+   * @param gender The user gender
+   * @returns The matching waypoint
+   */
+  public waypoint(waypointId: string, gender: Gender): Observable&lt;Waypoint&gt; {
+    let params &#x3D; new HttpParams();
+
+    if (gender) params &#x3D; params.set(&#x27;gender&#x27;, gender);
+
+    return this.http.get&lt;Waypoint&gt;(&#x60;${this.WAYPOINT_URI}/${waypointId}&#x60;, { params });
+  }
+
+  /* -- SCHOOL -- */
+
+  /**
+   * Retrieves schools associated to a given waypoint within a given application, optionally using
+   * filters
+   *
+   * @param waypointId The waypoint Id
+   * @param applicationNodeId The application node id
+   * @param waypointType The type of the waypoint
+   * @param schoolFilters Optional filters
+   * @param limit The number of results allowed
+   * @returns The matching schools
+   */
+  public schools(
+    waypointId: string,
+    applicationNodeId: string,
+    waypointType: WaypointType,
+    schoolFilters?: Filters,
+    limit?: number
+  ): Observable&lt;School[]&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;appUuid&#x27;, applicationNodeId).set(&#x27;type&#x27;, waypointType);
+
+    if (limit) params &#x3D; params.set(&#x27;limit&#x27;, &#x60;${limit}&#x60;);
+
+    let body: ApiFilters &#x3D; {
+      applicationUuid:
+        this.context.applicationName &#x3D;&#x3D;&#x3D; ApplicationName.CmqBtpNumerique
+          ? this.context.application.nodeId
+          : undefined
+    };
+
+    if (schoolFilters) {
+      body &#x3D; { ...schoolFilters.toApi(), ...body };
+    }
+
+    return this.http
+      .post&lt;ApiSchool[]&gt;(&#x60;${this.WAYPOINT_URI}/${waypointId}/schools&#x60;, body, { params })
+      .pipe(map(apiSchools &#x3D;&gt; apiSchools.map(apiSchool &#x3D;&gt; School.build(apiSchool))));
+  }
+
+  /**
+   * Retrieve a school associated to a given waypoint
+   *
+   * @param waypointId The waypoint Id
+   * @param applicationNodeId The application node id
+   * @param schoolId The school Id
+   * @returns The matching schools
+   */
+  public school(
+    waypointId: string,
+    applicationNodeId: string,
+    schoolId: string
+  ): Observable&lt;School&gt; {
+    const params &#x3D; new HttpParams().set(&#x27;appUuid&#x27;, applicationNodeId);
+
+    return this.http
+      .get&lt;ApiSchool&gt;(&#x60;${this.WAYPOINT_URI}/${waypointId}/schools/${schoolId}&#x60;, { params })
+      .pipe(map(apiSchool &#x3D;&gt; School.build(apiSchool)));
+  }
+
+  /* -- STRUCTURE -- */
+
+  /**
+   * Retrieves structures within a given application, optionally using
+   * filters
+   *
+   * @param applicationNodeId The application node id
+   * @param structureFilters Optional filters
+   * @param limit The number of results allowed
+   * @returns The matching structures
+   */
+  public structures(
+    applicationNodeId: string,
+    structureFilters?: Filters,
+    limit?: number
+  ): Observable&lt;Structure[]&gt; {
+    let params &#x3D; new HttpParams();
+
+    if (limit) params &#x3D; params.set(&#x27;limit&#x27;, &#x60;${limit}&#x60;);
+
+    return this.http.post&lt;Structure[]&gt;(
+      &#x60;${APPLICATION_URI}/${applicationNodeId}/support-structures&#x60;,
+      structureFilters ? structureFilters.toApi() : {},
+      { params }
+    );
+  }
+
+  /* -- ORIGINS -- */
+
+  /**
+   * Get origin waypoints for a destination and a user gender
+   *
+   * @param destinationId The destination Id
+   * @param originFilters Optional filters
+   * @returns An observable of the waypoints matching the destination and the user status
+   */
+  public origins(destinationId: string, originFilters?: Filters): Observable&lt;Waypoint[]&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;a&#x27;, this.context.applicationName).set(&#x27;id&#x27;, destinationId);
+
+    if (this.situationContext.situation?.gender)
+      params &#x3D; params.set(&#x27;gender&#x27;, this.situationContext.situation.gender);
+
+    return this.http.post&lt;Waypoint[]&gt;(
+      &#x60;${this.WAYPOINT_URI}/origins&#x60;,
+      originFilters ? originFilters.toApi() : {},
+      { params }
+    );
+  }
+
+  /**
+   * Get an origin and/or a destination from a partner reference
+   *
+   * @param partnerName The name of the partner
+   * @param id The reference id to the partner item
+   * @param type The type of waypoint
+   * @returns An observable of the waypoints matching the partner reference
+   */
+  public fromPartner(
+    partnerName: PartnerName,
+    id: string,
+    type?: WaypointType
+  ): Observable&lt;OriginAndDestination&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;p&#x27;, partnerName).set(&#x27;id&#x27;, id);
+
+    if (type) params &#x3D; params.set(&#x27;t&#x27;, type);
+
+    return this.http.get&lt;OriginAndDestination&gt;(&#x60;${this.WAYPOINT_URI}/from-partner&#x60;, { params });
+  }
+
+  /* -- MAP -- */
+
+  public backward(
+    waypoint: Waypoint,
+    application?: string,
+    gender?: Gender
+  ): Observable&lt;Waypoint[]&gt; {
+    let params &#x3D; new HttpParams();
+
+    if (application) params &#x3D; params.set(&#x27;a&#x27;, application);
+
+    if (gender) params &#x3D; params.set(&#x27;gender&#x27;, gender);
+
+    return this.http.post&lt;Waypoint[]&gt;(&#x60;${this.WAYPOINT_URI}/backward&#x60;, waypoint, { params });
+  }
+
+  /* -- OFFER -- */
+
+  /**
+   * Retrieve offers for an application
+   */
+  public offers(nodeId: string): Observable&lt;Offer[]&gt; {
+    return this.http
+      .get&lt;ApiOffer[]&gt;(&#x60;${APPLICATION_URI}/${nodeId}/offers&#x60;)
+      .pipe(map(apiOffers &#x3D;&gt; apiOffers.map(apiOffer &#x3D;&gt; Offer.build(apiOffer))));
+  }
+
+  /* -- RESUME NODE -- */
+
+  /**
+   * Find resume nodes (jobs or diplomas) matching a given search text based on the user status
+   *
+   * @param applicationNodeId The application node Id
+   * @param resumeNodeType The resume node type (or waypoint type). Can be Job or Diploma
+   * @param searchText The search text
+   * @param trendsFilters The filters containing the region used to get the job trends
+   */
+  public resumeNodes(
+    applicationNodeId: string,
+    resumeNodeType: WaypointType,
+    searchText: string,
+    trendsFilters: Filters
+  ): Observable&lt;Waypoint[]&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;type&#x27;, resumeNodeType).set(&#x27;search&#x27;, searchText);
+
+    if (this.situationContext.situation)
+      params &#x3D; params
+        .set(&#x27;status&#x27;, this.situationContext.situation.status)
+        .set(&#x27;gender&#x27;, this.situationContext.situation.gender);
+
+    return this.http.post&lt;Waypoint[]&gt;(
+      &#x60;${APPLICATION_URI}/${applicationNodeId}/resumeNodes&#x60;,
+      trendsFilters ? trendsFilters.toApi() : {},
+      {
+        params
+      }
+    );
+  }
+
+  /* -- COMPANY -- */
+
+  /**
+   * Retrieves companies associated to a given waypoint within a given application, optionally using
+   * filters
+   *
+   * @param waypointId The waypoint Id
+   * @param applicationNodeId The application node id
+   * @param waypointType The type of the waypoint
+   * @param companiesFilters Optional filters
+   * @param limit The number of results allowed
+   * @returns The matching companies
+   */
+  public companies(
+    waypointId: string,
+    applicationNodeId: string,
+    waypointType: WaypointType,
+    companiesFilters?: Filters,
+    limit?: number
+  ): Observable&lt;Company[]&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;appUuid&#x27;, applicationNodeId).set(&#x27;type&#x27;, waypointType);
+
+    if (limit) params &#x3D; params.set(&#x27;limit&#x27;, &#x60;${limit}&#x60;);
+
+    let body: ApiFilters &#x3D; {
+      applicationUuid:
+        this.context.applicationName &#x3D;&#x3D;&#x3D; ApplicationName.CmqBtpNumerique
+          ? this.context.application.nodeId
+          : undefined
+    };
+
+    if (companiesFilters) {
+      body &#x3D; { ...companiesFilters.toApi(), ...body };
+    }
+
+    return this.http
+      .post&lt;ApiLocation[]&gt;(&#x60;${this.WAYPOINT_URI}/${waypointId}/companies&#x60;, body, { params })
+      .pipe(map(apiCompanies &#x3D;&gt; apiCompanies.map(apiCompany &#x3D;&gt; Company.build(apiCompany))));
+  }
+
+  /* -- HUMAN -- */
+
+  /**
+   * Get Humans POIs for a waypoint
+   *
+   * @param waypointId The waypoint ID
+   * @param nomenclature The Human POIs nomenclature. Can be either alumni or student
+   * @param filters The waypoint filters, used to get the application
+   * @returns An array of HumanPoi objects built from the array of HumanPoiResponse received from
+   *          Adventure Service
+   */
+  public humanPois(
+    waypointId: string,
+    nomenclature: Nomenclature,
+    filters: Filters
+  ): Observable&lt;HumanPoi[]&gt; {
+    return this.http
+      .post&lt;ApiHumanPoi[]&gt;(
+        &#x60;${this.WAYPOINT_URI}/${waypointId}/${nomenclature}/humans&#x60;,
+        filters.toApi()
+      )
+      .pipe(
+        map((apiHumanPois: ApiHumanPoi[]) &#x3D;&gt; {
+          if (!apiHumanPois) return [];
+
+          return apiHumanPois.map((apiHumanPoi: ApiHumanPoi) &#x3D;&gt; HumanPoi.build(apiHumanPoi));
+        }),
+        share()
+      );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'WaypointClient.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

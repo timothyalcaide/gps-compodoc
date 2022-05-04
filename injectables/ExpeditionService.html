@@ -1,0 +1,1540 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >ExpeditionService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/features/expeditions/services/expedition.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#cacheAllExpeditionInstances" >cacheAllExpeditionInstances</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#cacheAllExpeditions" >cacheAllExpeditions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentExpedition$" >currentExpedition$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentExpeditionId$" >currentExpeditionId$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentExpeditionInstance$" >currentExpeditionInstance$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentExpeditionInstanceId$" >currentExpeditionInstanceId$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#destroy$" >destroy$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expeditionInstances$" >expeditionInstances$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expeditionInstancesCompleted$" >expeditionInstancesCompleted$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expeditionInstancesInProgress$" >expeditionInstancesInProgress$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expeditions$" >expeditions$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getExpedition" >_getExpedition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_getExpeditionInstance" >_getExpeditionInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addChallengeSynthesis" >addChallengeSynthesis</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createExpeditionInstance" >createExpeditionInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllExpedition" >getAllExpedition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllExpeditionInstances" >getAllExpeditionInstances</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setCurrentExpedition" >setCurrentExpedition</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setCurrentExpeditionInstance" >setCurrentExpeditionInstance</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(client: <a href="../injectables/ExpeditionClient.html" target="_self">ExpeditionClient</a>, state: <a href="../injectables/ExpeditionStateService.html" target="_self">ExpeditionStateService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, snackBar: MatSnackBar, translate: TranslateService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>client</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ExpeditionClient.html" target="_self" >ExpeditionClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>state</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ExpeditionStateService.html" target="_self" >ExpeditionStateService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getExpedition"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_getExpedition</b></span>
+                        <a href="#_getExpedition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getExpedition(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="291"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:291</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ApiExpedition.html" target="_self" >Observable&lt;ApiExpedition&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_getExpeditionInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>_getExpeditionInstance</b></span>
+                        <a href="#_getExpeditionInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>_getExpeditionInstance(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="285"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:285</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;ExpeditionInstance&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addChallengeSynthesis"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addChallengeSynthesis</b></span>
+                        <a href="#addChallengeSynthesis"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addChallengeSynthesis(expeditionInstanceId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, challengeId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, synthesis: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>expeditionInstanceId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>challengeId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>synthesis</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createExpeditionInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createExpeditionInstance</b></span>
+                        <a href="#createExpeditionInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createExpeditionInstance(expeditionUuid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>expeditionUuid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllExpedition"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllExpedition</b></span>
+                        <a href="#getAllExpedition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllExpedition()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllExpeditionInstances"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllExpeditionInstances</b></span>
+                        <a href="#getAllExpeditionInstances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllExpeditionInstances()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrentExpedition"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setCurrentExpedition</b></span>
+                        <a href="#setCurrentExpedition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setCurrentExpedition(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrentExpeditionInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setCurrentExpeditionInstance</b></span>
+                        <a href="#setCurrentExpeditionInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setCurrentExpeditionInstance(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cacheAllExpeditionInstances"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>cacheAllExpeditionInstances</b></span>
+                        <a href="#cacheAllExpeditionInstances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ isLoaded: false, expirationDate: null }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cacheAllExpeditions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>cacheAllExpeditions</b></span>
+                        <a href="#cacheAllExpeditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ isLoaded: false, expirationDate: null }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentExpedition$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>currentExpedition$</b></span>
+                        <a href="#currentExpedition$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ApiExpedition.html" target="_self" >Observable&lt;ApiExpedition&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentExpeditionId$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currentExpeditionId$</b></span>
+                        <a href="#currentExpeditionId$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentExpeditionInstance$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>currentExpeditionInstance$</b></span>
+                        <a href="#currentExpeditionInstance$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;ExpeditionInstance&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentExpeditionInstanceId$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currentExpeditionInstanceId$</b></span>
+                        <a href="#currentExpeditionInstanceId$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroy$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>destroy$</b></span>
+                        <a href="#destroy$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expeditionInstances$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>expeditionInstances$</b></span>
+                        <a href="#expeditionInstances$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;ExpeditionInstance[]&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expeditionInstancesCompleted$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>expeditionInstancesCompleted$</b></span>
+                        <a href="#expeditionInstancesCompleted$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;ExpeditionInstance[]&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expeditionInstancesInProgress$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>expeditionInstancesInProgress$</b></span>
+                        <a href="#expeditionInstancesInProgress$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;ExpeditionInstance[]&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expeditions$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>expeditions$</b></span>
+                        <a href="#expeditions$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ApiExpedition.html" target="_self" >Observable&lt;ApiExpedition[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/features/expeditions/services/expedition.service.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpErrorResponse } from &#x27;@angular/common/http&#x27;;
+import { Injectable, OnDestroy } from &#x27;@angular/core&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { AppRouteUrls } from &#x27;@core/routing/app/route-urls&#x27;;
+import { ExpeditionInstance } from &#x27;@features/expeditions/models/expedition-instance&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { selectDistinctState } from &#x27;@shared/operators/selectDistinctState&#x27;;
+import dayjs from &#x27;dayjs&#x27;;
+import { combineLatest, filter, map, Observable, Subject } from &#x27;rxjs&#x27;;
+import { distinctUntilKeyChanged, share, takeUntil } from &#x27;rxjs/operators&#x27;;
+import { ApiExpedition } from &#x27;../models/expedition.model&#x27;;
+import { ExpeditionClient } from &#x27;./expedition.client&#x27;;
+import { ExpeditionKeyEnum, ExpeditionState, ExpeditionStateService } from &#x27;./expedition.state&#x27;;
+
+const CACHE_DURATION_IN_MINUTES &#x3D; 60;
+const dateExpireIn &#x3D; (minutes: number): Date &#x3D;&gt; dayjs(new Date()).add(minutes, &#x27;minute&#x27;).toDate();
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class ExpeditionService implements OnDestroy {
+  public expeditionInstances$: Observable&lt;ExpeditionInstance[]&gt;;
+  public expeditionInstancesCompleted$: Observable&lt;ExpeditionInstance[]&gt;;
+  public expeditionInstancesInProgress$: Observable&lt;ExpeditionInstance[]&gt;;
+  public currentExpeditionInstance$: Observable&lt;ExpeditionInstance&gt;; // TODO (optimization) : transform array in entity to avoid mapping
+  public expeditions$: Observable&lt;ApiExpedition[]&gt;;
+  public currentExpedition$: Observable&lt;ApiExpedition&gt;;
+
+  private currentExpeditionId$: Observable&lt;string&gt;;
+  private currentExpeditionInstanceId$: Observable&lt;string&gt;;
+  private destroy$ &#x3D; new Subject&lt;void&gt;();
+
+  private cacheAllExpeditionInstances &#x3D; { isLoaded: false, expirationDate: null };
+  private cacheAllExpeditions &#x3D; { isLoaded: false, expirationDate: null };
+
+  constructor(
+    private client: ExpeditionClient,
+    private state: ExpeditionStateService,
+    private router: Router,
+    private snackBar: MatSnackBar,
+    private translate: TranslateService
+  ) {
+    // Expedition instance state
+    this.expeditionInstances$ &#x3D; this.state.state$.pipe(
+      selectDistinctState&lt;ExpeditionState, ExpeditionInstance[]&gt;(
+        ExpeditionKeyEnum.expeditionsInstances
+      ),
+      map(instances &#x3D;&gt; instances.sort((a, b) &#x3D;&gt; a?.name.localeCompare(b?.name))),
+      share()
+    );
+
+    this.currentExpeditionInstanceId$ &#x3D; this.state.state$.pipe(
+      selectDistinctState&lt;ExpeditionState, string&gt;(ExpeditionKeyEnum.currentExpeditionInstanceId),
+      share()
+    );
+
+    this.expeditionInstancesCompleted$ &#x3D; this.expeditionInstances$.pipe(
+      map(instances &#x3D;&gt;
+        instances.filter(
+          // expedition is completed if all the syntheses is completed
+          instance &#x3D;&gt; instance.expeditionSteps.length &#x3D;&#x3D;&#x3D; Object.values(instance.syntheses).length
+        )
+      ),
+      share()
+    );
+
+    this.expeditionInstancesInProgress$ &#x3D; this.expeditionInstances$.pipe(
+      map(instances &#x3D;&gt;
+        instances.filter(
+          instance &#x3D;&gt;
+            Object.values(instance.syntheses).length &gt; 0 &amp;&amp;
+            instance.expeditionSteps.length !&#x3D;&#x3D; Object.values(instance.syntheses).length
+        )
+      ),
+      share()
+    );
+
+    this.currentExpeditionInstance$ &#x3D; combineLatest([
+      this.expeditionInstances$,
+      this.currentExpeditionInstanceId$
+    ]).pipe(
+      filter(([list, id]) &#x3D;&gt; list.length &gt; 0 &amp;&amp; !!id),
+      map(([list, id]) &#x3D;&gt; list.find(item &#x3D;&gt; item.id &#x3D;&#x3D;&#x3D; id)),
+      distinctUntilKeyChanged(&#x27;id&#x27;),
+      share()
+    );
+
+    this.expeditions$ &#x3D; this.state.state$.pipe(
+      selectDistinctState&lt;ExpeditionState, ApiExpedition[]&gt;(ExpeditionKeyEnum.expeditions),
+      map(expedition &#x3D;&gt; expedition.sort((a, b) &#x3D;&gt; a.name.localeCompare(b.name))),
+      share()
+    );
+
+    this.currentExpeditionId$ &#x3D; this.state.state$.pipe(
+      selectDistinctState&lt;ExpeditionState, string&gt;(ExpeditionKeyEnum.currentExpeditionId),
+      share()
+    );
+
+    this.currentExpedition$ &#x3D; combineLatest([this.expeditions$, this.currentExpeditionId$]).pipe(
+      filter(([list, id]) &#x3D;&gt; list.length &gt; 0 &amp;&amp; !!id),
+      map(([list, id]) &#x3D;&gt; list.find(item &#x3D;&gt; item.uuid &#x3D;&#x3D;&#x3D; id)),
+      distinctUntilKeyChanged(&#x27;uuid&#x27;),
+      share()
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
+  public getAllExpeditionInstances(): void {
+    const { isLoaded, expirationDate } &#x3D; this.cacheAllExpeditionInstances;
+
+    if (!isLoaded || dayjs(new Date()).isAfter(expirationDate)) {
+      this.client
+        .getExpeditionInstances()
+        .pipe(
+          map(apiExp &#x3D;&gt; apiExp.map(exp &#x3D;&gt; ExpeditionInstance.build(exp))),
+          takeUntil(this.destroy$)
+        )
+        .subscribe({
+          next: instances &#x3D;&gt; {
+            this.state.dispatch({
+              key: ExpeditionKeyEnum.expeditionsInstances,
+              payload: instances
+            });
+            this.cacheAllExpeditionInstances &#x3D; {
+              isLoaded: true,
+              expirationDate: dateExpireIn(CACHE_DURATION_IN_MINUTES)
+            };
+          }
+        });
+    }
+  }
+
+  public getAllExpedition(): void {
+    const { isLoaded, expirationDate } &#x3D; this.cacheAllExpeditions;
+
+    if (!isLoaded || dayjs(new Date()).isAfter(expirationDate)) {
+      this.client
+        .getExpeditions()
+        .pipe(
+          // TODO tim : keep an interface or create an object for each Expedition ?
+          // map(apiExp &#x3D;&gt; apiExp.map(exp &#x3D;&gt; ExpeditionInstance.build(exp))),
+          takeUntil(this.destroy$)
+        )
+        .subscribe({
+          next: expedition &#x3D;&gt; {
+            this.state.dispatch({ key: ExpeditionKeyEnum.expeditions, payload: expedition });
+
+            this.cacheAllExpeditions &#x3D; {
+              isLoaded: true,
+              expirationDate: dateExpireIn(CACHE_DURATION_IN_MINUTES)
+            };
+          }
+        });
+    }
+  }
+
+  public setCurrentExpeditionInstance(id: string): void {
+    const expeditionInstanceExist &#x3D; this.state?.snapshots.expeditionsInstances.some(
+      instance &#x3D;&gt; instance.id &#x3D;&#x3D;&#x3D; id
+    );
+
+    if (!expeditionInstanceExist) {
+      this._getExpeditionInstance(id)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(instance &#x3D;&gt; {
+          if (instance?.id) {
+            this.state.dispatch({
+              key: ExpeditionKeyEnum.expeditionsInstances,
+              payload: [...this.state.snapshots.expeditionsInstances, instance]
+            });
+
+            this.state.dispatch({
+              key: ExpeditionKeyEnum.currentExpeditionInstanceId,
+              payload: instance.id
+            });
+          } else {
+            this.router.navigateByUrl(&#x60;/${AppRouteUrls.EXPEDITION}&#x60;);
+          }
+        });
+    } else {
+      this.state.dispatch({ key: ExpeditionKeyEnum.currentExpeditionInstanceId, payload: id });
+    }
+  }
+
+  public setCurrentExpedition(id: string): void {
+    const expeditionExist &#x3D; this.state?.snapshots.expeditions.some(
+      instance &#x3D;&gt; instance.uuid &#x3D;&#x3D;&#x3D; id
+    );
+
+    if (!expeditionExist) {
+      this._getExpedition(id)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(expedition &#x3D;&gt; {
+          if (expedition?.uuid) {
+            this.state.dispatch({
+              key: ExpeditionKeyEnum.expeditions,
+              payload: [...this.state.snapshots.expeditions, expedition]
+            });
+
+            this.state.dispatch({
+              key: ExpeditionKeyEnum.currentExpeditionId,
+              payload: expedition.uuid
+            });
+          } else {
+            this.router.navigateByUrl(&#x60;/${AppRouteUrls.EXPEDITION_LIBRARY}&#x60;);
+          }
+        });
+    } else {
+      this.state.dispatch({ key: ExpeditionKeyEnum.currentExpeditionId, payload: id });
+    }
+  }
+
+  public createExpeditionInstance(expeditionUuid: string): void {
+    this.client
+      .createExpeditionInstance(expeditionUuid)
+      .pipe(
+        filter(instance &#x3D;&gt; instance.id !&#x3D; null), // not null or undefined
+        takeUntil(this.destroy$)
+      )
+      .subscribe({
+        next: instance &#x3D;&gt; {
+          // the instance is added to the expInstances list
+          this.state.dispatch({
+            key: ExpeditionKeyEnum.expeditionsInstances,
+            payload: [...this.state.snapshots.expeditionsInstances, instance]
+          });
+
+          this.router.navigateByUrl(&#x60;/${AppRouteUrls.EXPEDITION_INSTANCE_DETAIL(instance.id)}&#x60;);
+
+          // the old expedition has become an instance, so it must be deleted from the exp list
+          const expeditions &#x3D; this.state.snapshots.expeditions.filter(
+            exp &#x3D;&gt; exp.uuid !&#x3D;&#x3D; expeditionUuid
+          );
+
+          this.state.dispatch({
+            key: ExpeditionKeyEnum.expeditions,
+            payload: expeditions
+          });
+        },
+        // eslint-disable-next-line rxjs/no-implicit-any-catch
+        error: (error: HttpErrorResponse): void &#x3D;&gt; {
+          const trad &#x3D; this.translate.instant(&#x60;error.${error.status}&#x60;);
+
+          const message &#x3D;
+            trad &#x3D;&#x3D;&#x3D; error.status || trad &#x3D;&#x3D;&#x3D; &#x27;&#x27; ? this.translate.instant(&#x60;error.default&#x60;) : trad;
+
+          this.snackBar.open(message, null, { duration: 3000 });
+        },
+        complete: () &#x3D;&gt;
+          this.snackBar.open(this.translate.instant(&#x27;expedition.expedition-added&#x27;), null, {
+            duration: 3000
+          })
+      });
+  }
+
+  public addChallengeSynthesis(
+    expeditionInstanceId: string,
+    challengeId: string,
+    synthesis: string
+  ): void {
+    this.client
+      .addChallengeSynthesis(expeditionInstanceId, challengeId, synthesis)
+      .pipe(map(apiExpeditionInstance &#x3D;&gt; ExpeditionInstance.build(apiExpeditionInstance)))
+      .subscribe({
+        next: expeditionInstance &#x3D;&gt; {
+          const otherInstances &#x3D; this.state.snapshots.expeditionsInstances.filter(
+            e &#x3D;&gt; e.id !&#x3D;&#x3D; expeditionInstance.id
+          );
+
+          const expeditionsInstancesUpdated &#x3D; [...otherInstances, expeditionInstance];
+
+          this.state.dispatch({
+            key: ExpeditionKeyEnum.expeditionsInstances,
+            payload: expeditionsInstancesUpdated
+          });
+        }
+      });
+  }
+
+  private _getExpeditionInstance(id: string): Observable&lt;ExpeditionInstance&gt; {
+    return this.client
+      .getExpeditionInstance(id)
+      .pipe(map(apiExp &#x3D;&gt; ExpeditionInstance.build(apiExp)));
+  }
+
+  private _getExpedition(id: string): Observable&lt;ApiExpedition&gt; {
+    return this.client.getExpedition(id);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ExpeditionService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

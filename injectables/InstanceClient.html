@@ -1,0 +1,1957 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >InstanceClient</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/clients/instance.client.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#INSTANCES_URI" >INSTANCES_URI</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#attachInstance" >attachInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countCompletedInstances" >countCompletedInstances</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countOrigins" >countOrigins</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countStartedInstances" >countStartedInstances</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createInstanceFromInstance" >createInstanceFromInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createInstanceFromWaypoint" >createInstanceFromWaypoint</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expand" >expand</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#horizons" >horizons</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#humanPoi" >humanPoi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#humanPois" >humanPois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#instance" >instance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#instances" >instances</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sendRoadmap" >sendRoadmap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#siblings" >siblings</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/core/services/clients/instance.client.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="attachInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>attachInstance</b></span>
+                        <a href="#attachInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>attachInstance(instanceId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, email: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Attach an instance to an email</p>
+<div><pre class="line-numbers"><code class="language-none">         a user is authenticated</code></pre></div></div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>instanceId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance Ids to attach to the email</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The email to which instance has to be attached. It is not needed (and ignored) if
+a user is authenticated</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countCompletedInstances"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>countCompletedInstances</b></span>
+                        <a href="#countCompletedInstances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countCompletedInstances(applicationName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, startDate: Dayjs)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the number of completed instances for an application from a date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicationName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application name</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>startDate</td>
+                                    <td>
+                                            <code>Dayjs</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The date from when the count starts</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The number of completed instances from the given date</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countOrigins"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>countOrigins</b></span>
+                        <a href="#countOrigins"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countOrigins(applicationName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, startDate: Dayjs)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the number of started instances for an application from a date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicationName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application name</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>startDate</td>
+                                    <td>
+                                            <code>Dayjs</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The date from when the count starts</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ApiMetricInList.html" target="_self" >Observable&lt;ApiMetricInList[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The number of started instances from the given date</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countStartedInstances"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>countStartedInstances</b></span>
+                        <a href="#countStartedInstances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countStartedInstances(applicationName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, startDate: Dayjs)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the number of started instances for an application from a date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>applicationName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The application name</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>startDate</td>
+                                    <td>
+                                            <code>Dayjs</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The date from when the count starts</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The number of started instances from the given date</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createInstanceFromInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createInstanceFromInstance</b></span>
+                        <a href="#createInstanceFromInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createInstanceFromInstance(instance: <a href="../classes/Instance.html" target="_self">Instance</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create an instance from a given instance containing a definition</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>instance</td>
+                                    <td>
+                                                <code><a href="../classes/Instance.html" target="_self" >Instance</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance gathering the user situation, the definition and the user email</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Instance.html" target="_self" >Observable&lt;Instance&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The created instance</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createInstanceFromWaypoint"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createInstanceFromWaypoint</b></span>
+                        <a href="#createInstanceFromWaypoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createInstanceFromWaypoint(situation: <a href="../classes/Situation.html" target="_self">Situation</a>, undefined: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create an instance from waypoint as origin or destination (or both)
+And from an application and a situation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>situation</td>
+                                    <td>
+                                                <code><a href="../classes/Situation.html" target="_self" >Situation</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Instance.html" target="_self" >Observable&lt;Instance&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The created instance</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expand"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>expand</b></span>
+                        <a href="#expand"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>expand(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, stage: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, waypoints: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>, gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>, filters?: <a href="../classes/Filters.html" target="_self">Filters</a>, type?: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the list of domains and waypoints for the next step in the adventure</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The id of the instance</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>stage</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The stage in the instance</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>waypoints</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of waypoints in the instance since the previous village</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>gender</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The gender of the user</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The list of filters</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The type of requested waypoints</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Expand.html" target="_self" >Observable&lt;Expand&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An observable emitting an expand, listing the next diplomas and/or jobs</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="horizons"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>horizons</b></span>
+                        <a href="#horizons"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>horizons(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, stage: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, waypoints: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>, gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>stage</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>waypoints</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gender</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="humanPoi"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>humanPoi</b></span>
+                        <a href="#humanPoi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>humanPoi(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, humanId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get a specific Human POI</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance ID</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>humanId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Human POIs ID</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;HumanPoi&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>A HumanPoi object built from the HumanPoiResponse received from Adventure Service</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="humanPois"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>humanPois</b></span>
+                        <a href="#humanPois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>humanPois(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, nomenclature: <a href="../undefineds/Nomenclature.html" target="_self">Nomenclature</a>, stage?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, waypoints?: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Humans POIs for an instance</p>
+<div><pre class="line-numbers"><code class="language-none">     Adventure Service</code></pre></div></div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance ID</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>nomenclature</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Nomenclature" target="_self" >Nomenclature</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Human POIs nomenclature. Can be either alumni or student</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>stage</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance stage</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>waypoints</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                    <td>
+                                        <p>The instance waypoints</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;HumanPoi[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An array of HumanPoi objects built from the array of HumanPoiResponse received from
+Adventure Service</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="instance"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>instance</b></span>
+                        <a href="#instance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>instance(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Instance.html" target="_self" >Observable&lt;Instance&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="instances"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>instances</b></span>
+                        <a href="#instances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>instances()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>List instances attached to the authenticated user for an application</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Instance.html" target="_self" >Observable&lt;Instance[]&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendRoadmap"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>sendRoadmap</b></span>
+                        <a href="#sendRoadmap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>sendRoadmap(leadRoadmap: <a href="../classes/LeadRoadmap.html" target="_self">LeadRoadmap</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a lead for a save roadmap action &amp; send the roadmap by email to the user attached to the instance</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>leadRoadmap</td>
+                                    <td>
+                                                <code><a href="../classes/LeadRoadmap.html" target="_self" >LeadRoadmap</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The lead roadmap</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;LeadRoadmap&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="siblings"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>siblings</b></span>
+                        <a href="#siblings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>siblings(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, stage: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, waypoints: <a href="../interfaces/Waypoint.html" target="_self">Waypoint[]</a>, gender: <a href="../undefineds/Gender.html" target="_self">Gender</a>, filters: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/core/services/clients/instance.client.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>stage</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>waypoints</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gender</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#Gender" target="_self" >Gender</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>filters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Waypoint.html" target="_self" >Observable&lt;Waypoint[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="INSTANCES_URI"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>INSTANCES_URI</b></span>
+                        <a href="#INSTANCES_URI"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x60;${environment.adventureUri}/instances&#x60;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/core/services/clients/instance.client.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ApiMetricInList } from &#x27;@admin-models/list-metric/metric-in-list.api&#x27;;
+import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { Expand, Waypoint } from &#x27;@clients/adventure/bean/waypoint&#x27;;
+import { Nomenclature } from &#x27;@clients/poi/poi&#x27;;
+import { ApplicationContext } from &#x27;@core/services&#x27;;
+import { Filters } from &#x27;@models/filters/filters&#x27;;
+import { Gender } from &#x27;@models/gender/gender&#x27;;
+import { Instance } from &#x27;@models/instance/instance&#x27;;
+import { ApiInstance } from &#x27;@models/instance/instance.api&#x27;;
+import { ApiLeadRoadmap, LeadRoadmap } from &#x27;@models/lead/lead-roadmap&#x27;;
+import { HumanPoi } from &#x27;@models/poi/human-poi/human-poi&#x27;;
+import { ApiHumanPoi } from &#x27;@models/poi/human-poi/human-poi.api&#x27;;
+import { Situation } from &#x27;@models/situation/situation&#x27;;
+import { WaypointType } from &#x27;@models/waypoint/waypoint-type&#x27;;
+import { Dayjs } from &#x27;dayjs&#x27;;
+import { environment } from &#x27;environments/environment&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { map, share } from &#x27;rxjs/operators&#x27;;
+
+@Injectable({ providedIn: &#x27;root&#x27; })
+export class InstanceClient {
+  private readonly INSTANCES_URI &#x3D; &#x60;${environment.adventureUri}/instances&#x60;;
+
+  constructor(private context: ApplicationContext, private http: HttpClient) {}
+
+  /* -- INSTANCE -- */
+
+  /**
+   * List instances attached to the authenticated user for an application
+   */
+  public instances(): Observable&lt;Instance[]&gt; {
+    return this.http
+      .get&lt;ApiInstance[]&gt;(&#x60;${this.INSTANCES_URI}/list&#x60;)
+      .pipe(map((is: ApiInstance[]) &#x3D;&gt; is.map((i: ApiInstance) &#x3D;&gt; Instance.build(i))));
+  }
+
+  public instance(id: string): Observable&lt;Instance&gt; {
+    return this.http
+      .get&lt;ApiInstance&gt;(&#x60;${this.INSTANCES_URI}/${id}&#x60;)
+      .pipe(map((i: ApiInstance) &#x3D;&gt; Instance.build(i)));
+  }
+
+  /**
+   * Get the number of started instances for an application from a date
+   *
+   * @param applicationName The application name
+   * @param startDate The date from when the count starts
+   * @returns The number of started instances from the given date
+   */
+  public countStartedInstances(applicationName: string, startDate: Dayjs): Observable&lt;number&gt; {
+    const params: HttpParams &#x3D; new HttpParams()
+      .set(&#x27;a&#x27;, applicationName)
+      .set(&#x27;d&#x27;, &#x60;${startDate.unix()}&#x60;);
+
+    return this.http.get&lt;number&gt;(&#x60;${this.INSTANCES_URI}/started&#x60;, { params });
+  }
+
+  /**
+   * Get the number of completed instances for an application from a date
+   *
+   * @param applicationName The application name
+   * @param startDate The date from when the count starts
+   * @returns The number of completed instances from the given date
+   */
+  public countCompletedInstances(applicationName: string, startDate: Dayjs): Observable&lt;number&gt; {
+    const params: HttpParams &#x3D; new HttpParams()
+      .set(&#x27;a&#x27;, applicationName)
+      .set(&#x27;d&#x27;, &#x60;${startDate.unix()}&#x60;);
+
+    return this.http.get&lt;number&gt;(&#x60;${this.INSTANCES_URI}/completed&#x60;, { params });
+  }
+
+  /**
+   * Get the number of started instances for an application from a date
+   *
+   * @param applicationName The application name
+   * @param startDate The date from when the count starts
+   * @returns The number of started instances from the given date
+   */
+  public countOrigins(applicationName: string, startDate: Dayjs): Observable&lt;ApiMetricInList[]&gt; {
+    const params: HttpParams &#x3D; new HttpParams()
+      .set(&#x27;a&#x27;, applicationName)
+      .set(&#x27;d&#x27;, &#x60;${startDate.unix()}&#x60;);
+
+    return this.http.get&lt;ApiMetricInList[]&gt;(&#x60;${this.INSTANCES_URI}/origins-count&#x60;, {
+      params
+    });
+  }
+
+  /**
+   * Create an instance from waypoint as origin or destination (or both)
+   * And from an application and a situation
+   *
+   * @returns The created instance
+   */
+  public createInstanceFromWaypoint(
+    situation: Situation,
+    {
+      origin,
+      destination
+    }: {
+      origin?: Waypoint;
+      destination?: Waypoint;
+    }
+  ): Observable&lt;Instance&gt; {
+    return this.http
+      .post&lt;ApiInstance&gt;(&#x60;${this.INSTANCES_URI}/create&#x60;, {
+        application: this.context.applicationName,
+        situation: situation.toApi(),
+        origin,
+        destination
+      })
+      .pipe(map((i: ApiInstance) &#x3D;&gt; Instance.build(i)));
+  }
+
+  /**
+   * Create an instance from a given instance containing a definition
+   *
+   * @param instance The instance gathering the user situation, the definition and the user email
+   * @returns The created instance
+   */
+  public createInstanceFromInstance(instance: Instance): Observable&lt;Instance&gt; {
+    return this.http
+      .post&lt;ApiInstance&gt;(&#x60;${this.INSTANCES_URI}/initiate&#x60;, instance.toApi())
+      .pipe(map((i: ApiInstance) &#x3D;&gt; Instance.build(i)));
+  }
+
+  /**
+   * Attach an instance to an email
+   *
+   * @param instanceId The instance Ids to attach to the email
+   * @param email The email to which instance has to be attached. It is not needed (and ignored) if
+   *              a user is authenticated
+   */
+  public attachInstance(instanceId: string, email: string): Observable&lt;void&gt; {
+    let params &#x3D; new HttpParams();
+
+    if (email) params &#x3D; params.set(&#x27;email&#x27;, email);
+
+    return this.http.post&lt;void&gt;(&#x60;${this.INSTANCES_URI}/attached&#x60;, [instanceId], { params });
+  }
+
+  /**
+   * Create a lead for a save roadmap action &amp; send the roadmap by email to the user attached to the instance
+   *
+   * @param leadRoadmap The lead roadmap
+   */
+  public sendRoadmap(leadRoadmap: LeadRoadmap): Observable&lt;LeadRoadmap&gt; {
+    return this.http
+      .post&lt;ApiLeadRoadmap&gt;(&#x60;${this.INSTANCES_URI}/send-roadmap&#x60;, leadRoadmap.toApi())
+      .pipe(map(lead &#x3D;&gt; LeadRoadmap.build(lead)));
+  }
+
+  /* -- MAP -- */
+
+  public horizons(
+    id: string,
+    stage: number,
+    waypoints: Waypoint[],
+    gender: Gender
+  ): Observable&lt;Waypoint[]&gt; {
+    const params &#x3D; new HttpParams().set(&#x27;gender&#x27;, gender);
+
+    return this.http.patch&lt;Waypoint[]&gt;(&#x60;${this.INSTANCES_URI}/${id}/horizons/${stage}&#x60;, waypoints, {
+      params
+    });
+  }
+
+  public siblings(
+    id: string,
+    stage: number,
+    waypoints: Waypoint[],
+    gender: Gender,
+    filters: Filters
+  ): Observable&lt;Waypoint[]&gt; {
+    const params &#x3D; new HttpParams().set(&#x27;gender&#x27;, gender);
+
+    return this.http.patch&lt;Waypoint[]&gt;(
+      &#x60;${this.INSTANCES_URI}/${id}/siblings/${stage}&#x60;,
+      { path: waypoints, filters: filters?.toApi() },
+      {
+        params
+      }
+    );
+  }
+
+  /**
+   * Get the list of domains and waypoints for the next step in the adventure
+   *
+   * @param id The id of the instance
+   * @param stage The stage in the instance
+   * @param waypoints The list of waypoints in the instance since the previous village
+   * @param gender The gender of the user
+   * @param filters The list of filters
+   * @param type The type of requested waypoints
+   * @returns An observable emitting an expand, listing the next diplomas and/or jobs
+   */
+  public expand(
+    id: string,
+    stage: number,
+    waypoints: Waypoint[],
+    gender: Gender,
+    filters?: Filters,
+    type?: WaypointType
+  ): Observable&lt;Expand&gt; {
+    let params &#x3D; new HttpParams().set(&#x27;gender&#x27;, gender);
+
+    if (type) params &#x3D; params.set(&#x27;type&#x27;, type.toString());
+
+    return this.http.patch&lt;Expand&gt;(
+      &#x60;${this.INSTANCES_URI}/${id}/expand/${stage}&#x60;,
+      { path: waypoints, filters: filters?.toApi() },
+      { params }
+    );
+  }
+
+  /* -- HUMAN -- */
+
+  // FIXME: handle by adventure service for now but need to be replace to poi service (create a jar)
+  /**
+   * Get Humans POIs for an instance
+   *
+   * @param id The instance ID
+   * @param nomenclature The Human POIs nomenclature. Can be either alumni or student
+   * @param stage The instance stage
+   * @param waypoints The instance waypoints
+   * @returns An array of HumanPoi objects built from the array of HumanPoiResponse received from
+   *          Adventure Service
+   */
+  public humanPois(
+    id: string,
+    nomenclature: Nomenclature,
+    stage?: number,
+    waypoints?: Waypoint[]
+  ): Observable&lt;HumanPoi[]&gt; {
+    let params &#x3D; new HttpParams();
+
+    if (stage !&#x3D; null &amp;&amp; stage &gt;&#x3D; 0) params &#x3D; params.set(&#x27;stage&#x27;, String(stage));
+
+    return this.http
+      .patch&lt;ApiHumanPoi[]&gt;(&#x60;${this.INSTANCES_URI}/${id}/${nomenclature}&#x60;, waypoints, { params })
+      .pipe(
+        map((apiHumanPois: ApiHumanPoi[]) &#x3D;&gt; {
+          if (!apiHumanPois) return [];
+
+          return apiHumanPois.map((apiHumanPoi: ApiHumanPoi) &#x3D;&gt; HumanPoi.build(apiHumanPoi));
+        }),
+        share()
+      );
+  }
+
+  /**
+   * Get a specific Human POI
+   *
+   * @param id The instance ID
+   * @param humanId The Human POIs ID
+   * @returns A HumanPoi object built from the HumanPoiResponse received from Adventure Service
+   */
+  public humanPoi(id: string, humanId: string): Observable&lt;HumanPoi&gt; {
+    return this.http.get&lt;ApiHumanPoi&gt;(&#x60;${this.INSTANCES_URI}/${id}/humans/${humanId}&#x60;).pipe(
+      map((apiHumanPoi: ApiHumanPoi) &#x3D;&gt; {
+        if (!apiHumanPoi) return null;
+
+        return HumanPoi.build(apiHumanPoi);
+      })
+    );
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'InstanceClient.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

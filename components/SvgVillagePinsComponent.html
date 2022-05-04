@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SvgVillagePinsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/map/svg-definitions/svg-village-pins/svg-village-pins.component.ts</code>
+</p>
+
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>svg-village-pins</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../svg-definitions.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./svg-village-pins.component.svg</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
+  selector: &#x27;svg-village-pins&#x27;,
+  templateUrl: &#x27;./svg-village-pins.component.svg&#x27;,
+  styleUrls: [&#x27;../svg-definitions.component.scss&#x27;]
+})
+export class SvgVillagePinsComponent {}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;defs&gt;&lt;filter id&#x3D;&quot;village-pin-filter0_f&quot; x&#x3D;&quot;24&quot; y&#x3D;&quot;74&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;16&quot; filterUnits&#x3D;&quot;userSpaceOnUse&quot; color-interpolation-filters&#x3D;&quot;sRGB&quot;&gt;&lt;feFlood flood-opacity&#x3D;&quot;0&quot; result&#x3D;&quot;BackgroundImageFix&quot;/&gt;&lt;feBlend in&#x3D;&quot;SourceGraphic&quot; in2&#x3D;&quot;BackgroundImageFix&quot; result&#x3D;&quot;shape&quot;/&gt;&lt;feGaussianBlur stdDeviation&#x3D;&quot;2&quot; result&#x3D;&quot;effect1_foregroundBlur&quot;/&gt;&lt;/filter&gt;&lt;filter id&#x3D;&quot;village-pin-filter1_d&quot; x&#x3D;&quot;.167&quot; y&#x3D;&quot;0&quot; width&#x3D;&quot;79.667&quot; height&#x3D;&quot;88&quot; filterUnits&#x3D;&quot;userSpaceOnUse&quot; color-interpolation-filters&#x3D;&quot;sRGB&quot;&gt;&lt;feFlood flood-opacity&#x3D;&quot;0&quot; result&#x3D;&quot;BackgroundImageFix&quot;/&gt;&lt;feColorMatrix in&#x3D;&quot;SourceAlpha&quot; values&#x3D;&quot;0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0&quot;/&gt;&lt;feOffset dy&#x3D;&quot;2&quot;/&gt;&lt;feGaussianBlur stdDeviation&#x3D;&quot;2&quot;/&gt;&lt;feColorMatrix values&#x3D;&quot;0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0.4 0&quot;/&gt;&lt;feBlend in2&#x3D;&quot;BackgroundImageFix&quot; result&#x3D;&quot;effect1_dropShadow&quot;/&gt;&lt;feBlend in&#x3D;&quot;SourceGraphic&quot; in2&#x3D;&quot;effect1_dropShadow&quot; result&#x3D;&quot;shape&quot;/&gt;&lt;/filter&gt;&lt;filter id&#x3D;&quot;village-pin-selected-filter0_f&quot; x&#x3D;&quot;24&quot; y&#x3D;&quot;74&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;16&quot; filterUnits&#x3D;&quot;userSpaceOnUse&quot; color-interpolation-filters&#x3D;&quot;sRGB&quot;&gt;&lt;feFlood flood-opacity&#x3D;&quot;0&quot; result&#x3D;&quot;BackgroundImageFix&quot;/&gt;&lt;feBlend in&#x3D;&quot;SourceGraphic&quot; in2&#x3D;&quot;BackgroundImageFix&quot; result&#x3D;&quot;shape&quot;/&gt;&lt;feGaussianBlur stdDeviation&#x3D;&quot;2&quot; result&#x3D;&quot;effect1_foregroundBlur&quot;/&gt;&lt;/filter&gt;&lt;filter id&#x3D;&quot;village-pin-destination-filter0_f&quot; x&#x3D;&quot;24&quot; y&#x3D;&quot;74&quot; width&#x3D;&quot;32&quot; height&#x3D;&quot;16&quot; filterUnits&#x3D;&quot;userSpaceOnUse&quot; color-interpolation-filters&#x3D;&quot;sRGB&quot;&gt;&lt;feFlood flood-opacity&#x3D;&quot;0&quot; result&#x3D;&quot;BackgroundImageFix&quot;/&gt;&lt;feBlend in&#x3D;&quot;SourceGraphic&quot; in2&#x3D;&quot;BackgroundImageFix&quot; result&#x3D;&quot;shape&quot;/&gt;&lt;feGaussianBlur stdDeviation&#x3D;&quot;2&quot; result&#x3D;&quot;effect1_foregroundBlur&quot;/&gt;&lt;/filter&gt;&lt;g id&#x3D;&quot;village-pin&quot; clip-path&#x3D;&quot;url(#village-pin-clip0)&quot;&gt;&lt;g style&#x3D;&quot;mix-blend-mode:darken&quot; opacity&#x3D;&quot;.4&quot; filter&#x3D;&quot;url(#village-pin-filter0_f)&quot;&gt;&lt;ellipse cx&#x3D;&quot;40&quot; cy&#x3D;&quot;82&quot; rx&#x3D;&quot;12&quot; ry&#x3D;&quot;4&quot; fill&#x3D;&quot;gray&quot;/&gt;&lt;/g&gt;&lt;g filter&#x3D;&quot;url(#village-pin-filter1_d)&quot;&gt;&lt;path d&#x3D;&quot;m31.667 71.333-.5-.166c-15-4-25.334-17.667-25.334-33.167C5.833 19 21.167 3.667 40 3.667 58.833 3.667 74.167 19 74.167 38c0 15.5-10.5 29.167-25.334 33.167l-.5.166L40 79.667l-8.333-8.334ZM40 26.667c-5.833 0-10.667 4.833-10.667 10.666C29.333 43.167 34.167 48 40 48s10.667-4.833 10.667-10.667c0-5.833-4.834-10.666-10.667-10.666Z&quot; fill&#x3D;&quot;#F0624D&quot;/&gt;&lt;path d&#x3D;&quot;M40 5.333C58 5.333 72.5 20 72.5 38c0 14.833-10 27.833-24.167 31.5l-.833.167-.667.666-6.833 7-6.833-7-.667-.666-.833-.167C17.5 65.833 7.5 52.833 7.5 38 7.5 20 22 5.333 40 5.333Zm0 44.5c6.833 0 12.333-5.5 12.333-12.333S46.833 25.167 40 25.167s-12.333 5.5-12.333 12.333S33.167 49.833 40 49.833ZM40 2C20.167 2 4.167 18.167 4.167 38c0 16.667 11.333 30.667 26.666 34.833L40 82l9.167-9.167c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Zm0 44.5c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;g id&#x3D;&quot;village-pin-selected&quot; clip-path&#x3D;&quot;url(#village-pin-selected-clip0)&quot;&gt;&lt;g style&#x3D;&quot;mix-blend-mode:darken&quot; opacity&#x3D;&quot;.4&quot; filter&#x3D;&quot;url(#village-pin-selected-filter0_f)&quot;&gt;&lt;ellipse cx&#x3D;&quot;40&quot; cy&#x3D;&quot;82&quot; rx&#x3D;&quot;12&quot; ry&#x3D;&quot;4&quot; fill&#x3D;&quot;gray&quot;/&gt;&lt;/g&gt;&lt;path d&#x3D;&quot;M39.833 2C20 2 4 18.167 4 38c0 16.667 11.333 30.667 26.667 34.833L39.833 82 49 72.833c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Z&quot; fill&#x3D;&quot;#C2D535&quot;/&gt;&lt;path d&#x3D;&quot;M39.833 4.5c18.334 0 33.334 15 33.334 33.5C73.166 53.167 63 66.333 48.5 70.333l-.667.167-.5.5-7.5 7.333L32.5 71l-.5-.5-.667-.167C16.667 66.333 6.5 53.167 6.5 38c0-18.5 15-33.5 33.333-33.5Zm0-2.5C20 2 4 18.167 4 38c0 16.667 11.333 30.667 26.667 34.833L39.833 82 49 72.833c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m34.834 40.167-7-7.834-7.834 8 14.667 14.834 25-25.167L54 24.167l-19.166 16Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;/g&gt;&lt;g id&#x3D;&quot;village-pin-destination&quot; clip-path&#x3D;&quot;url(#village-pin-destination-clip0)&quot;&gt;&lt;g style&#x3D;&quot;mix-blend-mode:darken&quot; opacity&#x3D;&quot;.4&quot; filter&#x3D;&quot;url(#village-pin-destination-filter0_f)&quot;&gt;&lt;ellipse cx&#x3D;&quot;40&quot; cy&#x3D;&quot;82&quot; rx&#x3D;&quot;12&quot; ry&#x3D;&quot;4&quot; fill&#x3D;&quot;gray&quot;/&gt;&lt;/g&gt;&lt;path d&#x3D;&quot;M39.833 0C20.167 0 4.167 16.167 4.167 36c0 16.667 11.333 30.667 26.5 34.833L39.833 80 49 70.833c15.333-4 26.5-18 26.5-34.833 0-19.833-16-36-35.667-36Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M46.667.667C44.5.167 42.167 0 39.833 0 37.5 0 35.167.167 33 .667L39.833 7.5 46.667.667Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m53.5 21.334 11.167-11.167c-4.834-4.666-11.167-8.166-18-9.5l-6.834 6.834L53.5 21.334Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;M64.5 10.168 53.333 21.334 67 35.168l7.333-7.5c-1.5-6.834-5-12.834-9.833-17.5Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M74.833 42.834c.5-2.166.667-4.5.667-6.833 0-2.833-.333-5.667-1-8.333l-7.333 7.5 7.666 7.666ZM39.834 7.5 33 .668c-7 1.334-13.166 4.667-18 9.5l11.167 11.167L39.833 7.5Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m26.167 21.333 13.666 13.833L53.5 21.333 39.833 7.499 26.167 21.333Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m53.5 48.833 13.667-13.667L53.5 21.333 39.833 35.166 53.5 48.833Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;M53.5 48.833 65.5 61c4.667-4.833 8-11.167 9.333-18.167l-7.5-7.666L53.5 48.833ZM26.167 21.334l-11-11.166c-4.834 4.666-8.334 10.666-10 17.5l7.333 7.5 13.667-13.834Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M26.167 21.333 12.5 35.166l13.667 13.667 13.666-13.667-13.666-13.833Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m26.167 48.833 13.666 13.834L53.5 48.833 39.833 35.167 26.167 48.833Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M39.833 62.666 48.167 71C55 69.333 61 65.833 65.667 61l-12-12.167-13.834 13.833ZM5.167 27.668c-.667 2.666-1 5.5-1 8.333 0 2.333.166 4.667.666 6.833l7.667-7.666-7.333-7.5Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;M12.5 35.167 4.833 43c1.334 7 4.667 13.167 9.334 18.167l12-12.167L12.5 35.167Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M26.167 48.833 14 61c4.667 4.833 10.667 8.333 17.5 10l8.333-8.334-13.666-13.833Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;M31.5 71.001c2.667.667 5.5 1 8.333 1 2.834 0 5.667-.333 8.334-1l-8.334-8.333L31.5 71Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M39.833 3.333c18 0 32.5 14.667 32.5 32.667 0 14.833-10 27.833-24.166 31.5l-.834.167-.666.666-6.834 7-6.833-7-.667-.666-.833-.167C17.333 63.833 7.333 50.833 7.333 36c0-18 14.5-32.667 32.5-32.667Zm0-3.333C20 0 4 16.167 4 36c0 16.667 11.333 30.667 26.667 34.833L39.833 80 49 70.833c15.333-4 26.667-18 26.667-34.833 0-19.833-16-36-35.834-36Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;/g&gt;&lt;g id&#x3D;&quot;village-pin-destination-horizon&quot;&gt;&lt;path d&#x3D;&quot;M11.464.357c-5.9 0-10.7 4.85-10.7 10.8 0 5 3.4 9.2 7.95 10.45l2.75 2.75 2.75-2.75c4.6-1.2 7.95-5.4 7.95-10.45 0-5.95-4.8-10.8-10.7-10.8Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M13.515.557c-.65-.15-1.35-.2-2.05-.2-.7 0-1.4.05-2.05.2l2.05 2.05 2.05-2.05Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m15.564 6.757 3.35-3.35c-1.45-1.4-3.35-2.45-5.4-2.85l-2.05 2.05 4.1 4.15Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m18.864 3.407-3.35 3.35 4.1 4.15 2.2-2.25c-.45-2.05-1.5-3.85-2.95-5.25Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M21.964 13.207c.15-.65.2-1.35.2-2.05 0-.85-.1-1.7-.3-2.5l-2.2 2.25 2.3 2.3ZM11.464 2.607 9.414.557c-2.1.4-3.95 1.4-5.4 2.85l3.35 3.35 4.1-4.15Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m7.364 6.757 4.1 4.15 4.1-4.15-4.1-4.15-4.1 4.15Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m15.564 15.007 4.1-4.1-4.1-4.15-4.1 4.15 4.1 4.1Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m15.565 15.007 3.6 3.65c1.4-1.45 2.4-3.35 2.8-5.45l-2.25-2.3-4.15 4.1ZM7.364 6.757l-3.3-3.35c-1.45 1.4-2.5 3.2-3 5.25l2.2 2.25 4.1-4.15Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m7.364 6.757-4.1 4.15 4.1 4.1 4.1-4.1-4.1-4.15Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m7.364 15.007 4.1 4.15 4.1-4.15-4.1-4.1-4.1 4.1Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m11.464 19.157 2.5 2.5c2.05-.5 3.85-1.55 5.25-3l-3.6-3.65-4.15 4.15ZM1.064 8.657c-.2.8-.3 1.65-.3 2.5 0 .7.05 1.4.2 2.05l2.3-2.3-2.2-2.25Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;m3.264 10.907-2.3 2.35c.4 2.1 1.4 3.95 2.8 5.45l3.6-3.65-4.1-4.15Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;m7.364 15.007-3.65 3.65c1.4 1.45 3.2 2.5 5.25 3l2.5-2.5-4.1-4.15Z&quot; fill&#x3D;&quot;#fff&quot;/&gt;&lt;path d&#x3D;&quot;M8.964 21.657c.8.2 1.65.3 2.5.3.85 0 1.7-.1 2.5-.3l-2.5-2.5-2.5 2.5Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;path d&#x3D;&quot;M11.464 1.357c5.4 0 9.75 4.4 9.75 9.8 0 4.45-3 8.35-7.25 9.45l-.25.05-.2.2-2.05 2.1-2.05-2.1-.2-.2-.25-.05c-4.25-1.1-7.25-5-7.25-9.45 0-5.4 4.35-9.8 9.75-9.8Zm0-1c-5.95 0-10.75 4.85-10.75 10.8 0 5 3.4 9.2 8 10.45l2.75 2.75 2.75-2.75c4.6-1.2 8-5.4 8-10.45 0-5.95-4.8-10.8-10.75-10.8Z&quot; fill&#x3D;&quot;#373365&quot;/&gt;&lt;/g&gt;&lt;clipPath id&#x3D;&quot;village-pin-clip0&quot;&gt;&lt;path fill&#x3D;&quot;#fff&quot; d&#x3D;&quot;M0 0h80v88H0z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id&#x3D;&quot;village-pin-selected-clip0&quot;&gt;&lt;path fill&#x3D;&quot;#fff&quot; d&#x3D;&quot;M0 0h80v88H0z&quot;/&gt;&lt;/clipPath&gt;&lt;clipPath id&#x3D;&quot;village-pin-destination-clip0&quot;&gt;&lt;path fill&#x3D;&quot;#fff&quot; d&#x3D;&quot;M0 0h80v88H0z&quot;/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;/svg&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../svg-definitions.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="village-pin-filter0_f" x="24" y="74" width="32" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/></filter><filter id="village-pin-filter1_d" x=".167" y="0" width="79.667" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0 0.501961 0 0 0 0.4 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter><filter id="village-pin-selected-filter0_f" x="24" y="74" width="32" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/></filter><filter id="village-pin-destination-filter0_f" x="24" y="74" width="32" height="16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur"/></filter><g id="village-pin" clip-path="url(#village-pin-clip0)"><g style="mix-blend-mode:darken" opacity=".4" filter="url(#village-pin-filter0_f)"><ellipse cx="40" cy="82" rx="12" ry="4" fill="gray"/></g><g filter="url(#village-pin-filter1_d)"><path d="m31.667 71.333-.5-.166c-15-4-25.334-17.667-25.334-33.167C5.833 19 21.167 3.667 40 3.667 58.833 3.667 74.167 19 74.167 38c0 15.5-10.5 29.167-25.334 33.167l-.5.166L40 79.667l-8.333-8.334ZM40 26.667c-5.833 0-10.667 4.833-10.667 10.666C29.333 43.167 34.167 48 40 48s10.667-4.833 10.667-10.667c0-5.833-4.834-10.666-10.667-10.666Z" fill="#F0624D"/><path d="M40 5.333C58 5.333 72.5 20 72.5 38c0 14.833-10 27.833-24.167 31.5l-.833.167-.667.666-6.833 7-6.833-7-.667-.666-.833-.167C17.5 65.833 7.5 52.833 7.5 38 7.5 20 22 5.333 40 5.333Zm0 44.5c6.833 0 12.333-5.5 12.333-12.333S46.833 25.167 40 25.167s-12.333 5.5-12.333 12.333S33.167 49.833 40 49.833ZM40 2C20.167 2 4.167 18.167 4.167 38c0 16.667 11.333 30.667 26.666 34.833L40 82l9.167-9.167c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Zm0 44.5c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9Z" fill="#fff"/></g></g><g id="village-pin-selected" clip-path="url(#village-pin-selected-clip0)"><g style="mix-blend-mode:darken" opacity=".4" filter="url(#village-pin-selected-filter0_f)"><ellipse cx="40" cy="82" rx="12" ry="4" fill="gray"/></g><path d="M39.833 2C20 2 4 18.167 4 38c0 16.667 11.333 30.667 26.667 34.833L39.833 82 49 72.833c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Z" fill="#C2D535"/><path d="M39.833 4.5c18.334 0 33.334 15 33.334 33.5C73.166 53.167 63 66.333 48.5 70.333l-.667.167-.5.5-7.5 7.333L32.5 71l-.5-.5-.667-.167C16.667 66.333 6.5 53.167 6.5 38c0-18.5 15-33.5 33.333-33.5Zm0-2.5C20 2 4 18.167 4 38c0 16.667 11.333 30.667 26.667 34.833L39.833 82 49 72.833c15.333-4 26.666-18 26.666-34.833 0-19.833-16-36-35.833-36Z" fill="#fff"/><path d="m34.834 40.167-7-7.834-7.834 8 14.667 14.834 25-25.167L54 24.167l-19.166 16Z" fill="#fff"/></g><g id="village-pin-destination" clip-path="url(#village-pin-destination-clip0)"><g style="mix-blend-mode:darken" opacity=".4" filter="url(#village-pin-destination-filter0_f)"><ellipse cx="40" cy="82" rx="12" ry="4" fill="gray"/></g><path d="M39.833 0C20.167 0 4.167 16.167 4.167 36c0 16.667 11.333 30.667 26.5 34.833L39.833 80 49 70.833c15.333-4 26.5-18 26.5-34.833 0-19.833-16-36-35.667-36Z" fill="#373365"/><path d="M46.667.667C44.5.167 42.167 0 39.833 0 37.5 0 35.167.167 33 .667L39.833 7.5 46.667.667Z" fill="#373365"/><path d="m53.5 21.334 11.167-11.167c-4.834-4.666-11.167-8.166-18-9.5l-6.834 6.834L53.5 21.334Z" fill="#fff"/><path d="M64.5 10.168 53.333 21.334 67 35.168l7.333-7.5c-1.5-6.834-5-12.834-9.833-17.5Z" fill="#373365"/><path d="M74.833 42.834c.5-2.166.667-4.5.667-6.833 0-2.833-.333-5.667-1-8.333l-7.333 7.5 7.666 7.666ZM39.834 7.5 33 .668c-7 1.334-13.166 4.667-18 9.5l11.167 11.167L39.833 7.5Z" fill="#fff"/><path d="m26.167 21.333 13.666 13.833L53.5 21.333 39.833 7.499 26.167 21.333Z" fill="#373365"/><path d="m53.5 48.833 13.667-13.667L53.5 21.333 39.833 35.166 53.5 48.833Z" fill="#fff"/><path d="M53.5 48.833 65.5 61c4.667-4.833 8-11.167 9.333-18.167l-7.5-7.666L53.5 48.833ZM26.167 21.334l-11-11.166c-4.834 4.666-8.334 10.666-10 17.5l7.333 7.5 13.667-13.834Z" fill="#373365"/><path d="M26.167 21.333 12.5 35.166l13.667 13.667 13.666-13.667-13.666-13.833Z" fill="#fff"/><path d="m26.167 48.833 13.666 13.834L53.5 48.833 39.833 35.167 26.167 48.833Z" fill="#373365"/><path d="M39.833 62.666 48.167 71C55 69.333 61 65.833 65.667 61l-12-12.167-13.834 13.833ZM5.167 27.668c-.667 2.666-1 5.5-1 8.333 0 2.333.166 4.667.666 6.833l7.667-7.666-7.333-7.5Z" fill="#fff"/><path d="M12.5 35.167 4.833 43c1.334 7 4.667 13.167 9.334 18.167l12-12.167L12.5 35.167Z" fill="#373365"/><path d="M26.167 48.833 14 61c4.667 4.833 10.667 8.333 17.5 10l8.333-8.334-13.666-13.833Z" fill="#fff"/><path d="M31.5 71.001c2.667.667 5.5 1 8.333 1 2.834 0 5.667-.333 8.334-1l-8.334-8.333L31.5 71Z" fill="#373365"/><path d="M39.833 3.333c18 0 32.5 14.667 32.5 32.667 0 14.833-10 27.833-24.166 31.5l-.834.167-.666.666-6.834 7-6.833-7-.667-.666-.833-.167C17.333 63.833 7.333 50.833 7.333 36c0-18 14.5-32.667 32.5-32.667Zm0-3.333C20 0 4 16.167 4 36c0 16.667 11.333 30.667 26.667 34.833L39.833 80 49 70.833c15.333-4 26.667-18 26.667-34.833 0-19.833-16-36-35.834-36Z" fill="#373365"/></g><g id="village-pin-destination-horizon"><path d="M11.464.357c-5.9 0-10.7 4.85-10.7 10.8 0 5 3.4 9.2 7.95 10.45l2.75 2.75 2.75-2.75c4.6-1.2 7.95-5.4 7.95-10.45 0-5.95-4.8-10.8-10.7-10.8Z" fill="#373365"/><path d="M13.515.557c-.65-.15-1.35-.2-2.05-.2-.7 0-1.4.05-2.05.2l2.05 2.05 2.05-2.05Z" fill="#373365"/><path d="m15.564 6.757 3.35-3.35c-1.45-1.4-3.35-2.45-5.4-2.85l-2.05 2.05 4.1 4.15Z" fill="#fff"/><path d="m18.864 3.407-3.35 3.35 4.1 4.15 2.2-2.25c-.45-2.05-1.5-3.85-2.95-5.25Z" fill="#373365"/><path d="M21.964 13.207c.15-.65.2-1.35.2-2.05 0-.85-.1-1.7-.3-2.5l-2.2 2.25 2.3 2.3ZM11.464 2.607 9.414.557c-2.1.4-3.95 1.4-5.4 2.85l3.35 3.35 4.1-4.15Z" fill="#fff"/><path d="m7.364 6.757 4.1 4.15 4.1-4.15-4.1-4.15-4.1 4.15Z" fill="#373365"/><path d="m15.564 15.007 4.1-4.1-4.1-4.15-4.1 4.15 4.1 4.1Z" fill="#fff"/><path d="m15.565 15.007 3.6 3.65c1.4-1.45 2.4-3.35 2.8-5.45l-2.25-2.3-4.15 4.1ZM7.364 6.757l-3.3-3.35c-1.45 1.4-2.5 3.2-3 5.25l2.2 2.25 4.1-4.15Z" fill="#373365"/><path d="m7.364 6.757-4.1 4.15 4.1 4.1 4.1-4.1-4.1-4.15Z" fill="#fff"/><path d="m7.364 15.007 4.1 4.15 4.1-4.15-4.1-4.1-4.1 4.1Z" fill="#373365"/><path d="m11.464 19.157 2.5 2.5c2.05-.5 3.85-1.55 5.25-3l-3.6-3.65-4.15 4.15ZM1.064 8.657c-.2.8-.3 1.65-.3 2.5 0 .7.05 1.4.2 2.05l2.3-2.3-2.2-2.25Z" fill="#fff"/><path d="m3.264 10.907-2.3 2.35c.4 2.1 1.4 3.95 2.8 5.45l3.6-3.65-4.1-4.15Z" fill="#373365"/><path d="m7.364 15.007-3.65 3.65c1.4 1.45 3.2 2.5 5.25 3l2.5-2.5-4.1-4.15Z" fill="#fff"/><path d="M8.964 21.657c.8.2 1.65.3 2.5.3.85 0 1.7-.1 2.5-.3l-2.5-2.5-2.5 2.5Z" fill="#373365"/><path d="M11.464 1.357c5.4 0 9.75 4.4 9.75 9.8 0 4.45-3 8.35-7.25 9.45l-.25.05-.2.2-2.05 2.1-2.05-2.1-.2-.2-.25-.05c-4.25-1.1-7.25-5-7.25-9.45 0-5.4 4.35-9.8 9.75-9.8Zm0-1c-5.95 0-10.75 4.85-10.75 10.8 0 5 3.4 9.2 8 10.45l2.75 2.75 2.75-2.75c4.6-1.2 8-5.4 8-10.45 0-5.95-4.8-10.8-10.75-10.8Z" fill="#373365"/></g><clipPath id="village-pin-clip0"><path fill="#fff" d="M0 0h80v88H0z"/></clipPath><clipPath id="village-pin-selected-clip0"><path fill="#fff" d="M0 0h80v88H0z"/></clipPath><clipPath id="village-pin-destination-clip0"><path fill="#fff" d="M0 0h80v88H0z"/></clipPath></defs></svg></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'SvgVillagePinsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SvgVillagePinsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

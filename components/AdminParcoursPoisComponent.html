@@ -1,0 +1,1474 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AdminParcoursPoisComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/AdminBaseComponent.html" target="_self" >AdminBaseComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-admin-parcours-pois</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./admin-parcours-pois.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#filters" >filters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#onDestroySubject$" >onDestroySubject$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#parcoursPois$" >parcoursPois$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#load" >load</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onAdd" >onAdd</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onDelete" >onDelete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEdit" >onEdit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onGenerate" >onGenerate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSearch" >onSearch</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#save" >save</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#error" >error</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#success" >success</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(adminPoiService: <a href="../injectables/AdminPoiService.html" target="_self">AdminPoiService</a>, context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, dialog: MatDialog, dialogService: <a href="../injectables/DialogService.html" target="_self">DialogService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, snackBar: MatSnackBar)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>adminPoiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AdminPoiService.html" target="_self" >AdminPoiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="load"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>load</b></span>
+                        <a href="#load"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>load()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onAdd"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onAdd</b></span>
+                        <a href="#onAdd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onAdd()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDelete"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onDelete</b></span>
+                        <a href="#onDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onDelete(parcoursPoi: <a href="../interfaces/ParcoursPoi.html" target="_self">ParcoursPoi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>parcoursPoi</td>
+                                    <td>
+                                                <code><a href="../interfaces/ParcoursPoi.html" target="_self" >ParcoursPoi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onEdit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onEdit</b></span>
+                        <a href="#onEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onEdit(parcoursPoi: <a href="../interfaces/ParcoursPoi.html" target="_self">ParcoursPoi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>parcoursPoi</td>
+                                    <td>
+                                                <code><a href="../interfaces/ParcoursPoi.html" target="_self" >ParcoursPoi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onGenerate"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onGenerate</b></span>
+                        <a href="#onGenerate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onGenerate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSearch"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSearch</b></span>
+                        <a href="#onSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSearch(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>text</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="save"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>save</b></span>
+                        <a href="#save"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>save(action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, parcoursPoi: <a href="../interfaces/ParcoursPoi.html" target="_self">ParcoursPoi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Add or edit a parcours POI</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The action type; &#39;add&#39; or &#39;edit&#39;</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>parcoursPoi</td>
+                                    <td>
+                                                <code><a href="../interfaces/ParcoursPoi.html" target="_self" >ParcoursPoi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The parcours POI to add or edit</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="error"></a>
+                    <span class="name">
+                        <span class="modifier">Protected</span>
+                        <span ><b>error</b></span>
+                        <a href="#error"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>error(label: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AdminBaseComponent.html" target="_self" >AdminBaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AdminBaseComponent.html#source" target="_self" >AdminBaseComponent:19</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show a snackbar with an error message</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="success"></a>
+                    <span class="name">
+                        <span class="modifier">Protected</span>
+                        <span ><b>success</b></span>
+                        <a href="#success"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>success(label: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/AdminBaseComponent.html" target="_self" >AdminBaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/AdminBaseComponent.html#source" target="_self" >AdminBaseComponent:12</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show a snackbar with a success message</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="columns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>columns</b></span>
+                        <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &#x27;name&#x27;,
+    &#x27;description&#x27;,
+    &#x27;type&#x27;,
+    &#x27;kind&#x27;,
+    &#x27;nodeLabel&#x27;,
+    &#x27;applicationId&#x27;,
+    &#x27;placement&#x27;,
+    &#x27;actions&#x27;
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filters"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>filters</b></span>
+                        <a href="#filters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Filters()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDestroySubject$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>onDestroySubject$</b></span>
+                        <a href="#onDestroySubject$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="parcoursPois$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>parcoursPois$</b></span>
+                        <a href="#parcoursPois$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;ParcoursPoi[]&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;ParcoursPoi[]&gt;([])</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/admin/components/organisms/admin-parcours-pois/admin-parcours-pois.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Filters } from &#x27;@admin-models/filters/filters&#x27;;
+import { AdminPoiDialogComponent } from &#x27;@admin-organisms/admin-poi-dialog/admin-poi-dialog.component&#x27;;
+import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ApplicationContext, DialogService } from &#x27;@core/services&#x27;;
+import { ParcoursPoi } from &#x27;@models/poi/parcours-poi/parcours-poi&#x27;;
+import { PoiProvider } from &#x27;@models/poi/poi-provider&#x27;;
+import { ConfirmationDialogComponent } from &#x27;@organisms/confirmation-dialog/confirmation-dialog.component&#x27;;
+import { AdminPoiService } from &#x27;@services/admin-poi.service&#x27;;
+import { BehaviorSubject, Subject } from &#x27;rxjs&#x27;;
+import { filter, mergeMap, takeUntil, tap } from &#x27;rxjs/operators&#x27;;
+import { AdminBaseComponent } from &#x27;../../abstract/admin-base.component&#x27;;
+
+@Component({
+  selector: &#x27;app-admin-parcours-pois&#x27;,
+  templateUrl: &#x27;./admin-parcours-pois.component.html&#x27;
+})
+export class AdminParcoursPoisComponent extends AdminBaseComponent implements OnInit, OnDestroy {
+  public columns &#x3D; [
+    &#x27;name&#x27;,
+    &#x27;description&#x27;,
+    &#x27;type&#x27;,
+    &#x27;kind&#x27;,
+    &#x27;nodeLabel&#x27;,
+    &#x27;applicationId&#x27;,
+    &#x27;placement&#x27;,
+    &#x27;actions&#x27;
+  ];
+
+  public filters: Filters &#x3D; new Filters();
+  public parcoursPois$: BehaviorSubject&lt;ParcoursPoi[]&gt; &#x3D; new BehaviorSubject&lt;ParcoursPoi[]&gt;([]);
+
+  private onDestroySubject$ &#x3D; new Subject&lt;void&gt;();
+
+  constructor(
+    private adminPoiService: AdminPoiService,
+    private context: ApplicationContext,
+    public dialog: MatDialog,
+    private dialogService: DialogService,
+    protected router: Router,
+    protected snackBar: MatSnackBar
+  ) {
+    super(router, snackBar);
+  }
+
+  // -- LYFE CYCLE --
+
+  public ngOnInit(): void {
+    this.load();
+  }
+
+  public ngOnDestroy(): void {
+    this.onDestroySubject$.next();
+    this.onDestroySubject$.complete();
+  }
+
+  // -- EVENTS --
+
+  public onGenerate(): void {
+    this.adminPoiService
+      .createPoisParcours(this.context.application.nodeId)
+      .pipe(tap(() &#x3D;&gt; this.load()))
+      .subscribe({
+        next: () &#x3D;&gt; this.success(&#x27;Pois generated&#x27;),
+        error: () &#x3D;&gt; this.error(&#x27;Failed to generate Pois&#x27;)
+      });
+  }
+
+  public onAdd(): void {
+    this.save(&#x27;add&#x27;, null);
+  }
+
+  public onEdit(parcoursPoi: ParcoursPoi): void {
+    this.save(&#x27;edit&#x27;, parcoursPoi);
+  }
+
+  public onDelete(parcoursPoi: ParcoursPoi): void {
+    this.dialog
+      .open(ConfirmationDialogComponent, this.dialogService.simpleDialogConfig())
+      .afterClosed()
+      .pipe(
+        filter(res &#x3D;&gt; !!res),
+        mergeMap(() &#x3D;&gt; this.adminPoiService.deleteParcoursPoi(parcoursPoi)),
+        tap(() &#x3D;&gt; this.load())
+      )
+      .subscribe({
+        next: () &#x3D;&gt; this.success(&#x27;Poi deleted&#x27;),
+        error: () &#x3D;&gt; this.error(&#x27;Failed to delete Poi&#x27;)
+      });
+  }
+
+  public onSearch(text: string): void {
+    this.filters &#x3D; new Filters(this.filters.date, this.filters.application, text);
+  }
+
+  /* -- PRIVATE -- */
+
+  private load(): void {
+    this.adminPoiService
+      .parcoursPois(this.context.application.nodeId)
+      .pipe(takeUntil(this.onDestroySubject$))
+      .subscribe(pois &#x3D;&gt; this.parcoursPois$.next(pois));
+  }
+
+  /**
+   * Add or edit a parcours POI
+   *
+   * @param action The action type; &#x27;add&#x27; or &#x27;edit&#x27;
+   * @param parcoursPoi The parcours POI to add or edit
+   */
+  // FIXME : Factorise this method (at least) with AdminMongoPoiComponent
+  private save(action: string, parcoursPoi: ParcoursPoi): void {
+    this.dialog
+      .open(
+        AdminPoiDialogComponent,
+        this.dialogService.defaultDialogConfig({
+          poi: parcoursPoi,
+          provider: PoiProvider.parcours
+        })
+      )
+      .afterClosed()
+      .pipe(
+        filter(res &#x3D;&gt; !!res),
+        mergeMap(res &#x3D;&gt; this.adminPoiService.saveParcoursPoi(res)),
+        tap(() &#x3D;&gt; this.load())
+      )
+      .subscribe({
+        next: () &#x3D;&gt; this.success(&#x60;Poi ${action}ed&#x60;),
+        error: () &#x3D;&gt; this.error(&#x60;Failed to ${action} Poi&#x60;)
+      });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h1 translate&gt;admin.parcoursPois.title&lt;/h1&gt;
+
+&lt;app-search-form [placeholder]&#x3D;&quot;&#x27;filter&#x27; | translate&quot; (search)&#x3D;&quot;onSearch($event)&quot;&gt;&lt;/app-search-form&gt;
+
+&lt;app-admin-table
+  [filter]&#x3D;&quot;filters&quot;
+  [displayedColumns]&#x3D;&quot;columns&quot;
+  [datas$]&#x3D;&quot;parcoursPois$&quot;
+  [i18nKey]&#x3D;&quot;&#x27;admin.parcoursPois&#x27;&quot;
+&gt;
+  &lt;!-- Actions --&gt;
+  &lt;ng-template #actionsHeader&gt;
+    &lt;button
+      [matTooltip]&#x3D;&quot;&#x27;add&#x27; | translate&quot;
+      mat-icon-button
+      color&#x3D;&quot;primary&quot;
+      [attr.aria-label]&#x3D;&quot;&#x27;add&#x27; | translate&quot;
+      (click)&#x3D;&quot;onAdd()&quot;
+    &gt;
+      &lt;mat-icon&gt;add&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;button
+      [matTooltip]&#x3D;&quot;&#x27;generate&#x27; | translate&quot;
+      mat-icon-button
+      color&#x3D;&quot;primary&quot;
+      [attr.aria-label]&#x3D;&quot;&#x27;generate&#x27; | translate&quot;
+      (click)&#x3D;&quot;onGenerate()&quot;
+    &gt;
+      &lt;mat-icon&gt;add_location&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/ng-template&gt;
+  &lt;ng-template #actionsContent let-parcoursPoi&gt;
+    &lt;button
+      [matTooltip]&#x3D;&quot;&#x27;edit&#x27; | translate&quot;
+      mat-icon-button
+      color&#x3D;&quot;primary&quot;
+      [attr.aria-label]&#x3D;&quot;&#x27;edit&#x27; | translate&quot;
+      onclick&#x3D;&quot;this.blur()&quot;
+      (click)&#x3D;&quot;onEdit(parcoursPoi)&quot;
+    &gt;
+      &lt;mat-icon&gt;edit&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;button
+      [matTooltip]&#x3D;&quot;&#x27;delete&#x27; | translate&quot;
+      mat-icon-button
+      color&#x3D;&quot;error&quot;
+      [attr.aria-label]&#x3D;&quot;&#x27;delete&#x27; | translate&quot;
+      onclick&#x3D;&quot;this.blur()&quot;
+      (click)&#x3D;&quot;onDelete(parcoursPoi)&quot;
+    &gt;
+      &lt;mat-icon&gt;delete&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/ng-template&gt;
+&lt;/app-admin-table&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h1 translate>admin.parcoursPois.title</h1><app-search-form [placeholder]="\'filter\' | translate" (search)="onSearch($event)"></app-search-form><app-admin-table  [filter]="filters"  [displayedColumns]="columns"  [datas$]="parcoursPois$"  [i18nKey]="\'admin.parcoursPois\'">  <!-- Actions -->  <ng-template #actionsHeader>    <button      [matTooltip]="\'add\' | translate"      mat-icon-button      color="primary"      [attr.aria-label]="\'add\' | translate"      (click)="onAdd()"    >      <mat-icon>add</mat-icon>    </button>    <button      [matTooltip]="\'generate\' | translate"      mat-icon-button      color="primary"      [attr.aria-label]="\'generate\' | translate"      (click)="onGenerate()"    >      <mat-icon>add_location</mat-icon>    </button>  </ng-template>  <ng-template #actionsContent let-parcoursPoi>    <button      [matTooltip]="\'edit\' | translate"      mat-icon-button      color="primary"      [attr.aria-label]="\'edit\' | translate"      onclick="this.blur()"      (click)="onEdit(parcoursPoi)"    >      <mat-icon>edit</mat-icon>    </button>    <button      [matTooltip]="\'delete\' | translate"      mat-icon-button      color="error"      [attr.aria-label]="\'delete\' | translate"      onclick="this.blur()"      (click)="onDelete(parcoursPoi)"    >      <mat-icon>delete</mat-icon>    </button>  </ng-template></app-admin-table></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'AdminParcoursPoisComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminParcoursPoisComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

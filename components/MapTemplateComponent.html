@@ -1,0 +1,2430 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MapTemplateComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/components/templates/map-template/map-template.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-map-template</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./map-template.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./map-template.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#currentVillageCardComponent" >currentVillageCardComponent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#desktopCardList" >desktopCardList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#instance" >instance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#isDesktop$" >isDesktop$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#itinerarySteps" >itinerarySteps</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mapDrawer" >mapDrawer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mapDrawerMode" >mapDrawerMode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#MapDrawerMode" >MapDrawerMode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#onDestroySubject$" >onDestroySubject$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#orderPois$" >orderPois$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#TabId" >TabId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#withOnBoarding" >withOnBoarding</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#allPois" >allPois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isNotSelected$" >isNotSelected$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onClickPoiCard" >onClickPoiCard</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onCloseVillageDetails" >onCloseVillageDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onOpenMenu" >onOpenMenu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onOpenVillageDetails" >onOpenVillageDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onVillageChoose" >onVillageChoose</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onVillageChooseInVillageDetails" >onVillageChooseInVillageDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#scrollToTopOfCardList" >scrollToTopOfCardList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#trackByPoi" >trackByPoi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#trackByWaypoint" >trackByWaypoint</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#focusedPoi$" >focusedPoi$</a>
+                            </li>
+                            <li>
+                                <a href="#siblings" >siblings</a>
+                            </li>
+                            <li>
+                                <a href="#village" >village</a>
+                            </li>
+                            <li>
+                                <a href="#villageIndex" >villageIndex</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#chooseVillage" >chooseVillage</a>
+                            </li>
+                            <li>
+                                <a href="#closeVillageDetails" >closeVillageDetails</a>
+                            </li>
+                            <li>
+                                <a href="#exit" >exit</a>
+                            </li>
+                            <li>
+                                <a href="#moveVillage" >moveVillage</a>
+                            </li>
+                            <li>
+                                <a href="#pickVillage" >pickVillage</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap" >roadmap</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isLoading$" >isLoading$</a>
+                                </li>
+                                <li>
+                                    <a href="#onlySiblings" >onlySiblings</a>
+                                </li>
+                                <li>
+                                    <a href="#inOfferSiblings" >inOfferSiblings</a>
+                                </li>
+                                <li>
+                                    <a href="#chooseButtonLabelKey" >chooseButtonLabelKey</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(adventureService: <a href="../injectables/AdventureService.html" target="_self">AdventureService</a>, analyticsService: <a href="../injectables/AnalyticsService.html" target="_self">AnalyticsService</a>, breakpointService: <a href="../injectables/BreakpointService.html" target="_self">BreakpointService</a>, context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, itinerary: <a href="../injectables/ItineraryService.html" target="_self">ItineraryService</a>, loaderService: <a href="../injectables/LoaderService.html" target="_self">LoaderService</a>, mapService: <a href="../injectables/MapService.html" target="_self">MapService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:79</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>adventureService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AdventureService.html" target="_self" >AdventureService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>analyticsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AnalyticsService.html" target="_self" >AnalyticsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>breakpointService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BreakpointService.html" target="_self" >BreakpointService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>itinerary</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ItineraryService.html" target="_self" >ItineraryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loaderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoaderService.html" target="_self" >LoaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>mapService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MapService.html" target="_self" >MapService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="focusedPoi$"></a>
+                        <b>focusedPoi$</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Poi.html" target="_self" >BehaviorSubject&lt;Poi&gt;</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:43</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="siblings"></a>
+                        <b>siblings</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint[]</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:42</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="village"></a>
+                        <b>village</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Village.html" target="_self" >Village</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:40</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="villageIndex"></a>
+                        <b>villageIndex</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:41</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chooseVillage"></a>
+                        <b>chooseVillage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:48</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closeVillageDetails"></a>
+                        <b>closeVillageDetails</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:49</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="exit"></a>
+                        <b>exit</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:44</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="moveVillage"></a>
+                        <b>moveVillage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:46</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pickVillage"></a>
+                        <b>pickVillage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:47</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="roadmap"></a>
+                        <b>roadmap</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:45</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allPois"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>allPois</b></span>
+                        <a href="#allPois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>allPois()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Build an array of all the POIs of the village</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Poi[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The list of Human and Parcours POIs</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNotSelected$"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isNotSelected$</b></span>
+                        <a href="#isNotSelected$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isNotSelected$(poi: <a href="../interfaces/Poi.html" target="_self">Poi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>poi</td>
+                                    <td>
+                                                <code><a href="../interfaces/Poi.html" target="_self" >Poi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onClickPoiCard"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onClickPoiCard</b></span>
+                        <a href="#onClickPoiCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onClickPoiCard(poi: <a href="../interfaces/Poi.html" target="_self">Poi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>poi</td>
+                                    <td>
+                                                <code><a href="../interfaces/Poi.html" target="_self" >Poi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCloseVillageDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onCloseVillageDetails</b></span>
+                        <a href="#onCloseVillageDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onCloseVillageDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onOpenMenu"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onOpenMenu</b></span>
+                        <a href="#onOpenMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onOpenMenu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onOpenVillageDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onOpenVillageDetails</b></span>
+                        <a href="#onOpenVillageDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onOpenVillageDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onVillageChoose"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onVillageChoose</b></span>
+                        <a href="#onVillageChoose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onVillageChoose()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onVillageChooseInVillageDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onVillageChooseInVillageDetails</b></span>
+                        <a href="#onVillageChooseInVillageDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onVillageChooseInVillageDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Choose the village from village details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scrollToTopOfCardList"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>scrollToTopOfCardList</b></span>
+                        <a href="#scrollToTopOfCardList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>scrollToTopOfCardList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByPoi"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>trackByPoi</b></span>
+                        <a href="#trackByPoi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>trackByPoi(_: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, poi: <a href="../interfaces/Poi.html" target="_self">Poi</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>poi</td>
+                                    <td>
+                                                <code><a href="../interfaces/Poi.html" target="_self" >Poi</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="trackByWaypoint"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>trackByWaypoint</b></span>
+                        <a href="#trackByWaypoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>trackByWaypoint(_: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="163"
+                            class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:163</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentVillageCardComponent"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>currentVillageCardComponent</b></span>
+                        <a href="#currentVillageCardComponent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Village.html" target="_self" >VillageCardComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;currentVillageCard&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="desktopCardList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>desktopCardList</b></span>
+                        <a href="#desktopCardList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef&lt;HTMLDivElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;desktopCardList&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="instance"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>instance</b></span>
+                        <a href="#instance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Instance.html" target="_self" >Instance</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDesktop$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>isDesktop$</b></span>
+                        <a href="#isDesktop$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itinerarySteps"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>itinerarySteps</b></span>
+                        <a href="#itinerarySteps"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Step.html" target="_self" >ItineraryStep[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapDrawer"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>mapDrawer</b></span>
+                        <a href="#mapDrawer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDrawer</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;mapDrawer&#x27;, {static: true})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapDrawerMode"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>mapDrawerMode</b></span>
+                        <a href="#mapDrawerMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#MapDrawerMode" target="_self" >MapDrawerMode</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>MapDrawerMode.VillageDetailsMode</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MapDrawerMode"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>MapDrawerMode</b></span>
+                        <a href="#MapDrawerMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>MapDrawerMode</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDestroySubject$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>onDestroySubject$</b></span>
+                        <a href="#onDestroySubject$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;void&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orderPois$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>orderPois$</b></span>
+                        <a href="#orderPois$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;Poi[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TabId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>TabId</b></span>
+                        <a href="#TabId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>TabId</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="withOnBoarding"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>withOnBoarding</b></span>
+                        <a href="#withOnBoarding"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading$"></a>
+                        <span class="name"><b>isLoading$</b><a href="#isLoading$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isLoading$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:65</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onlySiblings"></a>
+                        <span class="name"><b>onlySiblings</b><a href="#onlySiblings"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>onlySiblings()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:69</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inOfferSiblings"></a>
+                        <span class="name"><b>inOfferSiblings</b><a href="#inOfferSiblings"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>inOfferSiblings()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:73</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="chooseButtonLabelKey"></a>
+                        <span class="name"><b>chooseButtonLabelKey</b><a href="#chooseButtonLabelKey"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>chooseButtonLabelKey()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/shared/components/templates/map-template/map-template.component.ts:77</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+  ViewChild
+} from &#x27;@angular/core&#x27;;
+import { MatDrawer } from &#x27;@angular/material/sidenav&#x27;;
+import { isJob, Waypoint } from &#x27;@clients/adventure/bean/waypoint&#x27;;
+import { Poi } from &#x27;@clients/poi/poi&#x27;;
+import { IN_OFFER_CONFIG } from &#x27;@configs/in-offer.config&#x27;;
+import { ON_BOARDING_ENABLED_CONFIG } from &#x27;@configs/on-boarding-enabled.config&#x27;;
+import {
+  AdventureService,
+  AnalyticsService,
+  ApplicationContext,
+  BreakpointService,
+  LoaderService
+} from &#x27;@core/services&#x27;;
+import { Village } from &#x27;@features/map/models&#x27;;
+import { MapService } from &#x27;@features/map/services/map.service&#x27;;
+import { MoreDetailsVillageFromPoiClickAnalyticsEvent } from &#x27;@models/analytics-event/more-details-village-from-poi-click.analytics-event&#x27;;
+import { Instance } from &#x27;@models/instance/instance&#x27;;
+import { ItineraryStep } from &#x27;@models/itinerary-step/itinerary-step&#x27;;
+import { TabId } from &#x27;@models/tab-ids/tab-ids&#x27;;
+import { VillageCardComponent } from &#x27;@molecules/village-card/village-card.component&#x27;;
+import { ItineraryService } from &#x27;@services/itinerary.service&#x27;;
+import { BehaviorSubject, map, Observable, Subject } from &#x27;rxjs&#x27;;
+import { MapDrawerMode } from &#x27;./map-drawer-mode&#x27;;
+
+@Component({
+  selector: &#x27;app-map-template&#x27;,
+  templateUrl: &#x27;./map-template.component.html&#x27;,
+  styleUrls: [&#x27;./map-template.component.scss&#x27;]
+})
+export class MapTemplateComponent implements OnInit, OnDestroy {
+  @Input() public village: Village;
+  @Input() public villageIndex: number;
+  @Input() public siblings: Waypoint[];
+  @Input() public focusedPoi$: BehaviorSubject&lt;Poi&gt;;
+  @Output() public readonly exit &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() public readonly roadmap &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() public readonly moveVillage &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() public readonly pickVillage &#x3D; new EventEmitter&lt;Waypoint&gt;();
+  @Output() public readonly chooseVillage &#x3D; new EventEmitter&lt;void&gt;();
+  @Output() public readonly closeVillageDetails &#x3D; new EventEmitter&lt;void&gt;();
+  @ViewChild(&#x27;mapDrawer&#x27;, { static: true }) public mapDrawer: MatDrawer;
+  @ViewChild(&#x27;currentVillageCard&#x27;) public currentVillageCardComponent: VillageCardComponent;
+  @ViewChild(&#x27;desktopCardList&#x27;) public desktopCardList: ElementRef&lt;HTMLDivElement&gt;;
+
+  public readonly MapDrawerMode &#x3D; MapDrawerMode;
+  public readonly TabId &#x3D; TabId;
+  public readonly isDesktop$: Observable&lt;boolean&gt;;
+  public readonly instance: Instance;
+  public mapDrawerMode: MapDrawerMode &#x3D; MapDrawerMode.VillageDetailsMode;
+  public orderPois$: Observable&lt;Poi[]&gt;;
+  public withOnBoarding: boolean;
+  public itinerarySteps: ItineraryStep[];
+
+  private onDestroySubject$: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
+
+  public get isLoading$(): Observable&lt;boolean&gt; {
+    return this.loaderService.isLoading$;
+  }
+
+  public get onlySiblings(): Waypoint[] {
+    return this.mapService.onlySiblings(this.villageIndex, this.siblings);
+  }
+
+  public get inOfferSiblings(): boolean {
+    return IN_OFFER_CONFIG(this.context.application, this.village.stage, this.context.product);
+  }
+
+  public get chooseButtonLabelKey(): string {
+    return isJob(this.village.waypoint.type) ? &#x27;villages.choose-job-btn&#x27; : &#x27;villages.choose-btn&#x27;;
+  }
+
+  constructor(
+    private adventureService: AdventureService,
+    private analyticsService: AnalyticsService,
+    private breakpointService: BreakpointService,
+    private context: ApplicationContext,
+    private itinerary: ItineraryService,
+    private loaderService: LoaderService,
+    private mapService: MapService
+  ) {
+    this.isDesktop$ &#x3D; this.breakpointService.isDesktop$;
+    this.instance &#x3D; this.adventureService.instance;
+  }
+
+  public ngOnInit(): void {
+    this.withOnBoarding &#x3D; ON_BOARDING_ENABLED_CONFIG(this.context.applicationName);
+
+    this.orderPois$ &#x3D; this.focusedPoi$.pipe(
+      map(focusedPoi &#x3D;&gt; {
+        if (!focusedPoi) return this.allPois();
+
+        return this.mapService.orderPois(focusedPoi, this.allPois());
+      })
+    );
+
+    this.itinerarySteps &#x3D; this.itinerary.getItinerarySteps(
+      this.instance?.jobOrDiplomaWps,
+      !this.village || this.village.selected,
+      true,
+      this.instance.situation
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.onDestroySubject$.next();
+    this.onDestroySubject$.complete();
+  }
+
+  public onOpenMenu(): void {
+    this.mapDrawer.open();
+    this.mapDrawerMode &#x3D; MapDrawerMode.MenuMode;
+  }
+
+  public onOpenVillageDetails(): void {
+    this.mapDrawer.open();
+    this.mapDrawerMode &#x3D; MapDrawerMode.VillageDetailsMode;
+  }
+
+  public onCloseVillageDetails(): void {
+    this.mapDrawer.close();
+
+    this.closeVillageDetails.emit();
+  }
+
+  /**
+   * Choose the village from village details
+   */
+  public onVillageChooseInVillageDetails(): void {
+    this.onCloseVillageDetails();
+
+    // Unselect the focused POI so the Netflix button is shown to the user
+    if (this.focusedPoi$.value) this.focusedPoi$.next(null);
+
+    if (this.village.waypoint.final) this.currentVillageCardComponent.onRoadmap();
+    else this.currentVillageCardComponent.onChoose();
+  }
+
+  public onVillageChoose(): void {
+    this.village.selected &#x3D; true;
+  }
+
+  public scrollToTopOfCardList(): void {
+    this.desktopCardList.nativeElement.scroll({
+      left: 0,
+      top: 0,
+      behavior: &#x27;smooth&#x27;
+    });
+  }
+
+  public isNotSelected$(poi: Poi): Observable&lt;boolean&gt; {
+    return this.focusedPoi$.pipe(map(focusedPoi &#x3D;&gt; focusedPoi &amp;&amp; poi.id !&#x3D;&#x3D; focusedPoi.id));
+  }
+
+  public trackByWaypoint(_: number, waypoint: Waypoint): string {
+    return waypoint.id;
+  }
+
+  public trackByPoi(_: number, poi: Poi): string {
+    return poi.id;
+  }
+
+  public onClickPoiCard(poi: Poi): void {
+    this.analyticsService.pushTag(
+      new MoreDetailsVillageFromPoiClickAnalyticsEvent(this.village.waypoint.label, poi.type)
+    );
+
+    this.focusedPoi$.next(poi);
+  }
+
+  /**
+   * Build an array of all the POIs of the village
+   *
+   * @returns The list of Human and Parcours POIs
+   */
+  private allPois(): Poi[] {
+    const allPois: Poi[] &#x3D; [];
+
+    if (this.village.teamPoi) allPois.push(this.village.teamPoi);
+
+    if (this.village.positionablePois) allPois.push(...this.village.positionablePois);
+
+    return allPois;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-drawer-container class&#x3D;&quot;map-template&quot;&gt;
+  &lt;!-- Mobile drawer --&gt;
+  &lt;mat-drawer
+    #mapDrawer
+    appNavigateToDrawer
+    mode&#x3D;&quot;over&quot;
+    class&#x3D;&quot;map-drawer&quot;
+    [ngClass]&#x3D;&quot;{
+      &#x27;menu-drawer&#x27;: mapDrawerMode &#x3D;&#x3D;&#x3D; MapDrawerMode.MenuMode,
+      &#x27;village-details-drawer&#x27;: mapDrawerMode &#x3D;&#x3D;&#x3D; MapDrawerMode.VillageDetailsMode
+    }&quot;
+    drawerQueryParamKey&#x3D;&quot;details&quot;
+    (openDrawer)&#x3D;&quot;onOpenVillageDetails()&quot;
+    (closedStart)&#x3D;&quot;onCloseVillageDetails()&quot;
+  &gt;
+    &lt;app-mobile-menu (navigate)&#x3D;&quot;onCloseVillageDetails()&quot;&gt;&lt;/app-mobile-menu&gt;
+
+    &lt;ng-container *ngIf&#x3D;&quot;village&quot;&gt;
+      &lt;div class&#x3D;&quot;village-details mb-64&quot;&gt;
+        &lt;app-village-details
+          [instance]&#x3D;&quot;instance&quot;
+          [situation]&#x3D;&quot;instance?.situation&quot;
+          [domain]&#x3D;&quot;village.domain&quot;
+          [stage]&#x3D;&quot;village.stage&quot;
+          [waypoint]&#x3D;&quot;village.waypoint&quot;
+          (closeVillageDetails)&#x3D;&quot;onCloseVillageDetails()&quot;
+        &gt;&lt;/app-village-details&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;center choose-container&quot;&gt;
+        &lt;button mat-flat-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;onVillageChooseInVillageDetails()&quot;&gt;
+          &lt;ng-container *ngIf&#x3D;&quot;!village.waypoint.final; else roadmapLabel&quot;&gt;
+            &lt;mat-icon&gt;arrow_upward&lt;/mat-icon&gt;
+            {{ chooseButtonLabelKey | translate }}
+          &lt;/ng-container&gt;
+          &lt;ng-template #roadmapLabel&gt;
+            &lt;mat-icon svgIcon&#x3D;&quot;roadmap&quot;&gt;&lt;/mat-icon&gt;
+            {{ &quot;roadmap.home-page.generate-btn&quot; | translate }}
+          &lt;/ng-template&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/ng-container&gt;
+  &lt;/mat-drawer&gt;
+
+  &lt;mat-drawer-content class&#x3D;&quot;map-template-content&quot;&gt;
+    &lt;header class&#x3D;&quot;map-header&quot;&gt;
+      &lt;mat-toolbar class&#x3D;&quot;map-toolbar&quot;&gt;
+        &lt;div class&#x3D;&quot;map-toolbar-main&quot;&gt;
+          &lt;button
+            #menuBtn
+            mat-icon-button
+            color&#x3D;&quot;primary&quot;
+            onclick&#x3D;&quot;this.blur()&quot;
+            (click)&#x3D;&quot;onOpenMenu()&quot;
+          &gt;
+            &lt;mat-icon&gt;menu&lt;/mat-icon&gt;
+          &lt;/button&gt;
+          &lt;div class&#x3D;&quot;toolbar-title&quot;&gt;
+            &lt;span class&#x3D;&quot;mat-caption&quot; translate&gt;
+              {{ withOnBoarding ? &quot;adventure.way-to&quot; : &quot;adventure.your-adventure&quot; }}
+            &lt;/span&gt;
+            &lt;span
+              *ngIf&#x3D;&quot;instance?.definition.title as definitionTitle&quot;
+              class&#x3D;&quot;mat-body-strong ellipsis&quot;
+              [matTooltip]&#x3D;&quot;definitionTitle&quot;
+            &gt;
+              {{ definitionTitle }}
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button *ngIf&#x3D;&quot;withOnBoarding&quot; mat-icon-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;exit.emit()&quot;&gt;
+            &lt;mat-icon&gt;close&lt;/mat-icon&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;app-itinerary
+          *ngIf&#x3D;&quot;isDesktop$ | async&quot;
+          [itinerarySteps]&#x3D;&quot;itinerarySteps&quot;
+          [situation]&#x3D;&quot;instance.situation&quot;
+        &gt;&lt;/app-itinerary&gt;
+      &lt;/mat-toolbar&gt;
+
+      &lt;mat-progress-bar
+        *ngIf&#x3D;&quot;(isLoading$ | async) &#x3D;&#x3D;&#x3D; true&quot;
+        mode&#x3D;&quot;indeterminate&quot;
+      &gt;&lt;/mat-progress-bar&gt;
+
+      &lt;!-- Desktop cards --&gt;
+      &lt;div #desktopCardList *ngIf&#x3D;&quot;(isDesktop$ | async) &amp;&amp; village&quot; class&#x3D;&quot;desktop-cards-container&quot;&gt;
+        &lt;!-- Current village --&gt;
+        &lt;app-village-card
+          #currentVillageCard
+          [village]&#x3D;&quot;village&quot;
+          (roadmap)&#x3D;&quot;roadmap.emit()&quot;
+          (moveVillage)&#x3D;&quot;moveVillage.emit()&quot;
+          (chooseVillage)&#x3D;&quot;onVillageChoose()&quot;
+          [hidden]&#x3D;&quot;focusedPoi$ | async&quot;
+        &gt;
+        &lt;/app-village-card&gt;
+
+        &lt;!-- Sibling villages --&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;siblings.length&quot;&gt;
+          &lt;ng-container *ngFor&#x3D;&quot;let sibling of onlySiblings; trackBy: trackByWaypoint&quot;&gt;
+            &lt;app-village-card
+              *ngIf&#x3D;&quot;sibling.id !&#x3D;&#x3D; village.waypoint.id&quot;
+              [waypoint]&#x3D;&quot;sibling&quot;
+              [waypointInOffer]&#x3D;&quot;inOfferSiblings&quot;
+              (selectVillage)&#x3D;&quot;pickVillage.emit(sibling)&quot;
+              [hidden]&#x3D;&quot;focusedPoi$ | async&quot;
+            &gt;
+            &lt;/app-village-card&gt;
+          &lt;/ng-container&gt;
+        &lt;/ng-container&gt;
+
+        &lt;!-- Pois --&gt;
+        &lt;ng-container *ngFor&#x3D;&quot;let p of orderPois$ | async; trackBy: trackByPoi&quot;&gt;
+          &lt;app-poi-card
+            [hidden]&#x3D;&quot;(focusedPoi$ | async) &#x3D;&#x3D;&#x3D; null&quot;
+            [poi]&#x3D;&quot;p&quot;
+            [thinPadding]&#x3D;&quot;true&quot;
+            [notFocusedPoi]&#x3D;&quot;isNotSelected$(p) | async&quot;
+            [fullHeight]&#x3D;&quot;false&quot;
+            (click)&#x3D;&quot;onClickPoiCard(p)&quot;
+          &gt;
+          &lt;/app-poi-card&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;!-- Main Content --&gt;
+    &lt;main class&#x3D;&quot;main&quot;&gt;
+      &lt;ng-content&gt;&lt;/ng-content&gt;
+
+      &lt;!-- Mobile cards --&gt;
+      &lt;div *ngIf&#x3D;&quot;(isDesktop$ | async) &#x3D;&#x3D;&#x3D; false &amp;&amp; village&quot; class&#x3D;&quot;mobile-card-container&quot;&gt;
+        &lt;app-village-card
+          #currentVillageCard
+          [hidden]&#x3D;&quot;focusedPoi$ | async&quot;
+          [village]&#x3D;&quot;village&quot;
+          (roadmap)&#x3D;&quot;roadmap.emit()&quot;
+          (moveVillage)&#x3D;&quot;moveVillage.emit()&quot;
+          (chooseVillage)&#x3D;&quot;onVillageChoose()&quot;
+        &gt;
+        &lt;/app-village-card&gt;
+
+        &lt;app-scroll-wrapper
+          *ngIf&#x3D;&quot;focusedPoi$ | async&quot;
+          [objects]&#x3D;&quot;orderPois$ | async&quot;
+          [templateRef]&#x3D;&quot;poiCard&quot;
+        &gt;
+        &lt;/app-scroll-wrapper&gt;
+
+        &lt;ng-template #poiCard let-poi&gt;
+          &lt;app-poi-card
+            class&#x3D;&quot;mobile-poi-card&quot;
+            [poi]&#x3D;&quot;poi&quot;
+            [thinPadding]&#x3D;&quot;true&quot;
+            (click)&#x3D;&quot;onClickPoiCard(poi)&quot;
+          &gt;
+          &lt;/app-poi-card&gt;
+        &lt;/ng-template&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/mat-drawer-content&gt;
+&lt;/mat-drawer-container&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./map-template.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@use &quot;@angular/material&quot; as mat;
+@use &quot;abstracts/variables&quot; as *;
+
+.map-template {
+  height: 100%;
+}
+
+.map-template-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map-header {
+  flex: 0 1 auto;
+  height: 56px;
+}
+
+.map-drawer {
+  width: 100%;
+  max-width: 768px;
+
+  &amp;.menu-drawer {
+    width: 90%;
+  }
+}
+
+.mat-toolbar.map-toolbar {
+  @include mat.typography-level($custom-typography, &quot;body-1&quot;);
+}
+
+.map-toolbar-main {
+  display: flex;
+  width: 100%;
+
+  &gt; :first-child {
+    margin-right: 8px;
+  }
+
+  &gt; .toolbar-title {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    flex: 1 0 auto;
+  }
+
+  &gt; :last-child {
+    margin-left: 8px;
+  }
+}
+
+.main {
+  padding-top: 0;
+  padding-bottom: 0;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.mobile-card-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 16px 16px;
+  box-sizing: border-box;
+}
+
+.mobile-poi-card {
+  height: 100%;
+}
+
+@media #{$breakpoint-tablet} {
+  .map-header {
+    height: 64px;
+  }
+}
+
+@media #{$breakpoint-desktop} {
+  .map-template-content {
+    flex-direction: row;
+  }
+
+  .map-header {
+    height: 100%;
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 512px;
+  }
+
+  .mat-toolbar.map-toolbar {
+    padding: 16px;
+    flex-direction: column;
+    height: auto;
+
+    &gt; :not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  .desktop-cards-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 32px;
+
+    &gt; *:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.choose-container {
+  background-color: $white;
+  border-top: 1px solid $medium-grey-1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 8px 0;
+}
+
+// NOTE : Map full height for Safari
+
+/* For Safari 13+ only */
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (display: flow-root) {
+    .main {
+      display: flex;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-drawer-container class="map-template">  <!-- Mobile drawer -->  <mat-drawer    #mapDrawer    appNavigateToDrawer    mode="over"    class="map-drawer"    [ngClass]="{      \'menu-drawer\': mapDrawerMode === MapDrawerMode.MenuMode,      \'village-details-drawer\': mapDrawerMode === MapDrawerMode.VillageDetailsMode    }"    drawerQueryParamKey="details"    (openDrawer)="onOpenVillageDetails()"    (closedStart)="onCloseVillageDetails()"  >    <app-mobile-menu (navigate)="onCloseVillageDetails()"></app-mobile-menu>    <ng-container *ngIf="village">      <div class="village-details mb-64">        <app-village-details          [instance]="instance"          [situation]="instance?.situation"          [domain]="village.domain"          [stage]="village.stage"          [waypoint]="village.waypoint"          (closeVillageDetails)="onCloseVillageDetails()"        ></app-village-details>      </div>      <div class="center choose-container">        <button mat-flat-button color="primary" (click)="onVillageChooseInVillageDetails()">          <ng-container *ngIf="!village.waypoint.final; else roadmapLabel">            <mat-icon>arrow_upward</mat-icon>            {{ chooseButtonLabelKey | translate }}          </ng-container>          <ng-template #roadmapLabel>            <mat-icon svgIcon="roadmap"></mat-icon>            {{ "roadmap.home-page.generate-btn" | translate }}          </ng-template>        </button>      </div>    </ng-container>  </mat-drawer>  <mat-drawer-content class="map-template-content">    <header class="map-header">      <mat-toolbar class="map-toolbar">        <div class="map-toolbar-main">          <button            #menuBtn            mat-icon-button            color="primary"            onclick="this.blur()"            (click)="onOpenMenu()"          >            <mat-icon>menu</mat-icon>          </button>          <div class="toolbar-title">            <span class="mat-caption" translate>              {{ withOnBoarding ? "adventure.way-to" : "adventure.your-adventure" }}            </span>            <span              *ngIf="instance?.definition.title as definitionTitle"              class="mat-body-strong ellipsis"              [matTooltip]="definitionTitle"            >              {{ definitionTitle }}            </span>          </div>          <button *ngIf="withOnBoarding" mat-icon-button color="primary" (click)="exit.emit()">            <mat-icon>close</mat-icon>          </button>        </div>        <app-itinerary          *ngIf="isDesktop$ | async"          [itinerarySteps]="itinerarySteps"          [situation]="instance.situation"        ></app-itinerary>      </mat-toolbar>      <mat-progress-bar        *ngIf="(isLoading$ | async) === true"        mode="indeterminate"      ></mat-progress-bar>      <!-- Desktop cards -->      <div #desktopCardList *ngIf="(isDesktop$ | async) && village" class="desktop-cards-container">        <!-- Current village -->        <app-village-card          #currentVillageCard          [village]="village"          (roadmap)="roadmap.emit()"          (moveVillage)="moveVillage.emit()"          (chooseVillage)="onVillageChoose()"          [hidden]="focusedPoi$ | async"        >        </app-village-card>        <!-- Sibling villages -->        <ng-container *ngIf="siblings.length">          <ng-container *ngFor="let sibling of onlySiblings; trackBy: trackByWaypoint">            <app-village-card              *ngIf="sibling.id !== village.waypoint.id"              [waypoint]="sibling"              [waypointInOffer]="inOfferSiblings"              (selectVillage)="pickVillage.emit(sibling)"              [hidden]="focusedPoi$ | async"            >            </app-village-card>          </ng-container>        </ng-container>        <!-- Pois -->        <ng-container *ngFor="let p of orderPois$ | async; trackBy: trackByPoi">          <app-poi-card            [hidden]="(focusedPoi$ | async) === null"            [poi]="p"            [thinPadding]="true"            [notFocusedPoi]="isNotSelected$(p) | async"            [fullHeight]="false"            (click)="onClickPoiCard(p)"          >          </app-poi-card>        </ng-container>      </div>    </header>    <!-- Main Content -->    <main class="main">      <ng-content></ng-content>      <!-- Mobile cards -->      <div *ngIf="(isDesktop$ | async) === false && village" class="mobile-card-container">        <app-village-card          #currentVillageCard          [hidden]="focusedPoi$ | async"          [village]="village"          (roadmap)="roadmap.emit()"          (moveVillage)="moveVillage.emit()"          (chooseVillage)="onVillageChoose()"        >        </app-village-card>        <app-scroll-wrapper          *ngIf="focusedPoi$ | async"          [objects]="orderPois$ | async"          [templateRef]="poiCard"        >        </app-scroll-wrapper>        <ng-template #poiCard let-poi>          <app-poi-card            class="mobile-poi-card"            [poi]="poi"            [thinPadding]="true"            (click)="onClickPoiCard(poi)"          >          </app-poi-card>        </ng-template>      </div>    </main>  </mat-drawer-content></mat-drawer-container></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'MapTemplateComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MapTemplateComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

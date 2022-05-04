@@ -1,0 +1,1952 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  LocalisationFilterDialogComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-localisation-filter-dialog</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./localisation-filter-dialog.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./localisation-filter-dialog.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#CITY_RESULT_LIMIT" >CITY_RESULT_LIMIT</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#citySearchResults$" >citySearchResults$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isGeolocationLoading$" >isGeolocationLoading$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#localisationFilterForm" >localisationFilterForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#localisationFilterType" >localisationFilterType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#mobileSearchCityResultTemplate" >mobileSearchCityResultTemplate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#onDestroySubject$" >onDestroySubject$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#Regions" >Regions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#deselectOthers" >deselectOthers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initForm" >initForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#listenCityFilterDeselections" >listenCityFilterDeselections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#listenCitySearch" >listenCitySearch</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#listenFilterSelections" >listenFilterSelections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#listenNearByFilterDeselections" >listenNearByFilterDeselections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#listenNearByFilterSelections" >listenNearByFilterSelections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEmptySearch" >onEmptySearch</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onErase" >onErase</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSearchCity" >onSearchCity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSeeResults" >onSeeResults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSelectCity" >onSelectCity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#searchCities" >searchCities</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#hasSearchText" >hasSearchText</a>
+                                </li>
+                                <li>
+                                    <a href="#isCitySelected" >isCitySelected</a>
+                                </li>
+                                <li>
+                                    <a href="#selectedCity" >selectedCity</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(initialState: <a href="../classes/LocalisationFilters.html" target="_self">LocalisationFilters</a>, analyticsService: <a href="../injectables/AnalyticsService.html" target="_self">AnalyticsService</a>, breakpointService: <a href="../injectables/BreakpointService.html" target="_self">BreakpointService</a>, dialog: <a href="../components/LocalisationFilterDialogComponent.html" target="_self">MatDialogRef&lt;LocalisationFilterDialogComponent&gt;</a>, dialogContainer: MatDialog, dialogService: <a href="../injectables/DialogService.html" target="_self">DialogService</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, hroadsService: <a href="../injectables/HroadsService.html" target="_self">HroadsService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>initialState</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/LocalisationFilters.html" target="_self" >LocalisationFilters</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>analyticsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AnalyticsService.html" target="_self" >AnalyticsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>breakpointService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BreakpointService.html" target="_self" >BreakpointService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/LocalisationFilterDialogComponent.html" target="_self" >MatDialogRef&lt;LocalisationFilterDialogComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogContainer</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>hroadsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HroadsService.html" target="_self" >HroadsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deselectOthers"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>deselectOthers</b></span>
+                        <a href="#deselectOthers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deselectOthers(localisationFilter: <a href="../undefineds/LocalisationFilterType.html" target="_self">LocalisationFilterType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Deselect other localisation filters</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>localisationFilter</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#LocalisationFilterType" target="_self" >LocalisationFilterType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The new selected localisation filter</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initForm</b></span>
+                        <a href="#initForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialise localisation filter form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenCityFilterDeselections"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>listenCityFilterDeselections</b></span>
+                        <a href="#listenCityFilterDeselections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenCityFilterDeselections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Listen to city localisation filter deselections to empty selected city</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenCitySearch"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>listenCitySearch</b></span>
+                        <a href="#listenCitySearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenCitySearch()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="246"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:246</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Listen city search changes to launch the city search along API</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenFilterSelections"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>listenFilterSelections</b></span>
+                        <a href="#listenFilterSelections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenFilterSelections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Listen all filter selections and deselect other filters when one is selected</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenNearByFilterDeselections"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>listenNearByFilterDeselections</b></span>
+                        <a href="#listenNearByFilterDeselections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenNearByFilterDeselections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Listen to near by localisation filter deselections to empty user location</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenNearByFilterSelections"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>listenNearByFilterSelections</b></span>
+                        <a href="#listenNearByFilterSelections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenNearByFilterSelections()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Listen to near by localisation filter selections to invite user to enable geolocation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onEmptySearch"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onEmptySearch</b></span>
+                        <a href="#onEmptySearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onEmptySearch()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onErase"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onErase</b></span>
+                        <a href="#onErase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onErase()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSearchCity"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSearchCity</b></span>
+                        <a href="#onSearchCity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSearchCity()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSeeResults"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSeeResults</b></span>
+                        <a href="#onSeeResults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSeeResults()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectCity"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSelectCity</b></span>
+                        <a href="#onSelectCity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSelectCity(city: <a href="../classes/City.html" target="_self">City</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Select the city localisation filter type associated with the city</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>city</td>
+                                    <td>
+                                                <code><a href="../classes/City.html" target="_self" >City</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The selected city</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchCities"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>searchCities</b></span>
+                        <a href="#searchCities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>searchCities(searchText: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="276"
+                            class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:276</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Search cities based on a provided search text</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchText</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The search text</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/City.html" target="_self" >Observable&lt;City[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CITY_RESULT_LIMIT"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>CITY_RESULT_LIMIT</b></span>
+                        <a href="#CITY_RESULT_LIMIT"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>5</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="citySearchResults$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>citySearchResults$</b></span>
+                        <a href="#citySearchResults$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/City.html" target="_self" >Observable&lt;City[]&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isGeolocationLoading$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isGeolocationLoading$</b></span>
+                        <a href="#isGeolocationLoading$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;boolean&gt;(false)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="localisationFilterForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>localisationFilterForm</b></span>
+                        <a href="#localisationFilterForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Group" target="_self" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="localisationFilterType"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>localisationFilterType</b></span>
+                        <a href="#localisationFilterType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>LocalisationFilterType</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mobileSearchCityResultTemplate"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>mobileSearchCityResultTemplate</b></span>
+                        <a href="#mobileSearchCityResultTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/City.html" target="_self" >TemplateRef&lt;City&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;mobileSearchCityResult&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDestroySubject$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>onDestroySubject$</b></span>
+                        <a href="#onDestroySubject$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subject&lt;void&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Regions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>Regions</b></span>
+                        <a href="#Regions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Regions</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasSearchText"></a>
+                        <span class="name"><b>hasSearchText</b><a href="#hasSearchText"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hasSearchText()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:39</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isCitySelected"></a>
+                        <span class="name"><b>isCitySelected</b><a href="#isCitySelected"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isCitySelected()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:43</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedCity"></a>
+                        <span class="name"><b>selectedCity</b><a href="#selectedCity"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>selectedCity()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/shared/components/organisms/localisation-filter-dialog/localisation-filter-dialog.component.ts:47</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnDestroy, OnInit, TemplateRef, ViewChild } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup } from &#x27;@angular/forms&#x27;;
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+import { AnalyticsService, BreakpointService, DialogService, HroadsService } from &#x27;@core/services&#x27;;
+import { LocationFilterApplyAnalyticsEvent } from &#x27;@models/analytics-event/location-filter-apply.analytics-event&#x27;;
+import { RegionFilterApplyAnalyticsEvent } from &#x27;@models/analytics-event/region-filter-apply.analytics-event&#x27;;
+import { City } from &#x27;@models/city/city&#x27;;
+import { LocalisationFilterType } from &#x27;@models/filters/localisation-filters/localisation-filter-type&#x27;;
+import { LocalisationFilters } from &#x27;@models/filters/localisation-filters/localisation-filters&#x27;;
+import { SearchDialogComponent } from &#x27;@organisms/search-dialog/search-dialog.component&#x27;;
+import { BehaviorSubject, merge, Observable, of, Subject } from &#x27;rxjs&#x27;;
+import {
+  debounceTime,
+  distinctUntilChanged,
+  filter,
+  map,
+  switchMap,
+  takeUntil
+} from &#x27;rxjs/operators&#x27;;
+import { Regions } from &#x27;./regions&#x27;;
+
+@Component({
+  selector: &#x27;app-localisation-filter-dialog&#x27;,
+  templateUrl: &#x27;./localisation-filter-dialog.component.html&#x27;,
+  styleUrls: [&#x27;./localisation-filter-dialog.component.scss&#x27;]
+})
+export class LocalisationFilterDialogComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;mobileSearchCityResult&#x27;) private mobileSearchCityResultTemplate: TemplateRef&lt;City&gt;;
+
+  public readonly localisationFilterType &#x3D; LocalisationFilterType;
+  public localisationFilterForm: FormGroup;
+  public citySearchResults$: Observable&lt;City[]&gt;;
+  public isGeolocationLoading$ &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
+
+  public readonly Regions &#x3D; Regions;
+  private readonly CITY_RESULT_LIMIT &#x3D; 5;
+  private onDestroySubject$: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
+
+  public get hasSearchText(): boolean {
+    return !!this.localisationFilterForm.controls.citySearchText.value;
+  }
+
+  public get isCitySelected(): boolean {
+    return this.localisationFilterForm.controls[LocalisationFilterType.City].value;
+  }
+
+  public get selectedCity(): City {
+    return this.localisationFilterForm.controls.selectedCity.value as City;
+  }
+
+  constructor(
+    @Inject(MAT_DIALOG_DATA) private initialState: LocalisationFilters,
+    private analyticsService: AnalyticsService,
+    private breakpointService: BreakpointService,
+    private dialog: MatDialogRef&lt;LocalisationFilterDialogComponent&gt;,
+    private dialogContainer: MatDialog,
+    private dialogService: DialogService,
+    private formBuilder: FormBuilder,
+    private hroadsService: HroadsService
+  ) {}
+
+  public ngOnInit(): void {
+    this.initForm();
+    this.listenFilterSelections();
+    this.listenNearByFilterSelections();
+    this.listenNearByFilterDeselections();
+    this.listenCityFilterDeselections();
+    this.listenCitySearch();
+  }
+
+  public ngOnDestroy(): void {
+    this.onDestroySubject$.next();
+    this.onDestroySubject$.complete();
+  }
+
+  public onSeeResults(): void {
+    const locationFilters &#x3D; new LocalisationFilters(
+      this.localisationFilterForm.controls.userGeolocation.value,
+      this.localisationFilterForm.controls.selectedCity.value,
+      this.localisationFilterForm.controls[LocalisationFilterType.Regional].value
+    );
+
+    // Track location filter apply event
+    if (locationFilters.city || locationFilters.userGeolocation) {
+      const locationFilterApplyAnalyticsEvent &#x3D; new LocationFilterApplyAnalyticsEvent();
+
+      if (locationFilters.city)
+        locationFilterApplyAnalyticsEvent.filterCity &#x3D; locationFilters.city.name;
+      else if (locationFilters.userGeolocation)
+        locationFilterApplyAnalyticsEvent.filterAroundMe &#x3D; true;
+
+      this.analyticsService.pushTag(locationFilterApplyAnalyticsEvent);
+    }
+
+    locationFilters.regional.forEach(selectedRegion &#x3D;&gt; {
+      this.analyticsService.pushTag(new RegionFilterApplyAnalyticsEvent(selectedRegion));
+    });
+
+    this.dialog.close(locationFilters);
+  }
+
+  public onSearchCity(): void {
+    if (!this.breakpointService.snapshot.isDesktop) {
+      this.dialogContainer
+        .open(
+          SearchDialogComponent,
+          this.dialogService.defaultDialogConfig({
+            searchFn: (searchText: string) &#x3D;&gt; this.searchCities(searchText),
+            title: &#x27;dialog.mobile-search.city-title&#x27;,
+            inputPlaceholder: &#x27;dialog.localisation-filter.form.city&#x27;,
+            resultTemplate: this.mobileSearchCityResultTemplate
+          })
+        )
+        .afterClosed()
+        .pipe(
+          filter((city: City | &#x27;&#x27;) &#x3D;&gt; !!city),
+          takeUntil(this.onDestroySubject$)
+        )
+        .subscribe((city: City) &#x3D;&gt; {
+          this.onSelectCity(city);
+        });
+    }
+  }
+
+  public onEmptySearch(): void {
+    this.localisationFilterForm.controls.citySearchText.setValue(&#x27;&#x27;);
+  }
+
+  /**
+   * Select the city localisation filter type associated with the city
+   *
+   * @param city The selected city
+   */
+  public onSelectCity(city: City): void {
+    this.localisationFilterForm.controls[LocalisationFilterType.City].setValue(true);
+    this.localisationFilterForm.controls.selectedCity.setValue(city);
+
+    this.onEmptySearch();
+  }
+
+  public onErase(): void {
+    this.localisationFilterForm.controls[LocalisationFilterType.Nearby].setValue(false);
+    this.localisationFilterForm.controls[LocalisationFilterType.City].setValue(false);
+    this.localisationFilterForm.controls[LocalisationFilterType.Regional].setValue([]);
+    this.localisationFilterForm.controls.selectedCity.setValue(null);
+    this.localisationFilterForm.controls.userGeolocation.setValue(null);
+
+    this.onEmptySearch();
+  }
+
+  /**
+   * Initialise localisation filter form
+   */
+  private initForm(): void {
+    this.localisationFilterForm &#x3D; this.formBuilder.group({
+      citySearchText: &#x27;&#x27;,
+      [LocalisationFilterType.Nearby]: !!this.initialState.userGeolocation,
+      [LocalisationFilterType.City]: !!this.initialState.city,
+      [LocalisationFilterType.Regional]: [this.initialState.regional],
+      selectedCity: this.initialState.city,
+      userGeolocation: this.initialState.userGeolocation
+    });
+  }
+
+  /**
+   * Listen all filter selections and deselect other filters when one is selected
+   */
+  private listenFilterSelections(): void {
+    merge(
+      // Listen to near by filter selection
+      this.localisationFilterForm.controls[LocalisationFilterType.Nearby].valueChanges.pipe(
+        filter((selected: boolean) &#x3D;&gt; selected),
+        map(() &#x3D;&gt; LocalisationFilterType.Nearby)
+      ),
+      // Listen to city filter selection
+      this.localisationFilterForm.controls[LocalisationFilterType.City].valueChanges.pipe(
+        filter((selected: boolean) &#x3D;&gt; selected),
+        map(() &#x3D;&gt; LocalisationFilterType.City)
+      )
+    )
+      .pipe(takeUntil(this.onDestroySubject$))
+      .subscribe(localisationFilterType &#x3D;&gt; this.deselectOthers(localisationFilterType));
+  }
+
+  /**
+   * Listen to near by localisation filter selections to invite user to enable geolocation
+   */
+  private listenNearByFilterSelections(): void {
+    this.localisationFilterForm.controls[LocalisationFilterType.Nearby].valueChanges
+      .pipe(
+        filter((selected: boolean) &#x3D;&gt; selected),
+        takeUntil(this.onDestroySubject$)
+      )
+      .subscribe(() &#x3D;&gt; {
+        // Ignores if the user location is already know
+        if (this.localisationFilterForm.controls.userGeolocation.value) return;
+
+        this.isGeolocationLoading$.next(true);
+
+        /**
+         * Deselect the near by localisation filter until the user geolocation is got so if the user
+         * does not enable geolocation, the filter is not selected
+         */
+        this.localisationFilterForm.controls[LocalisationFilterType.Nearby].setValue(false);
+
+        navigator.geolocation.getCurrentPosition(position &#x3D;&gt; {
+          // When the user has enabled geolocation, select the near by filter
+          this.localisationFilterForm.controls.userGeolocation.setValue(position.coords);
+          this.localisationFilterForm.controls[LocalisationFilterType.Nearby].setValue(true);
+          this.isGeolocationLoading$.next(false);
+        });
+      });
+  }
+
+  /**
+   * Listen to near by localisation filter deselections to empty user location
+   */
+  private listenNearByFilterDeselections(): void {
+    this.localisationFilterForm.controls[LocalisationFilterType.Nearby].valueChanges
+      .pipe(
+        filter((selected: boolean) &#x3D;&gt; !selected),
+        takeUntil(this.onDestroySubject$)
+      )
+      .subscribe(() &#x3D;&gt; {
+        this.localisationFilterForm.controls.userGeolocation.setValue(null);
+      });
+  }
+
+  /**
+   * Listen to city localisation filter deselections to empty selected city
+   */
+  private listenCityFilterDeselections(): void {
+    this.localisationFilterForm.controls[LocalisationFilterType.City].valueChanges
+      .pipe(
+        filter((selected: boolean) &#x3D;&gt; !selected),
+        takeUntil(this.onDestroySubject$)
+      )
+      .subscribe(() &#x3D;&gt; {
+        this.localisationFilterForm.controls.selectedCity.setValue(null);
+      });
+  }
+
+  /**
+   * Listen city search changes to launch the city search along API
+   */
+  private listenCitySearch(): void {
+    this.citySearchResults$ &#x3D; this.localisationFilterForm.controls.citySearchText.valueChanges.pipe(
+      debounceTime(400),
+      distinctUntilChanged(),
+      filter((searchText: string) &#x3D;&gt; !!searchText),
+      switchMap(searchText &#x3D;&gt; this.searchCities(searchText))
+    );
+  }
+
+  /**
+   * Deselect other localisation filters
+   *
+   * @param localisationFilter The new selected localisation filter
+   */
+  private deselectOthers(localisationFilter: LocalisationFilterType): void {
+    Object.keys(LocalisationFilterType).forEach(key &#x3D;&gt; {
+      if (
+        LocalisationFilterType[key] !&#x3D;&#x3D; localisationFilter &amp;&amp;
+        LocalisationFilterType[key] !&#x3D;&#x3D; LocalisationFilterType.Regional &amp;&amp;
+        this.localisationFilterForm.controls[LocalisationFilterType[key]].value
+      )
+        this.localisationFilterForm.controls[LocalisationFilterType[key]].setValue(false);
+    });
+  }
+
+  /**
+   * Search cities based on a provided search text
+   *
+   * @param searchText The search text
+   */
+  private searchCities(searchText: string): Observable&lt;City[]&gt; {
+    // Prevent error when searching from mobile search dialog
+    if (!searchText) return of([]);
+
+    return this.hroadsService.searchCity(searchText, this.CITY_RESULT_LIMIT);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-dialog-content&gt;
+  &lt;button mat-fab mat-dialog-close class&#x3D;&quot;default-dialog-close-btn&quot;&gt;
+    &lt;mat-icon&gt;close&lt;/mat-icon&gt;
+  &lt;/button&gt;
+
+  &lt;div class&#x3D;&quot;default-dialog-main-container&quot;&gt;
+    &lt;div mat-dialog-title translate&gt;dialog.localisation-filter.title&lt;/div&gt;
+
+    &lt;form class&#x3D;&quot;default-form&quot; [formGroup]&#x3D;&quot;localisationFilterForm&quot; (ngSubmit)&#x3D;&quot;onSeeResults()&quot;&gt;
+      &lt;!-- City search --&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+        &lt;input
+          matInput
+          formControlName&#x3D;&quot;citySearchText&quot;
+          [placeholder]&#x3D;&quot;&#x27;dialog.localisation-filter.form.city&#x27; | translate&quot;
+          [matAutocomplete]&#x3D;&quot;cityAutocomplete&quot;
+          (click)&#x3D;&quot;onSearchCity()&quot;
+        /&gt;
+        &lt;mat-icon matPrefix color&#x3D;&quot;primary&quot;&gt;search&lt;/mat-icon&gt;
+        &lt;mat-icon
+          matSuffix
+          class&#x3D;&quot;pointer medium-grey-2&quot;
+          [hidden]&#x3D;&quot;!hasSearchText&quot;
+          (click)&#x3D;&quot;onEmptySearch()&quot;
+        &gt;
+          close
+        &lt;/mat-icon&gt;
+
+        &lt;!-- Search results --&gt;
+        &lt;mat-autocomplete
+          #cityAutocomplete&#x3D;&quot;matAutocomplete&quot;
+          class&#x3D;&quot;default-autocomplete&quot;
+          (optionSelected)&#x3D;&quot;onSelectCity($event.option.value)&quot;
+        &gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let city of citySearchResults$ | async&quot; [value]&#x3D;&quot;city&quot;&gt;
+            &lt;ng-container
+              [ngTemplateOutlet]&#x3D;&quot;cityLabel&quot;
+              [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: city }&quot;
+            &gt;&lt;/ng-container&gt;
+          &lt;/mat-option&gt;
+        &lt;/mat-autocomplete&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Select choices --&gt;
+      &lt;app-select-card-control
+        *ngIf&#x3D;&quot;isCitySelected&quot;
+        [formControlName]&#x3D;&quot;localisationFilterType.City&quot;
+      &gt;
+        &lt;ng-container
+          [ngTemplateOutlet]&#x3D;&quot;cityLabel&quot;
+          [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: selectedCity }&quot;
+        &gt;&lt;/ng-container&gt;
+      &lt;/app-select-card-control&gt;
+      &lt;app-select-card-control
+        [formControlName]&#x3D;&quot;localisationFilterType.Nearby&quot;
+        emoji&#x3D;&quot;📍&quot;
+        [isLoading$]&#x3D;&quot;isGeolocationLoading$&quot;
+      &gt;
+        {{ &quot;dialog.localisation-filter.form.close-to-me&quot; | translate }}
+      &lt;/app-select-card-control&gt;
+      &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+        &lt;mat-label&gt;{{ &quot;regions.label&quot; | translate }}&lt;/mat-label&gt;
+        &lt;mat-select [formControlName]&#x3D;&quot;localisationFilterType.Regional&quot; multiple&gt;
+          &lt;mat-option *ngFor&#x3D;&quot;let region of Regions | keyvalue&quot; [value]&#x3D;&quot;region.value&quot;&gt;{{
+            &quot;regions.&quot; + region.key | translate
+          }}&lt;/mat-option&gt;
+        &lt;/mat-select&gt;
+      &lt;/mat-form-field&gt;
+
+      &lt;!-- Dialog buttons --&gt;
+      &lt;mat-dialog-actions&gt;
+        &lt;button mat-button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;onErase()&quot;&gt;
+          {{ &quot;dialog.filter.clear&quot; | translate }}
+        &lt;/button&gt;
+        &lt;button mat-flat-button type&#x3D;&quot;submit&quot; color&#x3D;&quot;primary&quot;&gt;
+          {{ &quot;dialog.filter.see-results&quot; | translate }}
+        &lt;/button&gt;
+      &lt;/mat-dialog-actions&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/mat-dialog-content&gt;
+
+&lt;ng-template #mobileSearchCityResult let-result&gt;
+  &lt;div class&#x3D;&quot;mobile-search-city-result&quot;&gt;
+    &lt;ng-container
+      [ngTemplateOutlet]&#x3D;&quot;cityLabel&quot;
+      [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: result }&quot;
+    &gt;&lt;/ng-container&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+
+&lt;ng-template #cityLabel let-city&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;city.countryCode !&#x3D;&#x3D; &#x27;FR&#x27;&quot;&gt;
+    {{ city.countryCode | countryFlag }}
+  &lt;/ng-container&gt;
+  {{ city.name }}
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./localisation-filter-dialog.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.mobile-search-city-result {
+  padding: 16px 0;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-dialog-content>  <button mat-fab mat-dialog-close class="default-dialog-close-btn">    <mat-icon>close</mat-icon>  </button>  <div class="default-dialog-main-container">    <div mat-dialog-title translate>dialog.localisation-filter.title</div>    <form class="default-form" [formGroup]="localisationFilterForm" (ngSubmit)="onSeeResults()">      <!-- City search -->      <mat-form-field appearance="outline">        <input          matInput          formControlName="citySearchText"          [placeholder]="\'dialog.localisation-filter.form.city\' | translate"          [matAutocomplete]="cityAutocomplete"          (click)="onSearchCity()"        />        <mat-icon matPrefix color="primary">search</mat-icon>        <mat-icon          matSuffix          class="pointer medium-grey-2"          [hidden]="!hasSearchText"          (click)="onEmptySearch()"        >          close        </mat-icon>        <!-- Search results -->        <mat-autocomplete          #cityAutocomplete="matAutocomplete"          class="default-autocomplete"          (optionSelected)="onSelectCity($event.option.value)"        >          <mat-option *ngFor="let city of citySearchResults$ | async" [value]="city">            <ng-container              [ngTemplateOutlet]="cityLabel"              [ngTemplateOutletContext]="{ $implicit: city }"            ></ng-container>          </mat-option>        </mat-autocomplete>      </mat-form-field>      <!-- Select choices -->      <app-select-card-control        *ngIf="isCitySelected"        [formControlName]="localisationFilterType.City"      >        <ng-container          [ngTemplateOutlet]="cityLabel"          [ngTemplateOutletContext]="{ $implicit: selectedCity }"        ></ng-container>      </app-select-card-control>      <app-select-card-control        [formControlName]="localisationFilterType.Nearby"        emoji="📍"        [isLoading$]="isGeolocationLoading$"      >        {{ "dialog.localisation-filter.form.close-to-me" | translate }}      </app-select-card-control>      <mat-form-field appearance="outline">        <mat-label>{{ "regions.label" | translate }}</mat-label>        <mat-select [formControlName]="localisationFilterType.Regional" multiple>          <mat-option *ngFor="let region of Regions | keyvalue" [value]="region.value">{{            "regions." + region.key | translate          }}</mat-option>        </mat-select>      </mat-form-field>      <!-- Dialog buttons -->      <mat-dialog-actions>        <button mat-button type="button" (click)="onErase()">          {{ "dialog.filter.clear" | translate }}        </button>        <button mat-flat-button type="submit" color="primary">          {{ "dialog.filter.see-results" | translate }}        </button>      </mat-dialog-actions>    </form>  </div></mat-dialog-content><ng-template #mobileSearchCityResult let-result>  <div class="mobile-search-city-result">    <ng-container      [ngTemplateOutlet]="cityLabel"      [ngTemplateOutletContext]="{ $implicit: result }"    ></ng-container>  </div></ng-template><ng-template #cityLabel let-city>  <ng-container *ngIf="city.countryCode !== \'FR\'">    {{ city.countryCode | countryFlag }}  </ng-container>  {{ city.name }}</ng-template></div>'
+    var COMPONENTS = [{'name': 'AbstractHomeComponent', 'selector': ''},{'name': 'AcceptPolicyComponent', 'selector': 'app-accept-policy'},{'name': 'AccountPageComponent', 'selector': ''},{'name': 'AdminAdventuresComponent', 'selector': ''},{'name': 'AdminApplicationComponent', 'selector': ''},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AdminDefinitionDialogComponent', 'selector': 'app-admin-definition-dialog'},{'name': 'AdminDefinitionsComponent', 'selector': 'app-admin-definitions'},{'name': 'AdminEventPoiFormComponent', 'selector': 'app-admin-event-poi-form'},{'name': 'AdminEventPoisComponent', 'selector': 'app-admin-event-pois'},{'name': 'AdminFiltersComponent', 'selector': 'app-admin-filters'},{'name': 'AdminImageFormComponent', 'selector': 'app-admin-image-form'},{'name': 'AdminLeadsPageComponent', 'selector': ''},{'name': 'AdminLeadsTableComponent', 'selector': 'app-admin-leads-table'},{'name': 'AdminListMetricComponent', 'selector': 'app-admin-list-metric'},{'name': 'AdminLogoComponent', 'selector': 'app-admin-logo'},{'name': 'AdminNumericMetricComponent', 'selector': 'app-admin-numeric-metric'},{'name': 'AdminParcoursPoiDialogComponent', 'selector': 'app-admin-parcours-poi-dialog'},{'name': 'AdminParcoursPoisComponent', 'selector': 'app-admin-parcours-pois'},{'name': 'AdminPerformancePageComponent', 'selector': ''},{'name': 'AdminPoiDialogComponent', 'selector': 'app-admin-poi-dialog'},{'name': 'AdminPoisPageComponent', 'selector': ''},{'name': 'AdminRewardDialogComponent', 'selector': 'app-admin-reward-dialog'},{'name': 'AdminRewardsPageComponent', 'selector': ''},{'name': 'AdminTableComponent', 'selector': 'app-admin-table'},{'name': 'AdminTagDialogComponent', 'selector': 'app-admin-tag-dialog'},{'name': 'AdminTagsComponent', 'selector': 'app-admin-tags'},{'name': 'AdventureItineraryPageComponent', 'selector': 'app-page-adventure-itinerary'},{'name': 'AdventureMapPageComponent', 'selector': 'app-page-adventure-map'},{'name': 'AdventureRoadmapPageComponent', 'selector': 'app-page-adventure-roadmap'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationPreviewCardComponent', 'selector': 'app-application-preview-card'},{'name': 'BackButtonComponent', 'selector': '[svg-back-button]'},{'name': 'BackgroundStainComponent', 'selector': 'app-background-stain'},{'name': 'BackwardComponent', 'selector': '[svg-backward]'},{'name': 'BackwardsComponent', 'selector': '[svg-backwards]'},{'name': 'BannerOrganismComponent', 'selector': 'app-organism-banner'},{'name': 'CmqBtpNumeriqueHomeComponent', 'selector': 'app-cmq-btp-numerique-home'},{'name': 'CompanyDetailsComponent', 'selector': 'app-company-details'},{'name': 'CompanyDetailsDialogComponent', 'selector': ''},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConsentBannerComponent', 'selector': 'app-consent-banner'},{'name': 'ContactButtonComponent', 'selector': 'app-contact-button'},{'name': 'ContactDialogComponent', 'selector': 'app-contact-dialog'},{'name': 'CostComponent', 'selector': 'app-cost'},{'name': 'CreateExpeditionComponent', 'selector': 'app-create-expedition'},{'name': 'CrossroadComponent', 'selector': '[svg-crossroad]'},{'name': 'CursusFilterDialogComponent', 'selector': 'app-cursus-filter-dialog'},{'name': 'CursusFullComponent', 'selector': 'app-cursus-full'},{'name': 'CursusPreviewComponent', 'selector': 'app-cursus-preview'},{'name': 'DefaultHomeComponent', 'selector': 'app-default-home'},{'name': 'DialogWithMediaTemplateComponent', 'selector': 'app-dialog-with-media-template'},{'name': 'DiplomaSuccessDialogComponent', 'selector': 'app-diploma-success-dialog'},{'name': 'DiscoveriesFullComponent', 'selector': 'app-discoveries-full'},{'name': 'DiscoveriesPreviewComponent', 'selector': 'app-discoveries-preview'},{'name': 'DistrictComponent', 'selector': '[svg-district]'},{'name': 'DistrictLabelsComponent', 'selector': '[svg-district-labels]'},{'name': 'DistrictRoadComponent', 'selector': '[svg-district-road]'},{'name': 'EasterEggComponent', 'selector': '[svg-easter-egg]'},{'name': 'EmptySectionComponent', 'selector': 'app-empty-section'},{'name': 'ErrorPageComponent', 'selector': ''},{'name': 'EventComponent', 'selector': 'app-event'},{'name': 'EventsFullComponent', 'selector': 'app-events-full'},{'name': 'EventsPreviewComponent', 'selector': 'app-events-preview'},{'name': 'ExpeditionCardComponent', 'selector': 'app-expedition-card'},{'name': 'ExpeditionDetailsComponent', 'selector': 'app-expedition-details'},{'name': 'ExpeditionInstanceCardComponent', 'selector': 'app-expedition-instance-card'},{'name': 'ExpeditionInstanceDetailsComponent', 'selector': 'app-expedition-instance-details'},{'name': 'ExpeditionInstanceDetailsDialogComponent', 'selector': 'app-expedition-instance-details-dialog'},{'name': 'ExpeditionInstanceDetailsPageComponent', 'selector': ''},{'name': 'ExpeditionPageComponent', 'selector': ''},{'name': 'ExpeditionStepDescriptionComponent', 'selector': 'app-expedition-step-description'},{'name': 'ExpeditionStepPageComponent', 'selector': ''},{'name': 'ExpeditionStepsComponent', 'selector': 'app-expedition-steps'},{'name': 'ExpeditionStepsStaticComponent', 'selector': 'app-expedition-steps-static'},{'name': 'ExpeditionStepStaticPageComponent', 'selector': ''},{'name': 'ExpeditionStepSynthesisComponent', 'selector': 'app-expedition-step-synthesis'},{'name': 'FeaturesContainerComponent', 'selector': 'app-features-container'},{'name': 'FeedbackTextComponent', 'selector': 'app-feedback-text'},{'name': 'FiltersComponent', 'selector': 'app-filters'},{'name': 'FindInternshipApprenticeshipComponent', 'selector': 'app-find-internship-apprenticeship'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HelpMenuComponent', 'selector': 'app-help-menu'},{'name': 'HelpPageComponent', 'selector': ''},{'name': 'HomeBannerContainerComponent', 'selector': 'app-home-banner-container'},{'name': 'HomePageComponent', 'selector': ''},{'name': 'HorizonComponent', 'selector': 'app-horizon'},{'name': 'HorizonStainComponent', 'selector': '[svg-horizon-stain]'},{'name': 'HorizonVillagesComponent', 'selector': '[svg-horizon-villages]'},{'name': 'HumanCardComponent', 'selector': 'app-human-card'},{'name': 'HumanDetailsDialogComponent', 'selector': ''},{'name': 'HumanItineraryComponent', 'selector': 'app-human-itinerary'},{'name': 'HumanProfileDialogComponent', 'selector': 'app-human-profile-dialog'},{'name': 'HumanStepComponent', 'selector': 'app-human-step'},{'name': 'HumanStepsComponent', 'selector': 'app-human-steps'},{'name': 'IntentionsChoiceComponent', 'selector': 'app-intentions-choice'},{'name': 'IntentionsJobOriginsPageComponent', 'selector': ''},{'name': 'IntentionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDefinitionsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointDetailsPageComponent', 'selector': ''},{'name': 'IntentionsWaypointPageComponent', 'selector': ''},{'name': 'IntentionsWaypointSearchPageComponent', 'selector': ''},{'name': 'InviteLoginComponent', 'selector': 'app-invite-login'},{'name': 'ItineraryBarComponent', 'selector': 'app-itinerary-bar'},{'name': 'ItineraryCardComponent', 'selector': 'app-itinerary-card'},{'name': 'ItineraryComponent', 'selector': 'app-itinerary'},{'name': 'ItineraryFullComponent', 'selector': 'app-itinerary-full'},{'name': 'ItineraryPreviewComponent', 'selector': 'app-itinerary-preview'},{'name': 'ItineraryStepCardComponent', 'selector': 'app-itinerary-step-card'},{'name': 'JobFullComponent', 'selector': 'app-job-full'},{'name': 'JobPreviewComponent', 'selector': 'app-job-preview'},{'name': 'KpiComponent', 'selector': 'app-kpi'},{'name': 'KpiItemPercentageComponent', 'selector': 'app-kpi-item-percentage'},{'name': 'KpiItemProgressComponent', 'selector': 'app-kpi-item-progress'},{'name': 'KpisFullComponent', 'selector': 'app-kpis-full'},{'name': 'KpisPreviewComponent', 'selector': 'app-kpis-preview'},{'name': 'LangChoiceComponent', 'selector': 'app-lang-choice'},{'name': 'LibraryPageComponent', 'selector': ''},{'name': 'LocalisationFilterDialogComponent', 'selector': 'app-localisation-filter-dialog'},{'name': 'LocationComponent', 'selector': 'app-location'},{'name': 'LocationsFullComponent', 'selector': 'app-locations-full'},{'name': 'LocationsPreviewComponent', 'selector': 'app-locations-preview'},{'name': 'LocationSummaryComponent', 'selector': 'app-location-summary'},{'name': 'LogoComponent', 'selector': 'app-logo'},{'name': 'MapElementComponent', 'selector': ''},{'name': 'MapSvgComponent', 'selector': 'app-map-svg'},{'name': 'MapTemplateComponent', 'selector': 'app-map-template'},{'name': 'MillionroadsProductComponent', 'selector': 'app-millionroads-product'},{'name': 'MobileMenuComponent', 'selector': 'app-mobile-menu'},{'name': 'MoocComponent', 'selector': 'app-mooc'},{'name': 'MoocDialogComponent', 'selector': 'app-mooc-dialog'},{'name': 'MoocsFullComponent', 'selector': 'app-moocs-full'},{'name': 'MoocsPreviewComponent', 'selector': 'app-moocs-preview'},{'name': 'MoreDomainDialogComponent', 'selector': 'app-more-domain-dialog'},{'name': 'MyRegionComponent', 'selector': 'app-my-region'},{'name': 'MyRoadHomeComponent', 'selector': 'app-my-road-home'},{'name': 'NavbarBackComponent', 'selector': 'app-navbar-back'},{'name': 'NavbarBottomComponent', 'selector': 'app-navbar-bottom'},{'name': 'NavbarExpandComponent', 'selector': 'app-navbar-expand'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'NavigationMenuComponent', 'selector': 'app-navigation-menu'},{'name': 'NavigationTemplateComponent', 'selector': 'app-navigation-template'},{'name': 'NoRecordsComponent', 'selector': 'app-no-records'},{'name': 'OfferSummaryComponent', 'selector': 'app-offer-summary'},{'name': 'OnisepLinkComponent', 'selector': 'app-onisep-link'},{'name': 'OriginCardComponent', 'selector': 'app-origin-card'},{'name': 'ParcoursupLinkComponent', 'selector': 'app-parcoursup-link'},{'name': 'PartnershipLogosComponent', 'selector': 'app-partnership-logos'},{'name': 'PaysDeLaLoireHomeComponent', 'selector': 'app-pays-de-la-loire-home'},{'name': 'PoiCardComponent', 'selector': 'app-poi-card'},{'name': 'PoiDescriptionComponent', 'selector': 'app-poi-description'},{'name': 'PoiIconComponent', 'selector': 'app-poi-icon'},{'name': 'PoiLabelComponent', 'selector': 'app-poi-label'},{'name': 'PoiOverlayComponent', 'selector': 'app-poi-overlay'},{'name': 'PoisPathComponent', 'selector': '[svg-pois-path]'},{'name': 'PopularityComponent', 'selector': 'app-popularity'},{'name': 'PositionablePoiComponent', 'selector': '[svg-positionable-poi]'},{'name': 'PositionablePoisComponent', 'selector': '[svg-positionable-pois]'},{'name': 'PreviewSectionComponent', 'selector': 'app-preview-section'},{'name': 'ProfessionalContactComponent', 'selector': 'app-professional-contact'},{'name': 'ProfileHeaderOrganismComponent', 'selector': 'app-organism-profile-header'},{'name': 'ProfileListComponent', 'selector': 'app-profile-list'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'RecommendedBacSpecialtiesComponent', 'selector': 'app-recommended-bac-specialties'},{'name': 'RegionInfoDialogComponent', 'selector': 'app-region-info-dialog'},{'name': 'RegionSudHomeComponent', 'selector': 'app-region-sud-home'},{'name': 'RegistrationDialogComponent', 'selector': 'app-registration-dialog'},{'name': 'RewardCardComponent', 'selector': 'app-reward-card'},{'name': 'RewardFlatCardComponent', 'selector': 'app-reward-flat-card'},{'name': 'RewardHowToDialogComponent', 'selector': 'app-reward-how-to-dialog'},{'name': 'RewardPartnerDialogComponent', 'selector': 'app-reward-partner-dialog'},{'name': 'RewardsListComponent', 'selector': 'app-rewards-list'},{'name': 'RewardsPageComponent', 'selector': ''},{'name': 'RewardsRewardPageComponent', 'selector': 'app-page-rewards-reward'},{'name': 'RoadComponent', 'selector': '[svg-road]'},{'name': 'RoadmapsPageComponent', 'selector': ''},{'name': 'RoadmapStainComponent', 'selector': 'app-roadmap-stain'},{'name': 'SalaryComponent', 'selector': 'app-salary'},{'name': 'SchoolBannerComponent', 'selector': 'app-school-banner'},{'name': 'SchoolDetailsComponent', 'selector': 'app-school-details'},{'name': 'SchoolDetailsDialogComponent', 'selector': 'app-school-details-dialog'},{'name': 'SchoolPageComponent', 'selector': ''},{'name': 'ScrollWrapperComponent', 'selector': 'app-scroll-wrapper'},{'name': 'SearchDialogComponent', 'selector': 'app-search-dialog'},{'name': 'SearchFormComponent', 'selector': 'app-search-form'},{'name': 'SelectCardComponent', 'selector': 'app-select-card'},{'name': 'SelectCardControlComponent', 'selector': 'app-select-card-control'},{'name': 'SelectMultiCardControlComponent', 'selector': 'app-select-multi-card-control'},{'name': 'SelectMultiCardMultipleControlComponent', 'selector': 'app-select-multi-card-multiple-control'},{'name': 'SelectMultiCardSingleControlComponent', 'selector': 'app-select-multi-card-single-control'},{'name': 'SettingsPageComponent', 'selector': ''},{'name': 'SignComponent', 'selector': '[svg-sign]'},{'name': 'SimilarAdventuresComponent', 'selector': 'app-similar-adventures'},{'name': 'SimpleTemplateComponent', 'selector': 'app-simple-template'},{'name': 'SituationFormComponent', 'selector': 'app-situation-form'},{'name': 'SituationPageComponent', 'selector': ''},{'name': 'SkillsFullComponent', 'selector': 'app-skills-full'},{'name': 'SkillsPreviewComponent', 'selector': 'app-skills-preview'},{'name': 'StainComponent', 'selector': '[svg-stain]'},{'name': 'StepsAccordionComponent', 'selector': 'app-steps-accordion'},{'name': 'StructureListFullComponent', 'selector': 'app-structure-list-full'},{'name': 'StructureListPreviewComponent', 'selector': 'app-structure-list-preview'},{'name': 'SubscriptionLinkComponent', 'selector': 'app-subscription-link'},{'name': 'SubscriptionMenuComponent', 'selector': 'app-subscription-menu'},{'name': 'SuccessDialogComponent', 'selector': 'app-success-dialog'},{'name': 'SvgBackwardsComponent', 'selector': 'svg-backwards'},{'name': 'SvgEasterEggComponent', 'selector': 'svg-easter-egg'},{'name': 'SvgHumanPoisComponent', 'selector': 'svg-human-pois'},{'name': 'SvgPoisPathsComponent', 'selector': 'svg-pois-paths'},{'name': 'SvgPositionablePoisComponent', 'selector': 'svg-positionable-pois'},{'name': 'SvgStainsComponent', 'selector': 'svg-stains'},{'name': 'SvgUsersComponent', 'selector': 'svg-users'},{'name': 'SvgVillagePinsComponent', 'selector': 'svg-village-pins'},{'name': 'TeamFullComponent', 'selector': 'app-team-full'},{'name': 'TeamPoiComponent', 'selector': '[svg-team-poi]'},{'name': 'TeamPreviewComponent', 'selector': 'app-team-preview'},{'name': 'TestimonyDialogComponent', 'selector': 'app-testimony-dialog'},{'name': 'TestingMyRoadHomeComponent', 'selector': 'app-testing-my-road-home'},{'name': 'TrendsComponent', 'selector': 'app-trends'},{'name': 'UserComponent', 'selector': '[svg-user]'},{'name': 'VerifiedWaypointComponent', 'selector': 'app-verified-waypoint'},{'name': 'VideoAskPoiComponent', 'selector': '[svg-video-ask-poi]'},{'name': 'VideoAskThumbnailComponent', 'selector': 'app-video-ask-thumbnail'},{'name': 'VillageCardComponent', 'selector': 'app-village-card'},{'name': 'VillageComponent', 'selector': '[svg-village]'},{'name': 'VillageDetailsComponent', 'selector': 'app-village-details'},{'name': 'VillageLabelComponent', 'selector': '[svg-village-label]'},{'name': 'VillagePinComponent', 'selector': '[svg-village-pin]'},{'name': 'VillageRoadComponent', 'selector': '[svg-village-road]'},{'name': 'VimeoPlayerComponent', 'selector': 'app-vimeo-player'},{'name': 'WaypointCardComponent', 'selector': 'app-waypoint-card'},{'name': 'WaypointCardListComponent', 'selector': 'app-waypoint-card-list'},{'name': 'WaypointSummaryComponent', 'selector': 'app-waypoint-summary'},{'name': 'YoutubeDialogComponent', 'selector': 'app-youtube-dialog'},{'name': 'YoutubeWrapperComponent', 'selector': 'app-youtube-wrapper'}];
+    var DIRECTIVES = [{'name': 'AnimateMapDirective', 'selector': '[appAnimateMap]'},{'name': 'AutofocusInputDirective', 'selector': '[appAutofocusInput]'},{'name': 'GenerateRoadmapDirective', 'selector': '[appGenerateRoadmap]'},{'name': 'IdentifiedTabDirective', 'selector': '[appIdentifiedTab]'},{'name': 'MoveMapDirective', 'selector': '[appMoveMap]'},{'name': 'NavigateToAnchorDirective', 'selector': '[appNavigateToAnchor]'},{'name': 'NavigateToDrawerDirective', 'selector': '[appNavigateToDrawer]'},{'name': 'NavigateToTabDirective', 'selector': '[appNavigateToTab]'},{'name': 'NetflixLoaderDirective', 'selector': '[appNetflixLoader]'},{'name': 'PinchOutDirective', 'selector': '[appPinchOut]'},{'name': 'SaveRoadmapButtonDirective', 'selector': '[appSaveRoadmapButton]'},{'name': 'ScaleCenterDirective', 'selector': '[appScaleCenter]'},{'name': 'ScrollToDirective', 'selector': '[appScrollTo]'},{'name': 'TemplateHostDirective', 'selector': '[appTemplateHost]'}];
+    var ACTUAL_COMPONENT = {'name': 'LocalisationFilterDialogComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'LocalisationFilterDialogComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

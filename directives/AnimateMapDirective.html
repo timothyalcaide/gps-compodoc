@@ -1,0 +1,999 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content directive">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Directives</li>
+  <li >AnimateMapDirective</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/features/map/directives/animate-map/animate-map.directive.ts</code>
+        </p>
+
+
+
+
+
+
+        <section>
+            <h3>Metadata</h3>
+            <table class="table table-sm table-hover metadata">
+                <tbody>
+
+                    <tr>
+                        <td class="col-md-3">Selector</td>
+                        <td class="col-md-9"><code>[appAnimateMap]</code></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ANIMATION_DURATION" >ANIMATION_DURATION</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ANIMATION_TYPE" >ANIMATION_TYPE</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#DESKTOP_MAP_FACTOR" >DESKTOP_MAP_FACTOR</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#MOBILE_MAP_FACTOR" >MOBILE_MAP_FACTOR</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#TABLET_MAP_FACTOR" >TABLET_MAP_FACTOR</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#animation" >animation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#glide" >glide</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#zoomIn" >zoomIn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#zoomOut" >zoomOut</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#deviceMapFactor" >deviceMapFactor</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(svg: ElementRef<SVGGraphicsElement>, breakpointService: <a href="../injectables/BreakpointService.html" target="_self">BreakpointService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>svg</td>
+                                                  
+                                                        <td>
+                                                                    <code>ElementRef&lt;SVGGraphicsElement&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>breakpointService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BreakpointService.html" target="_self" >BreakpointService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="animation"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>animation</b></span>
+                        <a href="#animation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>animation(newRect: DOMRect, animationComplete$?: BehaviorSubject<boolean>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newRect</td>
+                                    <td>
+                                            <code>DOMRect</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>animationComplete$</td>
+                                    <td>
+                                            <code>BehaviorSubject&lt;boolean&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="glide"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>glide</b></span>
+                        <a href="#glide"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>glide(sign: <a href="../classes/Sign.html" target="_self">Sign</a>, animationComplete$: BehaviorSubject<boolean>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Glide to one of the child element associated to the road of the given sign</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sign</td>
+                                    <td>
+                                                <code><a href="../classes/Sign.html" target="_self" >Sign</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The sign</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>animationComplete$</td>
+                                    <td>
+                                            <code>BehaviorSubject&lt;boolean&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The animation complete behavior subject used for callback</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zoomIn"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>zoomIn</b></span>
+                        <a href="#zoomIn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>zoomIn(village: <a href="../classes/Village.html" target="_self">Village</a>, animationComplete$: BehaviorSubject<boolean>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Zoom in the given village</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>village</td>
+                                    <td>
+                                                <code><a href="../classes/Village.html" target="_self" >Village</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The village</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>animationComplete$</td>
+                                    <td>
+                                            <code>BehaviorSubject&lt;boolean&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zoomOut"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>zoomOut</b></span>
+                        <a href="#zoomOut"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>zoomOut(mapBowElement: <a href="../classes/MapBowElement.html" target="_self">MapBowElement</a>, animationComplete$: BehaviorSubject<boolean>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Zoom out on the given map bow element</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mapBowElement</td>
+                                    <td>
+                                                <code><a href="../classes/MapBowElement.html" target="_self" >MapBowElement</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The map bow element</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>animationComplete$</td>
+                                    <td>
+                                            <code>BehaviorSubject&lt;boolean&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The animation complete behavior subject used for callback</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ANIMATION_DURATION"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ANIMATION_DURATION</b></span>
+                        <a href="#ANIMATION_DURATION"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ANIMATION_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ANIMATION_TYPE</b></span>
+                        <a href="#ANIMATION_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;power1.out&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DESKTOP_MAP_FACTOR"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>DESKTOP_MAP_FACTOR</b></span>
+                        <a href="#DESKTOP_MAP_FACTOR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>2.3</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MOBILE_MAP_FACTOR"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>MOBILE_MAP_FACTOR</b></span>
+                        <a href="#MOBILE_MAP_FACTOR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>2</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:11</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="TABLET_MAP_FACTOR"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>TABLET_MAP_FACTOR</b></span>
+                        <a href="#TABLET_MAP_FACTOR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1.9</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deviceMapFactor"></a>
+                        <span class="name"><b>deviceMapFactor</b><a href="#deviceMapFactor"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>deviceMapFactor()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/features/map/directives/animate-map/animate-map.directive.ts:17</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Directive, ElementRef } from &#x27;@angular/core&#x27;;
+import { BreakpointService } from &#x27;@core/services&#x27;;
+import { MapBowElement, Position, Sign, Village } from &#x27;@features/map/models&#x27;;
+import gsap from &#x27;gsap&#x27;;
+import { BehaviorSubject } from &#x27;rxjs&#x27;;
+
+@Directive({
+  selector: &#x27;[appAnimateMap]&#x27;
+})
+export class AnimateMapDirective {
+  private readonly MOBILE_MAP_FACTOR &#x3D; 2;
+  private readonly TABLET_MAP_FACTOR &#x3D; 1.9;
+  private readonly DESKTOP_MAP_FACTOR &#x3D; 2.3;
+  private readonly ANIMATION_DURATION &#x3D; 1;
+  private readonly ANIMATION_TYPE &#x3D; &#x27;power1.out&#x27;;
+
+  private get deviceMapFactor(): number {
+    if (this.breakpointService.snapshot.isMobile) return this.MOBILE_MAP_FACTOR;
+
+    if (this.breakpointService.snapshot.isTablet) return this.TABLET_MAP_FACTOR;
+
+    return this.DESKTOP_MAP_FACTOR;
+  }
+
+  constructor(
+    private svg: ElementRef&lt;SVGGraphicsElement&gt;,
+    private breakpointService: BreakpointService
+  ) {}
+
+  /**
+   * Zoom in the given village
+   *
+   * @param village The village
+   */
+  public zoomIn(village: Village, animationComplete$: BehaviorSubject&lt;boolean&gt;): void {
+    this.animation(
+      new DOMRect(
+        village.start.x - this.svg.nativeElement.clientWidth / 2,
+        village.start.y - this.svg.nativeElement.clientHeight,
+        this.svg.nativeElement.clientWidth,
+        this.svg.nativeElement.clientHeight
+      ),
+      animationComplete$
+    );
+  }
+
+  /**
+   * Zoom out on the given map bow element
+   *
+   * @param mapBowElement The map bow element
+   * @param animationComplete$ The animation complete behavior subject used for callback
+   */
+  public zoomOut(mapBowElement: MapBowElement, animationComplete$: BehaviorSubject&lt;boolean&gt;): void {
+    let newRect: DOMRect;
+
+    if (this.breakpointService.snapshot.isMobile) {
+      newRect &#x3D; new DOMRect(
+        mapBowElement.start.x - this.svg.nativeElement.clientWidth,
+        mapBowElement.start.y - this.svg.nativeElement.clientHeight * 1.9,
+        this.svg.nativeElement.clientWidth * this.deviceMapFactor,
+        this.svg.nativeElement.clientHeight * this.deviceMapFactor
+      );
+    } else {
+      newRect &#x3D; new DOMRect(
+        mapBowElement.start.x - this.svg.nativeElement.clientWidth * 1.184,
+        mapBowElement.start.y - this.svg.nativeElement.clientHeight * 1.79,
+        this.svg.nativeElement.clientWidth * this.deviceMapFactor,
+        this.svg.nativeElement.clientHeight * this.deviceMapFactor
+      );
+    }
+
+    this.animation(newRect, animationComplete$);
+  }
+
+  /**
+   * Glide to one of the child element associated to the road of the given sign
+   *
+   * @param sign The sign
+   * @param animationComplete$ The animation complete behavior subject used for callback
+   */
+  public glide(sign: Sign, animationComplete$: BehaviorSubject&lt;boolean&gt;): void {
+    const childCenter &#x3D; new Position(
+      (sign.road.children[0].start.x + sign.road.children[0].end.x) / 2,
+      (sign.road.children[0].start.y + sign.road.children[0].end.y) / 2
+    );
+
+    this.animation(
+      new DOMRect(
+        childCenter.x - (this.svg.nativeElement.clientWidth * this.deviceMapFactor) / 2,
+        childCenter.y - (this.svg.nativeElement.clientHeight * this.deviceMapFactor) / 2,
+        this.svg.nativeElement.clientWidth * this.deviceMapFactor,
+        this.svg.nativeElement.clientHeight * this.deviceMapFactor
+      ),
+      animationComplete$
+    );
+  }
+
+  private animation(newRect: DOMRect, animationComplete$?: BehaviorSubject&lt;boolean&gt;): void {
+    const hasAlreadyViewBow &#x3D; !!this.svg.nativeElement.getAttribute(&#x27;viewBox&#x27;);
+
+    if (animationComplete$) animationComplete$.next(false);
+
+    gsap.to(this.svg.nativeElement, {
+      duration: hasAlreadyViewBow ? this.ANIMATION_DURATION : 0,
+      attr: { viewBox: &#x60;${newRect.x} ${newRect.y} ${newRect.width} ${newRect.height}&#x60; },
+      ease: this.ANIMATION_TYPE,
+      onComplete: () &#x3D;&gt; {
+        if (animationComplete$) animationComplete$.next(true);
+      }
+    });
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'directive';
+            var COMPODOC_CURRENT_PAGE_URL = 'AnimateMapDirective.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1313 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >PoiService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/shared/services/poi/poi.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#computeScoreDetails" >computeScoreDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cursusPois" >cursusPois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#events" >events</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#moocs" >moocs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#moocsForKpi" >moocsForKpi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#poi" >poi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#positionablePois" >positionablePois</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#skills" >skills</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#teamPoi" >teamPoi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#videos" >videos</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(client: <a href="../injectables/PoiClient.html" target="_self">PoiClient</a>, context: <a href="../injectables/ApplicationContext.html" target="_self">ApplicationContext</a>, hroads: <a href="../injectables/HroadsService.html" target="_self">HroadsService</a>, instanceService: <a href="../injectables/InstanceService.html" target="_self">InstanceService</a>, translateService: TranslateService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/shared/services/poi/poi.service.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>client</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PoiClient.html" target="_self" >PoiClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>context</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApplicationContext.html" target="_self" >ApplicationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>hroads</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HroadsService.html" target="_self" >HroadsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>instanceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InstanceService.html" target="_self" >InstanceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="computeScoreDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>computeScoreDetails</b></span>
+                        <a href="#computeScoreDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>computeScoreDetails(winners: <a href="../interfaces/Score.html" target="_self">Score[]</a>, instanceId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compute the score details from winner POIs of an instance</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>winners</td>
+                                    <td>
+                                                <code><a href="../interfaces/Score.html" target="_self" >Score[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The winner POIS array from the instance score</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>instanceId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The Id of the instance</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;Map&lt;string, Poi[]&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>An observable emitting the score details associating each POI type to an array of POIs</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cursusPois"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>cursusPois</b></span>
+                        <a href="#cursusPois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cursusPois(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all Pois except type = &quot;event&quot;</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;ParcoursPoi[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="events"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>events</b></span>
+                        <a href="#events"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>events(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>, eventFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all pois of Event type from a diploma and locations</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>eventFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;EventPoi[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moocs"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>moocs</b></span>
+                        <a href="#moocs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>moocs(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all moocs</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Mooc.html" target="_self" >Observable&lt;Mooc[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moocsForKpi"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>moocsForKpi</b></span>
+                        <a href="#moocsForKpi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>moocsForKpi(kpiItems: <a href="../interfaces/KpiItem.html" target="_self">KpiItem</a>, label: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all moocs based on Skills</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>kpiItems</td>
+                                    <td>
+                                                <code><a href="../interfaces/KpiItem.html" target="_self" >KpiItem</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>label</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Mooc.html" target="_self" >Observable&lt;Mooc[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="poi"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>poi</b></span>
+                        <a href="#poi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>poi(provider: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, poiId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, instanceId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get a POI</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>provider</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The provider of the POI</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>poiId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The id of the POI</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>instanceId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The id of the instance</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >Observable&lt;Poi&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The matching POI</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="positionablePois"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>positionablePois</b></span>
+                        <a href="#positionablePois"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>positionablePois(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>, poiFilters?: <a href="../classes/Filters.html" target="_self">Filters</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>poiFilters</td>
+                                    <td>
+                                                <code><a href="../classes/Filters.html" target="_self" >Filters</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Position.html" target="_self" >Observable&lt;PositionablePoi[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="skills"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>skills</b></span>
+                        <a href="#skills"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>skills(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>KPIs skills for a waypoint</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Skill.html" target="_self" >Observable&lt;Skill[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="teamPoi"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>teamPoi</b></span>
+                        <a href="#teamPoi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>teamPoi(humanPoiId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the team POI</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>humanPoiId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The id of one of the human POIs of the village</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The current waypoint</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Poi.html" target="_self" >TeamPoi</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The team POI</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="videos"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>videos</b></span>
+                        <a href="#videos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>videos(waypoint: <a href="../interfaces/Waypoint.html" target="_self">Waypoint</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/shared/services/poi/poi.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Retrieve all videos from a waypoint</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>waypoint</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >Waypoint</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;string[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Score } from &#x27;@clients/adventure/bean/instance-score&#x27;;
+import { isDiploma, Waypoint } from &#x27;@clients/adventure/bean/waypoint&#x27;;
+import { Poi } from &#x27;@clients/poi/poi&#x27;;
+import { PoiClient } from &#x27;@clients/poi/poi.client&#x27;;
+import { ApplicationContext, HroadsService } from &#x27;@core/services&#x27;;
+import { Utils } from &#x27;@features/map/utils&#x27;;
+import { Filters } from &#x27;@models/filters/filters&#x27;;
+import { Gender } from &#x27;@models/gender/gender&#x27;;
+import { KpiItem } from &#x27;@models/kpi.model&#x27;;
+import { EventPoi } from &#x27;@models/poi/event/event-poi&#x27;;
+import { Mooc } from &#x27;@models/poi/mooc/mooc&#x27;;
+import { ParcoursPoi } from &#x27;@models/poi/parcours-poi/parcours-poi&#x27;;
+import { PoiProvider } from &#x27;@models/poi/poi-provider&#x27;;
+import { PositionablePoi } from &#x27;@models/poi/positionable-poi/positionable-poi&#x27;;
+import { TeamPoi } from &#x27;@models/poi/team-poi/team-poi&#x27;;
+import { Skill } from &#x27;@models/skill/skill&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { forkJoin, Observable } from &#x27;rxjs&#x27;;
+import { filter, map, switchMap } from &#x27;rxjs/operators&#x27;;
+import { InstanceService } from &#x27;../instance.service&#x27;;
+
+@Injectable()
+export class PoiService {
+  constructor(
+    private client: PoiClient,
+    private context: ApplicationContext,
+    private hroads: HroadsService,
+    private instanceService: InstanceService,
+    private translateService: TranslateService
+  ) {}
+
+  // POIS
+
+  /**
+   * Get a POI
+   *
+   * @param provider The provider of the POI
+   * @param poiId The id of the POI
+   * @param instanceId The id of the instance
+   * @returns The matching POI
+   */
+  public poi(provider: string, poiId: string, instanceId: string): Observable&lt;Poi&gt; {
+    if (provider &#x3D;&#x3D;&#x3D; PoiProvider.human) return this.instanceService.humanPoi(instanceId, poiId);
+
+    return this.client.poi(provider, poiId);
+  }
+
+  // PARCOURS POI
+
+  public positionablePois(waypoint: Waypoint, poiFilters?: Filters): Observable&lt;PositionablePoi[]&gt; {
+    return this.client
+      .positionablePois(this.context.application.nodeId, waypoint.id, waypoint.type, poiFilters)
+      .pipe(filter(pois &#x3D;&gt; !!pois &amp;&amp; !!pois.length));
+  }
+
+  /**
+   * Retrieve all pois of Event type from a diploma and locations
+   */
+  public events(waypoint: Waypoint, eventFilters?: Filters): Observable&lt;EventPoi[]&gt; {
+    return this.client.events(this.context.application.nodeId, waypoint.id, eventFilters);
+  }
+
+  /**
+   * Retrieve all Pois except type &#x3D; &quot;event&quot;
+   */
+  public cursusPois(waypoint: Waypoint): Observable&lt;ParcoursPoi[]&gt; {
+    return this.client.cursusPois(this.context.application.nodeId, waypoint.id);
+  }
+
+  /**
+   * Retrieve all videos from a waypoint
+   */
+  public videos(waypoint: Waypoint): Observable&lt;string[]&gt; {
+    return this.client.videos(waypoint.id);
+  }
+
+  /**
+   * Retrieve all moocs
+   */
+  public moocs(waypoint: Waypoint): Observable&lt;Mooc[]&gt; {
+    return this.client.moocs(waypoint.id);
+  }
+
+  /**
+   * Get the team POI
+   *
+   * @param humanPoiId The id of one of the human POIs of the village
+   * @param waypoint The current waypoint
+   * @returns The team POI
+   */
+  public teamPoi(humanPoiId: string, waypoint: Waypoint): TeamPoi {
+    return new TeamPoi(
+      humanPoiId,
+      this.translateService.instant(&#x27;team.poi.name&#x27;),
+      this.translateService.instant(
+        isDiploma(waypoint.type) ? &#x27;team.poi.description-diploma&#x27; : &#x27;team.poi.description-job&#x27;
+      ),
+      Utils.randomBetween(0, 1) ? Gender.man : Gender.lady
+    );
+  }
+
+  /**
+   * Compute the score details from winner POIs of an instance
+   *
+   * @param winners The winner POIS array from the instance score
+   * @param instanceId The Id of the instance
+   * @returns An observable emitting the score details associating each POI type to an array of POIs
+   */
+  public computeScoreDetails(winners: Score[], instanceId: string): Observable&lt;Map&lt;string, Poi[]&gt;&gt; {
+    return forkJoin(winners.map(score &#x3D;&gt; this.poi(score.metadata, score.id, instanceId))).pipe(
+      map(pois &#x3D;&gt;
+        pois
+          .filter(poi &#x3D;&gt; !!poi)
+          .reduce((res, poi) &#x3D;&gt; {
+            (res[poi.type] &#x3D; res[poi.type] || []).push(poi);
+
+            return res;
+          }, {} as Map&lt;string, Poi[]&gt;)
+      )
+    );
+  }
+
+  /**
+   * KPIs skills for a waypoint
+   */
+  public skills(waypoint: Waypoint): Observable&lt;Skill[]&gt; {
+    return this.hroads.kpi(waypoint, &#x27;skills&#x27;, HroadsService.SKILLS_LIMIT).pipe(
+      switchMap((kpiItems: KpiItem[]) &#x3D;&gt;
+        forkJoin(
+          kpiItems.map(item &#x3D;&gt;
+            this.moocsForKpi(item, &#x27;Skill&#x27;).pipe(
+              map(moocs &#x3D;&gt; ({
+                title: item.name,
+                percentage: Math.floor((item.nb_resumes / item.count_u) * 100),
+                moocs
+              }))
+            )
+          )
+        )
+      )
+    );
+  }
+
+  /**
+   * Retrieve all moocs based on Skills
+   */
+  private moocsForKpi(kpiItems: KpiItem, label: string): Observable&lt;Mooc[]&gt; {
+    return this.client.moocs(kpiItems.uuid, label);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PoiService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

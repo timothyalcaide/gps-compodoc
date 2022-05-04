@@ -1,0 +1,859 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>gps documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">gps documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content guard">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+    <li>Guards</li>
+    <li >AdventureInUrlGuard</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+        <div class="tab-pane fade active in" id="c-info">
+            <p class="comment">
+            <h3>File</h3>
+            </p>
+            <p class="comment">
+                <code>src/app/shared/guards/adventure-in-url.guards.ts</code>
+            </p>
+
+
+
+
+
+
+                <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canActivate" >canActivate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createAdventure" >createAdventure</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#definitionAdventure" >definitionAdventure</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#destinationAndOriginAdventure" >destinationAndOriginAdventure</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#partnerAdventure" >partnerAdventure</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#redirectTo404" >redirectTo404</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+                <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(adventureService: <a href="../injectables/AdventureService.html" target="_self">AdventureService</a>, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, definitionService: <a href="../injectables/DefinitionService.html" target="_self">DefinitionService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, situationContext: <a href="../injectables/SituationContext.html" target="_self">SituationContext</a>, waypointService: <a href="../injectables/WaypointService.html" target="_self">WaypointService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>adventureService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AdventureService.html" target="_self" >AdventureService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>definitionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DefinitionService.html" target="_self" >DefinitionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>situationContext</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SituationContext.html" target="_self" >SituationContext</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>waypointService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WaypointService.html" target="_self" >WaypointService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+                <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canActivate"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canActivate</b></span>
+                        <a href="#canActivate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canActivate(route: <a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank">ActivatedRouteSnapshot</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>route</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank" >ActivatedRouteSnapshot</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable | boolean | UrlTree</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createAdventure"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createAdventure</b></span>
+                        <a href="#createAdventure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createAdventure(adventure: <a href="../interfaces/Adventure.html" target="_self">Adventure</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>adventure</td>
+                                    <td>
+                                                <code><a href="../interfaces/Adventure.html" target="_self" >Adventure</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UrlTree&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="definitionAdventure"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>definitionAdventure</b></span>
+                        <a href="#definitionAdventure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>definitionAdventure(definitionId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>definitionId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UrlTree&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destinationAndOriginAdventure"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>destinationAndOriginAdventure</b></span>
+                        <a href="#destinationAndOriginAdventure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>destinationAndOriginAdventure(originId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, destinationId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>originId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>destinationId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UrlTree&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="partnerAdventure"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>partnerAdventure</b></span>
+                        <a href="#partnerAdventure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>partnerAdventure(partnerName: <a href="../classes/Partner.html" target="_self">PartnerName</a>, partnerId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, partnerType: <a href="../interfaces/Waypoint.html" target="_self">WaypointType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>partnerName</td>
+                                    <td>
+                                                <code><a href="../classes/Partner.html" target="_self" >PartnerName</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>partnerId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>partnerType</td>
+                                    <td>
+                                                <code><a href="../interfaces/Waypoint.html" target="_self" >WaypointType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UrlTree&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectTo404"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>redirectTo404</b></span>
+                        <a href="#redirectTo404"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirectTo404()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/shared/guards/adventure-in-url.guards.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;UrlTree&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+        </div>
+
+
+        <div class="tab-pane fade  tab-source-code" id="c-source">
+            <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { ActivatedRouteSnapshot, CanActivate, Router, UrlTree } from &#x27;@angular/router&#x27;;
+import { AppRouteUrls } from &#x27;@core/routing/app/route-urls&#x27;;
+import { AdventureService, AuthService, SituationContext, WaypointService } from &#x27;@core/services&#x27;;
+import { DefinitionService } from &#x27;@core/services/definition/definition.service&#x27;;
+import { Adventure } from &#x27;@models/adventure/adventure&#x27;;
+import {
+  DEFINITION_QUERY_STRING,
+  DESTINATION_QUERY_STRING,
+  ORIGIN_QUERY_STRING,
+  PARTNER_ID_QUERY_STRING,
+  PARTNER_QUERY_STRING,
+  PARTNER_TYPE_QUERY_STRING
+} from &#x27;@models/adventure/adventure-query-string&#x27;;
+import { ErrorCodes } from &#x27;@models/error-codes/error-codes&#x27;;
+import { PartnerName } from &#x27;@models/partner/partner-name&#x27;;
+import { OriginAndDestination } from &#x27;@models/waypoint/origin-with-destination&#x27;;
+import { WaypointType } from &#x27;@models/waypoint/waypoint-type&#x27;;
+import { catchError, forkJoin, map, Observable, of, switchMap } from &#x27;rxjs&#x27;;
+
+@Injectable()
+export class AdventureInUrlGuard implements CanActivate {
+  constructor(
+    private adventureService: AdventureService,
+    private authService: AuthService,
+    private definitionService: DefinitionService,
+    private router: Router,
+    private situationContext: SituationContext,
+    private waypointService: WaypointService
+  ) {}
+
+  public canActivate(route: ActivatedRouteSnapshot): Observable&lt;UrlTree&gt; | boolean | UrlTree {
+    const definitionId: string &#x3D; route.queryParams[DEFINITION_QUERY_STRING];
+
+    const originId: string &#x3D; route.queryParams[ORIGIN_QUERY_STRING];
+
+    const destinationId: string &#x3D; route.queryParams[DESTINATION_QUERY_STRING];
+    const partnerName: PartnerName &#x3D; route.queryParams[PARTNER_QUERY_STRING];
+    const partnerId: string &#x3D; route.queryParams[PARTNER_ID_QUERY_STRING];
+
+    if (partnerName &amp;&amp; partnerId) {
+      return this.partnerAdventure(
+        partnerName,
+        partnerId,
+        route.queryParams[PARTNER_TYPE_QUERY_STRING]
+      );
+    }
+
+    if (destinationId &amp;&amp; originId)
+      return this.destinationAndOriginAdventure(originId, destinationId);
+
+    if (destinationId) {
+      return this.router.parseUrl(
+        AppRouteUrls.INTENTIONS_WAYPOINT_DETAILS(WaypointType.job, destinationId)
+      );
+    }
+
+    if (originId) {
+      return this.router.parseUrl(
+        AppRouteUrls.INTENTIONS_WAYPOINT_DETAILS(WaypointType.diploma, originId)
+      );
+    }
+
+    if (definitionId) return this.definitionAdventure(definitionId);
+
+    return true;
+  }
+
+  private createAdventure(adventure: Adventure): Observable&lt;UrlTree&gt; {
+    return this.adventureService.createAdventure(this.authService.email, adventure).pipe(
+      map(instance &#x3D;&gt; this.router.parseUrl(AppRouteUrls.ADVENTURE_MAP(instance.id))),
+      catchError(() &#x3D;&gt; this.redirectTo404())
+    );
+  }
+
+  private partnerAdventure(
+    partnerName: PartnerName,
+    partnerId: string,
+    partnerType: WaypointType
+  ): Observable&lt;UrlTree&gt; {
+    return this.waypointService.fromPartner(partnerName, partnerId, partnerType).pipe(
+      switchMap((originAndDestination: OriginAndDestination) &#x3D;&gt;
+        this.createAdventure({
+          origin: originAndDestination.origin,
+          destination: originAndDestination.destination
+        })
+      ),
+      catchError(() &#x3D;&gt; this.redirectTo404())
+    );
+  }
+
+  private destinationAndOriginAdventure(
+    originId: string,
+    destinationId: string
+  ): Observable&lt;UrlTree&gt; {
+    return forkJoin({
+      origin: this.waypointService.waypoint(originId, this.situationContext.situation.gender),
+      destination: this.waypointService.waypoint(
+        destinationId,
+        this.situationContext.situation.gender
+      )
+    }).pipe(
+      switchMap(adventure &#x3D;&gt; this.createAdventure(adventure)),
+      catchError(() &#x3D;&gt; this.redirectTo404())
+    );
+  }
+
+  private definitionAdventure(definitionId: string): Observable&lt;UrlTree&gt; {
+    return this.definitionService.definition(definitionId).pipe(
+      switchMap(adventure &#x3D;&gt; this.createAdventure(adventure)),
+      catchError(() &#x3D;&gt; this.redirectTo404())
+    );
+  }
+
+  private redirectTo404(): Observable&lt;UrlTree&gt; {
+    return of(this.router.parseUrl(&#x60;/${AppRouteUrls.ERROR(ErrorCodes.ERROR_404)}&#x60;));
+  }
+}
+</code></pre>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'guard';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdventureInUrlGuard.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
